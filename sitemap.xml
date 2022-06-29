@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://examplesite.com/tags/argo/</loc>
+    <loc>https://matbabs.github.io/tags/argo/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/</loc>
+    <loc>https://matbabs.github.io/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/</loc>
+    <loc>https://matbabs.github.io/categories/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/dev/</loc>
+    <loc>https://matbabs.github.io/categories/dev/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/frontend-svelte/</loc>
+    <loc>https://matbabs.github.io/posts/frontend-svelte/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/devops/</loc>
+    <loc>https://matbabs.github.io/categories/devops/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/flux/</loc>
+    <loc>https://matbabs.github.io/tags/flux/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/gitops/</loc>
+    <loc>https://matbabs.github.io/categories/gitops/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/gitops-argo-k8s/</loc>
+    <loc>https://matbabs.github.io/posts/gitops-argo-k8s/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/gitops-flux-k8s/</loc>
+    <loc>https://matbabs.github.io/posts/gitops-flux-k8s/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/k8s/</loc>
+    <loc>https://matbabs.github.io/tags/k8s/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/</loc>
+    <loc>https://matbabs.github.io/posts/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/ssr/</loc>
+    <loc>https://matbabs.github.io/tags/ssr/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/svelte/</loc>
+    <loc>https://matbabs.github.io/tags/svelte/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/svelte-kit/</loc>
+    <loc>https://matbabs.github.io/tags/svelte-kit/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/</loc>
+    <loc>https://matbabs.github.io/tags/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/web/</loc>
+    <loc>https://matbabs.github.io/categories/web/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url>
 </urlset>
