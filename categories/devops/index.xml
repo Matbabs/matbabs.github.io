@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DevOps on BreizhC@mp 2022 - Notes</title>
+    <link>https://examplesite.com/categories/devops/</link>
+    <description>Recent content in DevOps on BreizhC@mp 2022 - Notes</description>
+    <image>
+      <url>https://examplesite.com/</url>
+      <link>https://examplesite.com/</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://examplesite.com/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitOps avec Argo 🦑 - Kubernetes</title>
+      <link>https://examplesite.com/posts/gitops-argo-k8s/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://examplesite.com/posts/gitops-argo-k8s/</guid>
+      <description>CI/CD dans un cluster K8S</description>
+    </item>
+    
+    <item>
+      <title>GitOps avec Flux 👌 - Kubernetes</title>
+      <link>https://examplesite.com/posts/gitops-flux-k8s/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://examplesite.com/posts/gitops-flux-k8s/</guid>
+      <description>Injecter des ressources K8S depuis un dépot GIT</description>
+    </item>
+    
+  </channel>
+</rss>

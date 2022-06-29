@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SSR on BreizhC@mp 2022 - Notes</title>
+    <link>https://examplesite.com/tags/ssr/</link>
+    <description>Recent content in SSR on BreizhC@mp 2022 - Notes</description>
+    <image>
+      <url>https://examplesite.com/</url>
+      <link>https://examplesite.com/</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://examplesite.com/tags/ssr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dev front avec Svelte 💪</title>
+      <link>https://examplesite.com/posts/frontend-svelte/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://examplesite.com/posts/frontend-svelte/</guid>
+      <description>Framework javascript frontend orienté composants</description>
+    </item>
+    
+  </channel>
+</rss>

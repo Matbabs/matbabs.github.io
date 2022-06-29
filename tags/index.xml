@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on BreizhC@mp 2022 - Notes</title>
+    <link>https://examplesite.com/tags/</link>
+    <description>Recent content in Tags on BreizhC@mp 2022 - Notes</description>
+    <image>
+      <url>https://examplesite.com/</url>
+      <link>https://examplesite.com/</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://examplesite.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Argo</title>
+      <link>https://examplesite.com/tags/argo/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://examplesite.com/tags/argo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flux</title>
+      <link>https://examplesite.com/tags/flux/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://examplesite.com/tags/flux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>K8S</title>
+      <link>https://examplesite.com/tags/k8s/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://examplesite.com/tags/k8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSR</title>
+      <link>https://examplesite.com/tags/ssr/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://examplesite.com/tags/ssr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Svelte</title>
+      <link>https://examplesite.com/tags/svelte/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://examplesite.com/tags/svelte/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Svelte-KIT</title>
+      <link>https://examplesite.com/tags/svelte-kit/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://examplesite.com/tags/svelte-kit/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
