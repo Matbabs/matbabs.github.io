@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>GitOps on BreizhC@mp 2022 - Notes</title>
+    <title>GitOps on 🇫🇷 BreizhC@mp 2022 - Notes</title>
     <link>https://matbabs.github.io/categories/gitops/</link>
-    <description>Recent content in GitOps on BreizhC@mp 2022 - Notes</description>
+    <description>Recent content in GitOps on 🇫🇷 BreizhC@mp 2022 - Notes</description>
     <image>
       <url>https://matbabs.github.io/</url>
       <link>https://matbabs.github.io/</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://matbabs.github.io/categories/gitops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jun 2022 13:30:00 +0000</lastBuildDate><atom:link href="https://matbabs.github.io/categories/gitops/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>GitOps avec Argo 🦑 - Kubernetes</title>
-      <link>https://matbabs.github.io/posts/gitops-argo-k8s/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <title>GitOps avec Flux 👌 - Kubernetes</title>
+      <link>https://matbabs.github.io/posts/gitops-flux/</link>
+      <pubDate>Wed, 29 Jun 2022 13:30:00 +0000</pubDate>
       
-      <guid>https://matbabs.github.io/posts/gitops-argo-k8s/</guid>
-      <description>CI/CD dans un cluster K8S</description>
+      <guid>https://matbabs.github.io/posts/gitops-flux/</guid>
+      <description>Injecter des ressources K8S depuis un dépot GIT</description>
     </item>
     
     <item>
-      <title>GitOps avec Flux 👌 - Kubernetes</title>
-      <link>https://matbabs.github.io/posts/gitops-flux-k8s/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <title>GitOps avec Argo 🦑 - Kubernetes</title>
+      <link>https://matbabs.github.io/posts/gitops-argo/</link>
+      <pubDate>Wed, 29 Jun 2022 10:00:00 +0000</pubDate>
       
-      <guid>https://matbabs.github.io/posts/gitops-flux-k8s/</guid>
-      <description>Injecter des ressources K8S depuis un dépot GIT</description>
+      <guid>https://matbabs.github.io/posts/gitops-argo/</guid>
+      <description>CI/CD dans un cluster K8S</description>
     </item>
     
   </channel>

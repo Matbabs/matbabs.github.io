@@ -1,19 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>dev on BreizhC@mp 2022 - Notes</title>
+    <title>Dev on 🇫🇷 BreizhC@mp 2022 - Notes</title>
     <link>https://matbabs.github.io/categories/dev/</link>
-    <description>Recent content in dev on BreizhC@mp 2022 - Notes</description>
+    <description>Recent content in Dev on 🇫🇷 BreizhC@mp 2022 - Notes</description>
     <image>
       <url>https://matbabs.github.io/</url>
       <link>https://matbabs.github.io/</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://matbabs.github.io/categories/dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Jun 2022 17:35:00 +0000</lastBuildDate><atom:link href="https://matbabs.github.io/categories/dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FaaS avec Serverless Framework 🪛</title>
+      <link>https://matbabs.github.io/posts/faas-serverlessframework/</link>
+      <pubDate>Thu, 30 Jun 2022 17:35:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/posts/faas-serverlessframework/</guid>
+      <description>Permet de mettre en place des fonctionnalités de gestion d&amp;rsquo;application serverless sur les différents cloud provider (AWS, GCP, Azure).
+Déploiement d&amp;rsquo;une application serverless  Architecture simple du projet
+ Code Source serverless.yml   On définit un descriptif YML (presque du Clouformation dans le cadre d&amp;rsquo;AWS) pour nous faciliter le packaging et configurer notre environement.
+Serverless Framework Plugins  Serverless Offline: https://www.npmjs.com/package/serverless-offline   Ce plugin Serverless émule AWS λ Lambda et API Gateway sur votre machine locale pour accélérer vos cycles de développement.</description>
+    </item>
+    
+    <item>
+      <title>Les joies du SQL avec JOOQ 💽</title>
+      <link>https://matbabs.github.io/posts/sql-jooq/</link>
+      <pubDate>Thu, 30 Jun 2022 14:35:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/posts/sql-jooq/</guid>
+      <description>Simplifier ses requêtes SQL</description>
+    </item>
+    
+    <item>
+      <title>Kube pour les devs ⛵ - les bonnes pratiques</title>
+      <link>https://matbabs.github.io/posts/k8s-dev/</link>
+      <pubDate>Thu, 30 Jun 2022 10:30:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/posts/k8s-dev/</guid>
+      <description>Ce faciliter la vie avec Kubernetes</description>
+    </item>
+    
     <item>
       <title>Dev front avec Svelte 💪</title>
       <link>https://matbabs.github.io/posts/frontend-svelte/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <pubDate>Wed, 29 Jun 2022 16:00:00 +0000</pubDate>
       
       <guid>https://matbabs.github.io/posts/frontend-svelte/</guid>
       <description>Framework javascript frontend orienté composants</description>

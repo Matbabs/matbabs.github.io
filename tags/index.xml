@@ -1,46 +1,181 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on BreizhC@mp 2022 - Notes</title>
+    <title>Tags on 🇫🇷 BreizhC@mp 2022 - Notes</title>
     <link>https://matbabs.github.io/tags/</link>
-    <description>Recent content in Tags on BreizhC@mp 2022 - Notes</description>
+    <description>Recent content in Tags on 🇫🇷 BreizhC@mp 2022 - Notes</description>
     <image>
       <url>https://matbabs.github.io/</url>
       <link>https://matbabs.github.io/</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://matbabs.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Jun 2022 17:35:00 +0000</lastBuildDate><atom:link href="https://matbabs.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Argo</title>
-      <link>https://matbabs.github.io/tags/argo/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <title>AWS</title>
+      <link>https://matbabs.github.io/tags/aws/</link>
+      <pubDate>Thu, 30 Jun 2022 17:35:00 +0000</pubDate>
       
-      <guid>https://matbabs.github.io/tags/argo/</guid>
+      <guid>https://matbabs.github.io/tags/aws/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Flux</title>
-      <link>https://matbabs.github.io/tags/flux/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <title>Azure</title>
+      <link>https://matbabs.github.io/tags/azure/</link>
+      <pubDate>Thu, 30 Jun 2022 17:35:00 +0000</pubDate>
       
-      <guid>https://matbabs.github.io/tags/flux/</guid>
+      <guid>https://matbabs.github.io/tags/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FaaS</title>
+      <link>https://matbabs.github.io/tags/faas/</link>
+      <pubDate>Thu, 30 Jun 2022 17:35:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/tags/faas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GCP</title>
+      <link>https://matbabs.github.io/tags/gcp/</link>
+      <pubDate>Thu, 30 Jun 2022 17:35:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/tags/gcp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Serverless</title>
+      <link>https://matbabs.github.io/tags/serverless/</link>
+      <pubDate>Thu, 30 Jun 2022 17:35:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/tags/serverless/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Serverless Framework</title>
+      <link>https://matbabs.github.io/tags/serverless-framework/</link>
+      <pubDate>Thu, 30 Jun 2022 17:35:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/tags/serverless-framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CDK</title>
+      <link>https://matbabs.github.io/tags/cdk/</link>
+      <pubDate>Thu, 30 Jun 2022 16:00:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/tags/cdk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://matbabs.github.io/tags/java/</link>
+      <pubDate>Thu, 30 Jun 2022 14:35:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JOOQ</title>
+      <link>https://matbabs.github.io/tags/jooq/</link>
+      <pubDate>Thu, 30 Jun 2022 14:35:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/tags/jooq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JPA</title>
+      <link>https://matbabs.github.io/tags/jpa/</link>
+      <pubDate>Thu, 30 Jun 2022 14:35:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/tags/jpa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ORM</title>
+      <link>https://matbabs.github.io/tags/orm/</link>
+      <pubDate>Thu, 30 Jun 2022 14:35:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/tags/orm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>https://matbabs.github.io/tags/sql/</link>
+      <pubDate>Thu, 30 Jun 2022 14:35:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/tags/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apache Pinot</title>
+      <link>https://matbabs.github.io/tags/apache-pinot/</link>
+      <pubDate>Thu, 30 Jun 2022 13:30:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/tags/apache-pinot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Helm</title>
+      <link>https://matbabs.github.io/tags/helm/</link>
+      <pubDate>Thu, 30 Jun 2022 10:30:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/tags/helm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>K8S</title>
       <link>https://matbabs.github.io/tags/k8s/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <pubDate>Thu, 30 Jun 2022 10:30:00 +0000</pubDate>
       
       <guid>https://matbabs.github.io/tags/k8s/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Kompose</title>
+      <link>https://matbabs.github.io/tags/kompose/</link>
+      <pubDate>Thu, 30 Jun 2022 10:30:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/tags/kompose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skaffold</title>
+      <link>https://matbabs.github.io/tags/skaffold/</link>
+      <pubDate>Thu, 30 Jun 2022 10:30:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/tags/skaffold/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://matbabs.github.io/tags/javascript/</link>
+      <pubDate>Wed, 29 Jun 2022 16:00:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>SSR</title>
       <link>https://matbabs.github.io/tags/ssr/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <pubDate>Wed, 29 Jun 2022 16:00:00 +0000</pubDate>
       
       <guid>https://matbabs.github.io/tags/ssr/</guid>
       <description></description>
@@ -49,7 +184,7 @@
     <item>
       <title>Svelte</title>
       <link>https://matbabs.github.io/tags/svelte/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <pubDate>Wed, 29 Jun 2022 16:00:00 +0000</pubDate>
       
       <guid>https://matbabs.github.io/tags/svelte/</guid>
       <description></description>
@@ -58,9 +193,27 @@
     <item>
       <title>Svelte-KIT</title>
       <link>https://matbabs.github.io/tags/svelte-kit/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      <pubDate>Wed, 29 Jun 2022 16:00:00 +0000</pubDate>
       
       <guid>https://matbabs.github.io/tags/svelte-kit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flux</title>
+      <link>https://matbabs.github.io/tags/flux/</link>
+      <pubDate>Wed, 29 Jun 2022 13:30:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/tags/flux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Argo</title>
+      <link>https://matbabs.github.io/tags/argo/</link>
+      <pubDate>Wed, 29 Jun 2022 10:00:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/tags/argo/</guid>
       <description></description>
     </item>
     
