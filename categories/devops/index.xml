@@ -9,7 +9,16 @@
       <link>https://matbabs.github.io/</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 29 Jun 2022 13:30:00 +0000</lastBuildDate><atom:link href="https://matbabs.github.io/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jul 2022 10:30:00 +0000</lastBuildDate><atom:link href="https://matbabs.github.io/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduire de la sécurité 🛡 dans son DevOps</title>
+      <link>https://matbabs.github.io/posts/devsecops/</link>
+      <pubDate>Fri, 01 Jul 2022 10:30:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/posts/devsecops/</guid>
+      <description>Comment améliorer la sécurité de son logiciel</description>
+    </item>
+    
     <item>
       <title>GitOps avec Flux 👌 - Kubernetes</title>
       <link>https://matbabs.github.io/posts/gitops-flux/</link>

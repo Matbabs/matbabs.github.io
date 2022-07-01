@@ -9,16 +9,52 @@
       <link>https://matbabs.github.io/</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 30 Jun 2022 17:35:00 +0000</lastBuildDate><atom:link href="https://matbabs.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jul 2022 16:00:00 +0000</lastBuildDate><atom:link href="https://matbabs.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java dans le Cloud ☕ - Spring || Quarkus</title>
+      <link>https://matbabs.github.io/posts/java-spring-quarkus/</link>
+      <pubDate>Fri, 01 Jul 2022 16:00:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/posts/java-spring-quarkus/</guid>
+      <description>Cloud Native applications</description>
+    </item>
+    
+    <item>
+      <title>Spark dans Kubernetes et stockage S3</title>
+      <link>https://matbabs.github.io/posts/spark-k8s/</link>
+      <pubDate>Fri, 01 Jul 2022 13:30:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/posts/spark-k8s/</guid>
+      <description>Migrer la Data vers le Cloud</description>
+    </item>
+    
+    <item>
+      <title>Pourquoi envisager Rust 🦀 ?</title>
+      <link>https://matbabs.github.io/posts/rust/</link>
+      <pubDate>Fri, 01 Jul 2022 11:30:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/posts/rust/</guid>
+      <description>Langage système moderne</description>
+    </item>
+    
+    <item>
+      <title>Introduire de la sécurité 🛡 dans son DevOps</title>
+      <link>https://matbabs.github.io/posts/devsecops/</link>
+      <pubDate>Fri, 01 Jul 2022 10:30:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/posts/devsecops/</guid>
+      <description>Comment améliorer la sécurité de son logiciel</description>
+    </item>
+    
     <item>
       <title>FaaS avec Serverless Framework 🪛</title>
       <link>https://matbabs.github.io/posts/faas-serverlessframework/</link>
       <pubDate>Thu, 30 Jun 2022 17:35:00 +0000</pubDate>
       
       <guid>https://matbabs.github.io/posts/faas-serverlessframework/</guid>
-      <description>Permet de mettre en place des fonctionnalités de gestion d&amp;rsquo;application serverless sur les différents cloud provider (AWS, GCP, Azure).
+      <description>Serverless Framework permet de mettre en place des fonctionnalités de gestion d&amp;rsquo;application serverless sur les différents cloud provider (AWS, GCP, Azure).
 Déploiement d&amp;rsquo;une application serverless  Architecture simple du projet
- Code Source serverless.yml   On définit un descriptif YML (presque du Clouformation dans le cadre d&amp;rsquo;AWS) pour nous faciliter le packaging et configurer notre environement.
+ Code Source serverless.yml   Nous définissons un descriptif YML (presque du Clouformation dans le cadre d&amp;rsquo;AWS) pour nous faciliter le packaging et configurer notre environement.
 Serverless Framework Plugins  Serverless Offline: https://www.npmjs.com/package/serverless-offline   Ce plugin Serverless émule AWS λ Lambda et API Gateway sur votre machine locale pour accélérer vos cycles de développement.</description>
     </item>
     

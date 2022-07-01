@@ -9,7 +9,25 @@
       <link>https://matbabs.github.io/</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 30 Jun 2022 14:35:00 +0000</lastBuildDate><atom:link href="https://matbabs.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Jul 2022 16:00:00 +0000</lastBuildDate><atom:link href="https://matbabs.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java dans le Cloud ☕ - Spring || Quarkus</title>
+      <link>https://matbabs.github.io/posts/java-spring-quarkus/</link>
+      <pubDate>Fri, 01 Jul 2022 16:00:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/posts/java-spring-quarkus/</guid>
+      <description>Cloud Native applications</description>
+    </item>
+    
+    <item>
+      <title>Pourquoi envisager Rust 🦀 ?</title>
+      <link>https://matbabs.github.io/posts/rust/</link>
+      <pubDate>Fri, 01 Jul 2022 11:30:00 +0000</pubDate>
+      
+      <guid>https://matbabs.github.io/posts/rust/</guid>
+      <description>Langage système moderne</description>
+    </item>
+    
     <item>
       <title>Les joies du SQL avec JOOQ 💽</title>
       <link>https://matbabs.github.io/posts/sql-jooq/</link>

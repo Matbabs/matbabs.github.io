@@ -16,9 +16,9 @@
       <pubDate>Thu, 30 Jun 2022 17:35:00 +0000</pubDate>
       
       <guid>https://matbabs.github.io/posts/faas-serverlessframework/</guid>
-      <description>Permet de mettre en place des fonctionnalités de gestion d&amp;rsquo;application serverless sur les différents cloud provider (AWS, GCP, Azure).
+      <description>Serverless Framework permet de mettre en place des fonctionnalités de gestion d&amp;rsquo;application serverless sur les différents cloud provider (AWS, GCP, Azure).
 Déploiement d&amp;rsquo;une application serverless  Architecture simple du projet
- Code Source serverless.yml   On définit un descriptif YML (presque du Clouformation dans le cadre d&amp;rsquo;AWS) pour nous faciliter le packaging et configurer notre environement.
+ Code Source serverless.yml   Nous définissons un descriptif YML (presque du Clouformation dans le cadre d&amp;rsquo;AWS) pour nous faciliter le packaging et configurer notre environement.
 Serverless Framework Plugins  Serverless Offline: https://www.npmjs.com/package/serverless-offline   Ce plugin Serverless émule AWS λ Lambda et API Gateway sur votre machine locale pour accélérer vos cycles de développement.</description>
     </item>
     
