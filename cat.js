@@ -44,12 +44,12 @@ function update() {
     cat.childNodes[1].style.transform = `scaleX(${
       isLeftSide ? -1 : 1
     }) rotate(${angle * (isLeftSide ? -1 : 1) + (isLeftSide ? 0 : 180)}deg)`;
-    cursor.style.transform = `scale(${2 + Math.sin(time) / 4}) rotate(${
-      angle + 180
-    }deg)`;
   } else {
     cat.style.opacity = "0";
   }
+  cursor.style.transform = `scale(${2 + Math.sin(time) / 4}) rotate(${
+    angle + 180
+  }deg)`;
 }
 
 update();
