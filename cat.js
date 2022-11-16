@@ -1,6 +1,7 @@
 const speed = 4;
 const cat = document.getElementById("cat");
 cat.style = "position: absolute; top: 0; left: 0;";
+cat.style.transition = "opacity 250ms";
 cat.childNodes[1].style = "width: 140px";
 const mousePosition = { x: 0, y: 0 };
 const cursor = document.getElementById("cursor");
@@ -31,7 +32,8 @@ function update() {
   );
   cursor.style.left = mousePosition.x - cursor.clientWidth / 2 + "px";
   cursor.style.top = mousePosition.y - cursor.clientHeight / 2 + "px";
-  if (dist > 3) {
+  if (dist > cat.clientWidth / 5) {
+    cat.style.opacity = "1";
     cat.style.top = `${
       catPosition.top + ((targetY - actualY) / dist) * speed
     }px`;
@@ -45,6 +47,8 @@ function update() {
     cursor.style.transform = `scale(${2 + Math.sin(time) / 4}) rotate(${
       angle + 180
     }deg)`;
+  } else {
+    cat.style.opacity = "0";
   }
 }
 
