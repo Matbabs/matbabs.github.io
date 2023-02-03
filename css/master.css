@@ -1,0 +1,224 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #0b0b0b;
+  --margin: 2rem;
+  --margin-lg: 4rem;
+  --transition: 250ms;
+}
+
+@font-face {
+  font-family: "Cinzel";
+  src: url("../assets/fonts/cinzel.woff2") format("woff");
+}
+
+html,
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+.title {
+  font-family: "Cinzel";
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+header {
+  padding: var(--margin);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--black);
+  color: var(--white);
+  z-index: 100000;
+}
+
+nav {
+  display: flex;
+  gap: var(--margin);
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav * {
+  white-space: nowrap;
+}
+
+nav .menu-toggle {
+  display: none;
+  font-size: 1.3rem;
+}
+
+nav .menu-toggle:hover {
+  cursor: pointer;
+}
+
+nav .menu-item {
+  display: flex;
+  gap: var(--margin);
+  transition: width var(--transition);
+}
+
+nav .menu-item * {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1000px) {
+  nav .menu-toggle {
+    display: block;
+  }
+
+  nav .menu-item {
+    position: fixed;
+    top: 94;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000000e5;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    width: 0;
+    overflow: hidden;
+  }
+
+  nav .menu-item.open {
+    width: 100%;
+  }
+}
+
+section.intro {
+  position: relative;
+  margin-top: 94px;
+  height: calc(100vh - 94px - 50px);
+  background: url(../assets/img/intro.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+section.intro #teaser {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section.intro .container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  text-shadow: 0px 0px 8px #000000;
+}
+
+section.intro .title {
+  font-size: 5vw;
+}
+
+section.intro .subtitle {
+  font-size: 1.6vw;
+}
+
+@media screen and (max-width: 1000px) {
+  section.intro .title {
+    font-size: 9vw;
+  }
+
+  section.intro .subtitle {
+    font-size: 4vw;
+  }
+}
+
+section.videos {
+  background-color: var(--black);
+  background-size: cover;
+  background-position: center;
+  padding: var(--margin-lg);
+  color: var(--white);
+  text-shadow: 0px 0px 8px #000000;
+  display: grid;
+  gap: var(--margin);
+  grid-template-columns: 65% auto;
+}
+
+section.videos * {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--margin);
+}
+
+section.videos .presentation {
+  width: 100%;
+}
+
+section.videos .dossier embed {
+  width: 100%;
+  height: 60%;
+}
+
+@media screen and (max-width: 1000px) {
+  section.videos {
+    grid-template-columns: 1fr;
+  }
+
+  section.videos .dossier {
+    display: none;
+  }
+}
+
+section.about {
+  padding: var(--margin-lg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin);
+  justify-content: center;
+  align-items: center;
+}
+
+section.about .subtitle {
+  font-weight: bold;
+  font-style: italic;
+}
+
+section.about p {
+  max-width: 60%;
+}

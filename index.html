@@ -1,21 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🐱 Cat</title>
-    <style>
-        * {
-            cursor: none;
-        }
-    </style>
-</head>
-<body>
-    <div id="cat">
-        <img src="assets/cat.gif" alt="cat">
-    </div>
-    <img id="cursor" src="assets/cursor.png" alt="cat">
-    <script src="cat.js"></script>
-</body>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROJET AVENIR</title>
+    <link rel="stylesheet" href="./css/master.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h3>Projet Avenir</h3>
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars open"></i>
+          <i class="fa-solid fa-xmark close"></i>
+        </div>
+        <div class="menu-item">
+          <span>À propos</span>
+          <span>Les oeuvres</span>
+          <span>Contact</span>
+        </div>
+      </nav>
+    </header>
+    <section class="intro">
+      <video autoplay muted loop id="teaser">
+        <source src="./assets/videos/teaser.mp4" type="video/mp4" />
+      </video>
+      <div class="container">
+        <span class="title">Projet Avenir</span>
+        <span class="subtitle">
+          ... car l'urgence est là et l'avenir ne tient qu'à un fil !
+        </span>
+      </div>
+    </section>
+    <section class="videos">
+      <div>
+        <video controls poster="./assets/img/oeuvre.png" class="presentation">
+          <source src="./assets/videos/presentation.mp4" type="video/mp4" />
+        </video>
+        <h2>Presentation</h2>
+      </div>
+      <div class="dossier">
+        <embed
+          src="./assets/documents/presentation.pdf#toobar=0"
+          type="application/pdf"
+        />
+        <h2>Dossier</h2>
+      </div>
+    </section>
+    <section class="about">
+      <h1>L'Avenir ne tient qu'à un fil</h1>
+      <span class="subtitle">
+        Si la science ne convainc pas, alors est-ce que l’art peut le faire ?
+      </span>
+      <p>
+        "L'avenir ne tient qu'à un fil" est la réalisation d'oeuvres engagées
+        pour la protection de notre vaisseau terre, résultat d'une symphonie
+        d'univers aux apparences bien différentes, en particulier celui de l'art
+        et de la montagne.
+      </p>
+      <p>
+        La réalisation de ces oeuvres sera un véritable tremplin pour un grand
+        nombre de supports de diffusion ( films, photos, documentaires,
+        chorégraphies, spectacles, livres... )
+      </p>
+    </section>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>
