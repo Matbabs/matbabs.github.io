@@ -36,6 +36,10 @@ a {
   color: var(--white);
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 h1 {
   font-size: 2.6rem;
 }
