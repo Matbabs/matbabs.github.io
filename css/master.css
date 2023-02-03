@@ -222,6 +222,7 @@ section.videos .dossier embed {
 @media screen and (max-width: 1000px) {
   section.videos {
     grid-template-columns: 1fr;
+    padding: var(--margin);
   }
 
   section.videos .dossier {
