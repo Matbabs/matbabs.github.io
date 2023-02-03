@@ -257,6 +257,10 @@ section.about p {
   section.about {
     padding: var(--margin);
   }
+
+  section.about h1 {
+    font-size: 6vw;
+  }
 }
 
 section.interpretation {
@@ -387,6 +391,10 @@ section.timeline .time .date .subsubtitle {
   text-transform: uppercase;
 }
 
+section.timeline p {
+  text-align: justify;
+}
+
 @media screen and (max-width: 1400px) {
   section.timeline {
     padding: 0 15vh;
@@ -433,6 +441,7 @@ section.actors .presentation > * {
   align-items: center;
   gap: var(--margin);
   color: var(--black);
+  box-shadow: 0 0 10px 0 var(--black);
 }
 
 section.actors .presentation > * h3 {
@@ -505,6 +514,10 @@ section.participation {
   color: var(--white);
 }
 
+section.participation h1 {
+  text-align: center;
+}
+
 section.participation .bank {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -514,6 +527,7 @@ section.participation .bank {
 section.participation .bank .donation {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 section.participation .bank .donation img {
@@ -542,6 +556,7 @@ section.participation .bank .explenation {
   display: flex;
   flex-direction: column;
   gap: var(--margin);
+  text-align: center;
 }
 
 @media screen and (max-width: 1500px) {
