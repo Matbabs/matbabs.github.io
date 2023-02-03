@@ -460,3 +460,29 @@ section.parteners .list {
 section.parteners .list img {
   width: 15vh;
 }
+
+footer {
+  padding: var(--margin-lg);
+  position: relative;
+  background: url(../assets/img/contact.webp);
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+}
+
+footer .cover {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--grey);
+  opacity: 0.6;
+}
+
+footer .container {
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+}
