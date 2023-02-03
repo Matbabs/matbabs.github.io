@@ -459,6 +459,10 @@ section.actors .presentation > * .social {
   gap: var(--margin);
 }
 
+section.actors .presentation > * .social a {
+  color: var(--black);
+}
+
 section.actors .presentation > * .social i {
   font-size: 3rem;
   transition: all var(--transition);
