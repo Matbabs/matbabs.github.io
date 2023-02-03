@@ -16,17 +16,17 @@
   <body>
     <header>
       <nav>
-        <h3>Projet Avenir</h3>
+        <a onclick="window.scrollTo(0, 0);"><h3>Projet Avenir</h3></a>
         <div class="menu-toggle">
           <i class="fa-solid fa-bars open"></i>
           <i class="fa-solid fa-xmark close"></i>
         </div>
         <div class="menu-item">
-          <span>À propos</span>
-          <span>Les oeuvres</span>
-          <span>Les acteurs</span>
-          <span>Participer</span>
-          <span>Contact</span>
+          <a href="#about">À propos</a>
+          <a href="#interpretation">Les oeuvres</a>
+          <a href="#actors">Les acteurs</a>
+          <a href="#participate">Participer</a>
+          <a href="#contact">Contact</a>
         </div>
       </nav>
     </header>
@@ -56,7 +56,7 @@
         <h2>Dossier</h2>
       </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
       <h1>L'Avenir ne tient qu'à un fil</h1>
       <span class="subtitle">
         Si la science ne convainc pas, alors est-ce que l’art peut le faire ?
@@ -73,7 +73,7 @@
         chorégraphies, spectacles, livres... )
       </p>
     </section>
-    <section class="interpretation">
+    <section id="interpretation" class="interpretation">
       <div class="background"></div>
       <h1>Interprétation</h1>
       <div class="board">
@@ -87,7 +87,7 @@
             PRISE DE CONSCIENCE
           </h3>
           <span class="subtitle">HIGHLINE</span>
-          <p>
+          <p class="intro">
             “ Prends conscience que l’avenir est aussi entre tes mains, et que
             si tu lâches prise, l’avenir s’envole ... "
           </p>
@@ -130,7 +130,7 @@
             L'ACTION INDIVIDUELLE
           </h3>
           <span class="subtitle">ROPE JUMP</span>
-          <p>
+          <p class="intro">
             " Maintenant que tu as compris que l’avenir dépend aussi de toi,
             jette-toi dans l’inconnu pour essayer de la sauver… "
           </p>
@@ -167,7 +167,7 @@
             L'ACTION COLLECTIVE
           </h3>
           <span class="subtitle">ALPINISME</span>
-          <p>
+          <p class="intro">
             " ...et prend conscience qu’ensemble nous pouvons accomplir des
             miracles et atteindre des sommets ! "
           </p>
@@ -210,7 +210,7 @@
             <span></span>
           </h3>
           <span class="subtitle">EXPEDITION ARCTIQUE </span>
-          <p>
+          <p class="intro">
             " La dernière oeuvre sera un résumé des trois premières, elle
             illustrera tout le cheminement de pensée pour prendre conscience,
             agir individuellement puis collectivement. "
@@ -281,7 +281,74 @@
         </p>
       </div>
     </section>
-    <section class="participation">
+    <section id="actors" class="actors">
+      <h1>Les Acteurs</h1>
+      <div class="presentation">
+        <div>
+          <div class="img-box">
+            <img src="./assets/img/loic.jpeg" />
+          </div>
+          <h3>Loic Forques</h3>
+          <span class="role">Fondateur</span>
+          <p>
+            🌱 Chez Umber, nous avons fait le choix de mettre "nos compétences
+            au service du bon sens" afin d'appuyer vos projets de communication
+            à impact. <br />
+            <br />
+            🎥 Co-fondateur, producteur et réalisateur de l'agence de
+            communication et de production audiovisuelle à impact "Umber
+            studio", nous mettons sur le devant de la scène des leaders
+            inspirants et des projets novateurs !
+          </p>
+          <div class="social">
+            <a href="https://www.instagram.com/loic_forques/">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="img-box">
+            <img src="./assets/img/amael.jpg" />
+          </div>
+          <h3>Amaël Babonneau</h3>
+          <span class="role">Grimpeur Pro</span>
+          <p>
+            Je suis un explorateur/aventurier passionné de sports extrêmes, qui
+            après avoir exercé comme directeur adjoint d'une salle d'escalade
+            chez Arkose&co, se lance aujourd'hui dans un tour du monde
+            humanitaire à la rencontre des grimpeurs de notre planète. A
+            découvrir cet été sur la chaine YouTube A BLOC !
+          </p>
+          <div class="social">
+            <a href="https://www.instagram.com/ablocinsta/">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@ABLOC/videos">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="img-box">
+            <img src="./assets/img/joffrey.jpg" />
+          </div>
+          <h3>Joffrey Maluski</h3>
+          <span class="role">Créateur</span>
+          <p>
+            👉🏻 Nous sommes créateurs de contenus vidéos et photographiques au
+            service de l'humain, l'environnement et l'innovation. Nous créons
+            des films, des reportages vidéos et photos, ainsi que tout contenu
+            destiné à vos supports de communication digitale.
+          </p>
+          <div class="social">
+            <a href="https://www.instagram.com/joffreymaluski/">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="participate" class="participation">
       <div class="bank">
         <div class="donation">
           <h1>Participer à l'Aventure</h1>
@@ -322,10 +389,37 @@
         <img src="./assets/img/POW_SITE.png" />
       </div>
     </section>
-    <footer>
+    <footer id="contact">
       <div class="cover"></div>
       <div class="container">
         <h1>Contact</h1>
+        <div class="grid">
+          <div class="contacts">
+            <div class="contact">
+              <i class="fa-solid fa-envelopes-bulk"></i>
+              <span> contact@umber.studio</span>
+            </div>
+            <div class="contact">
+              <i class="fa-solid fa-phone"></i>
+              <span>06 27 35 86 74</span>
+            </div>
+          </div>
+
+          <div class="social">
+            <i class="fa-brands fa-square-instagram"></i>
+          </div>
+          <div class="contacts">
+            <div class="contact webdesign">
+              <i class="fa-solid fa-compass-drafting"></i>
+              <span>Webdesign</span>
+            </div>
+            <div class="contact webdesign">
+              <a href="https://matisse-babonneau.fr">
+                www.matisse-babonneau.fr
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
     <script src="./scripts/script.js"></script>

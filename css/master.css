@@ -28,11 +28,12 @@ body {
   font-family: sans-serif;
   font-size: 1rem;
   scroll-behavior: smooth;
+  color: var(--black);
 }
 
 a {
   text-decoration: none;
-  color: var(--black);
+  color: var(--white);
 }
 
 h1 {
@@ -60,6 +61,10 @@ h4,
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+section {
+  scroll-margin-top: 70px;
 }
 
 header {
@@ -100,6 +105,17 @@ nav .menu-item {
 
 nav .menu-item * {
   white-space: nowrap;
+}
+
+nav .menu-item a {
+  color: var(--white);
+  transition: all var(--transition);
+}
+
+nav .menu-item a:hover {
+  color: var(--blue);
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 1000px) {
@@ -232,6 +248,12 @@ section.about p {
   max-width: 60%;
 }
 
+@media screen and (max-width: 1000px) {
+  section.about {
+    padding: var(--margin);
+  }
+}
+
 section.interpretation {
   background: var(--black);
   color: var(--white);
@@ -285,6 +307,11 @@ section.interpretation .board * img {
 section.interpretation .board * .subtitle {
   text-transform: uppercase;
   font-weight: bold;
+}
+
+section.interpretation .board * .intro {
+  font-style: italic;
+  color: var(--blue);
 }
 
 @media screen and (max-width: 1400px) {
@@ -374,6 +401,95 @@ section.timeline .time .date .subsubtitle {
   }
 }
 
+section.actors {
+  padding: var(--margin-lg);
+  background: var(--grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--margin);
+  color: var(--white);
+}
+
+section.actors .presentation {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--margin);
+}
+
+section.actors .presentation > * {
+  width: 100%;
+  background: var(--white);
+  border-radius: var(--border-radius);
+  padding: var(--margin);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--margin);
+  color: var(--black);
+}
+
+section.actors .presentation > * h3 {
+  text-align: center;
+}
+
+section.actors .presentation > * .img-box {
+  width: 15rem;
+  height: 15rem;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+section.actors .presentation > * img {
+  width: 100%;
+}
+
+section.actors .presentation > * .role {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section.actors .presentation > * p {
+  text-align: center;
+}
+
+section.actors .presentation > * .social {
+  display: flex;
+  gap: var(--margin);
+}
+
+section.actors .presentation > * .social i {
+  font-size: 3rem;
+  transition: all var(--transition);
+}
+
+section.actors .presentation > * .social i:hover {
+  color: var(--blue);
+}
+
+@media screen and (max-width: 1400px) {
+  section.actors .presentation {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section.actors {
+    padding: var(--margin);
+  }
+
+  section.actors .presentation > * .img-box {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  section.actors .presentation {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
 section.participation {
   padding: var(--margin-lg) calc(var(--margin-lg) + 40vh);
   background: var(--black);
@@ -430,6 +546,10 @@ section.participation .bank .explenation {
     padding: var(--margin-lg);
   }
 
+  section.participation h1 {
+    font-size: 8vw;
+  }
+
   section.participation .bank {
     grid-template-columns: 1fr;
   }
@@ -461,8 +581,14 @@ section.parteners .list img {
   width: 15vh;
 }
 
+@media screen and (max-width: 1000px) {
+  section.parteners .list {
+    gap: var(--margin);
+  }
+}
+
 footer {
-  padding: var(--margin-lg);
+  padding: calc(2 * var(--margin-lg)) var(--margin-lg);
   position: relative;
   background: url(../assets/img/contact.webp);
   background-size: cover;
@@ -485,4 +611,80 @@ footer .container {
   position: relative;
   z-index: 2;
   opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--margin-lg);
+}
+
+footer .container .grid {
+  display: grid;
+  gap: var(--margin);
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+}
+
+footer .container .grid * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: calc(var(--margin) / 2);
+  flex-direction: column;
+}
+
+footer .container .contacts {
+  align-items: center;
+}
+
+footer .container .contact {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+}
+
+footer .container .contact i {
+  font-size: 1.8rem;
+}
+
+footer .container .social i {
+  font-size: 6rem;
+  transition: all var(--transition);
+}
+
+footer .container .social i:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+footer .container .contact.webdesign {
+  font-size: 1.1rem;
+}
+
+footer .container .contact.webdesign a {
+  text-decoration: none;
+  color: var(--white);
+  transition: all var(--transition);
+}
+
+footer .container .contact.webdesign a:hover {
+  color: var(--blue);
+}
+
+footer .container .contact.contact.webdesign i {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  footer .container {
+    gap: var(--margin);
+  }
+
+  footer .container .grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer .container .contact * {
+    font-size: 1.2rem;
+  }
 }

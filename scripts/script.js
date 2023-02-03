@@ -23,3 +23,12 @@ function toggleMenu() {
     menuItem.classList.add("open");
   }
 }
+
+const allLinks = document.querySelectorAll("a");
+
+allLinks.forEach((e) =>
+  e.addEventListener("click", () => {
+    menuIsOpened = false;
+    toggleMenu();
+  })
+);
