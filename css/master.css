@@ -364,7 +364,7 @@ section.interpretation .board * .intro {
 .separator {
   height: 10rem;
   background: var(--grey);
-  background: url(../assets/img/oeuvre.png);
+  background: url(../assets/img/oeuvre.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
