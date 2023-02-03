@@ -223,6 +223,16 @@ section.videos .dossier embed {
   height: 60%;
 }
 
+section.videos .dossier embed:hover {
+  position: fixed;
+  top: 94px;
+  right: 0;
+  width: 70%;
+  height: calc(100% - 94px);
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 1000px) {
   section.videos {
     grid-template-columns: 1fr;
