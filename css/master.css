@@ -10,6 +10,7 @@
   --white: #ffffff;
   --black: #0b0b0b;
   --grey: #2a2e30;
+  --blue: #85ccff;
   --shadow: #000000e5;
   --margin: 2rem;
   --margin-lg: 4rem;
@@ -27,6 +28,11 @@ body {
   font-family: sans-serif;
   font-size: 1rem;
   scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
 }
 
 h1 {
@@ -369,9 +375,68 @@ section.timeline .time .date .subsubtitle {
 }
 
 section.participation {
-  padding: var(--margin-lg);
+  padding: var(--margin-lg) calc(var(--margin-lg) + 40vh);
   background: var(--black);
   color: var(--white);
+}
+
+section.participation .bank {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--margin);
+}
+
+section.participation .bank .donation {
+  display: flex;
+  flex-direction: column;
+}
+
+section.participation .bank .donation img {
+  width: 50%;
+  filter: grayscale(100);
+}
+
+section.participation .bank .donation a {
+  color: var(--blue);
+  text-transform: uppercase;
+  font-weight: bold;
+  border: solid 1px var(--blue);
+  padding: var(--margin);
+  border-radius: var(--border-radius);
+  text-align: center;
+  transition: all var(--transition);
+  width: 80%;
+}
+
+section.participation .bank .donation a:hover {
+  background: var(--blue);
+  color: var(--black);
+}
+
+section.participation .bank .explenation {
+  display: flex;
+  flex-direction: column;
+  gap: var(--margin);
+}
+
+@media screen and (max-width: 1500px) {
+  section.participation {
+    padding: var(--margin-lg);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section.participation {
+    padding: var(--margin-lg);
+  }
+
+  section.participation .bank {
+    grid-template-columns: 1fr;
+  }
+
+  section.participation .bank .donation a {
+    width: 100%;
+  }
 }
 
 section.parteners {
