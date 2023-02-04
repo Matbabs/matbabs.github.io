@@ -16,7 +16,7 @@
   <body>
     <header>
       <nav>
-        <a onclick="window.scrollTo(0, 0);"><h3>Projet Avenir</h3></a>
+        <a onclick="scrollToTop()"><h3>Projet Avenir</h3></a>
         <div class="menu-toggle">
           <i class="fa-solid fa-bars open"></i>
           <i class="fa-solid fa-xmark close"></i>
@@ -49,10 +49,15 @@
         <h2>Presentation</h2>
       </div>
       <div class="dossier">
-        <embed
-          src="./assets/documents/presentation.pdf#toobar=0"
-          type="application/pdf"
-        />
+        <div onclick="openFolder()" class="folder"></div>
+        <div class="folder-popup">
+          <i onclick="closeFolder()" class="fa-solid fa-xmark close"></i>
+          <i class="fas fa-circle-notch fa-spin load"></i>
+          <embed
+            src="./assets/documents/presentation.pdf#toobar=0"
+            type="application/pdf"
+          />
+        </div>
         <h2>Dossier</h2>
       </div>
     </section>
@@ -404,9 +409,8 @@
               <span>06 27 35 86 74</span>
             </div>
           </div>
-
           <div class="social">
-            <i class="fa-brands fa-square-instagram"></i>
+            <!-- <i class="fa-brands fa-square-instagram"></i> -->
           </div>
           <div class="contacts">
             <div class="contact webdesign">

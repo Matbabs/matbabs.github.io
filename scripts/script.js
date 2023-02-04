@@ -32,3 +32,25 @@ allLinks.forEach((e) =>
     toggleMenu();
   })
 );
+
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
+
+const folderPopUp = document.querySelector(".folder-popup");
+const folderEmbed = document.querySelector("embed");
+const folderLoad = document.querySelector(".load");
+
+function openFolder() {
+  folderLoad.style.opacity = "1";
+  folderPopUp.style.bottom = "0";
+  setTimeout(() => {
+    folderLoad.style.opacity = "0";
+    folderEmbed.style.opacity = "1";
+  }, 1000);
+}
+
+function closeFolder() {
+  folderPopUp.style.bottom = "100vh";
+  folderEmbed.style.opacity = "0";
+}

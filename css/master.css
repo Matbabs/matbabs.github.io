@@ -203,13 +203,13 @@ section.videos {
   text-shadow: 0px 0px 8px var(--black);
   display: grid;
   gap: var(--margin);
-  grid-template-columns: 65% auto;
+  grid-template-columns: 70% auto;
 }
 
 section.videos * {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: var(--margin-lg);
 }
@@ -218,19 +218,67 @@ section.videos .presentation {
   width: 100%;
 }
 
-section.videos .dossier embed {
+section.videos .dossier .folder {
   width: 100%;
-  height: 60%;
+  height: 100%;
+  background: url(../assets/img/dossier.webp);
+  background-size: cover;
+  background-position: center;
+  border: solid 2px var(--grey);
+  transition: all var(--transition);
+  border-radius: var(--border-radius);
 }
 
-section.videos .dossier embed:hover {
+section.videos .dossier .folder:hover {
+  cursor: pointer;
+  border: solid 2px var(--blue);
+}
+
+section.videos .dossier .folder-popup {
   position: fixed;
-  top: 94px;
+  z-index: 9999999;
+  top: 0;
+  bottom: 100vh;
   right: 0;
-  width: 70%;
-  height: calc(100% - 94px);
-  margin: 0;
-  padding: 0;
+  left: 0;
+  background: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all var(--transition);
+}
+
+section.videos .dossier .folder-popup .close {
+  position: absolute;
+  top: var(--margin-lg);
+  right: var(--margin-lg);
+  font-size: 2rem;
+  transition: all var(--transition);
+}
+
+section.videos .dossier .folder-popup .load {
+  opacity: 1;
+  z-index: 4;
+  font-size: 5rem;
+  position: absolute;
+  top: 40%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  transition: all var(--transition);
+}
+
+section.videos .dossier .folder-popup .close:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+
+section.videos .dossier .folder-popup embed {
+  z-index: 4;
+  opacity: 0;
+  width: 80%;
+  height: 80%;
+  transition: all var(--transition);
 }
 
 @media screen and (max-width: 1000px) {
