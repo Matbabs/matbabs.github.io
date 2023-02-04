@@ -605,7 +605,7 @@ section.participation .bank .donation a {
   color: var(--blue);
   text-transform: uppercase;
   font-weight: bold;
-  border: solid 1px var(--blue);
+  border: solid 2px var(--blue);
   padding: var(--margin);
   border-radius: var(--border-radius);
   text-align: center;
