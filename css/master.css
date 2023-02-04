@@ -770,3 +770,10 @@ footer .container .contact.contact.webdesign i {
     font-size: 1.2rem;
   }
 }
+
+section.tagline {
+  padding: var(--margin);
+  text-align: center;
+  background: var(--black);
+  color: var(--white);
+}
