@@ -377,6 +377,8 @@ section.interpretation .board * .img-box {
 
 section.interpretation .board * img {
   width: 85%;
+  box-shadow: 0 0 10px 0 var(--black);
+  border-radius: var(--border-radius);
 }
 
 section.interpretation .board * .subtitle {
