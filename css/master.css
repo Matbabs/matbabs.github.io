@@ -216,6 +216,14 @@ section.videos * {
 
 section.videos .presentation {
   width: 100%;
+  border: solid 2px var(--grey);
+  transition: all var(--transition);
+  border-radius: var(--border-radius);
+}
+
+section.videos .presentation:hover {
+  cursor: pointer;
+  border: solid 2px var(--blue);
 }
 
 section.videos .dossier .folder {
