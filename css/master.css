@@ -732,7 +732,7 @@ footer .container .contacts {
 footer .container .contact {
   display: flex;
   flex-direction: row;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 footer .container .contact i {
@@ -768,6 +768,10 @@ footer .container .contact.contact.webdesign i {
 }
 
 @media screen and (max-width: 1000px) {
+  footer {
+    padding: var(--margin);
+  }
+
   footer .container {
     gap: var(--margin);
   }
