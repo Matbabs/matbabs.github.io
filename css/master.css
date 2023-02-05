@@ -130,7 +130,7 @@ nav .menu-item a:hover {
 
   nav .menu-item {
     position: fixed;
-    top: 94;
+    top: 94px;
     left: 0;
     right: 0;
     bottom: 0;
