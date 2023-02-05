@@ -21,6 +21,7 @@
 @font-face {
   font-family: "Cinzel";
   src: url("../assets/fonts/cinzel.woff2") format("woff");
+  font-display: swap;
 }
 
 html,
