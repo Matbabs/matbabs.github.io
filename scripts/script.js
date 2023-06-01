@@ -54,3 +54,11 @@ function closeFolder() {
   folderPopUp.style.bottom = "100vh";
   folderEmbed.style.opacity = "0";
 }
+
+function changeLanguage(language) {
+  if (language === "fr") {
+    window.location.href = "index.html";
+  } else if (language === "en") {
+    window.location.href = "index.en.html";
+  }
+}

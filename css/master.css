@@ -123,6 +123,45 @@ nav .menu-item a:hover {
   transform: scale(1.2);
 }
 
+nav ul {
+  list-style-type: none;
+}
+
+nav ul .showOnHover {
+  display: none;
+}
+
+nav ul:hover .showOnHover {
+  display: flex;
+}
+
+nav li {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 5px;
+  transition: all var(--transition);
+}
+
+nav li img {
+  border: solid 2px var(--white);
+  border-radius: var(--border-radius);
+  width: 1.3rem;
+  height: 1rem;
+}
+
+nav li.showOnHover {
+  position: fixed;
+}
+
+nav li.showOnHover:hover {
+  color: var(--blue);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
 @media screen and (max-width: 1000px) {
   nav .menu-toggle {
     display: block;
@@ -145,6 +184,10 @@ nav .menu-item a:hover {
 
   nav .menu-item.open {
     width: 100%;
+  }
+
+  nav li {
+    font-size: 1.3rem;
   }
 }
 
@@ -192,6 +235,8 @@ section.intro .subtitle {
 
   section.intro .subtitle {
     font-size: 4vw;
+    margin-left: var(--margin);
+    margin-right: var(--margin);
   }
 }
 
