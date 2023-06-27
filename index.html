@@ -1,16 +1,10 @@
-<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Projet pour le respect de l'environnement"
-    />
-    <title>PROJET AVENIR</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
-    <link rel="stylesheet" href="./css/master.css" />
+    <title>🏃‍♀️🏃Plaintel Aventure</title>
+    <link rel="stylesheet" href="style/master.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -20,445 +14,234 @@
     />
   </head>
   <body>
-    <header>
+    <section id="home">
       <nav>
-        <a href="#" onclick="scrollToTop()"><h3>Projet Avenir</h3></a>
-        <div class="menu-toggle">
-          <i class="fa-solid fa-bars open"></i>
-          <i class="fa-solid fa-xmark close"></i>
+        <a href="#"><img src="./assets/logo.png" height="90" alt="" /></a>
+        <div id="toggle" onclick="toggleMenu()">
+          <i id="toggle-icon" class="fa-sharp fa-solid fa-bars"></i>
         </div>
-        <div class="menu-item">
-          <a href="#about">À propos</a>
-          <a href="#interpretation">Les oeuvres</a>
-          <a href="#actors">Les acteurs</a>
-          <a href="#participate">Participer</a>
-          <a href="#contact">Contact</a>
-          <ul>
-            <li>
-              <img src="./assets/img/fr.webp" />
-              <span>FR</span>
-              <i class="fa-solid fa-caret-down"></i>
-            </li>
-            <li class="showOnHover" onclick="changeLanguage('en')">
-              <img src="./assets/img/en.webp" />
-              <span>EN</span>
-            </li>
-          </ul>
+        <div class="skew"></div>
+        <div class="links" onclick="toggleMenu()">
+          <a href="#trail">
+            <span>le trail</span>
+            <i class="fa-solid fa-person-running"></i>
+          </a>
+          <a href="#club">
+            <span>le club</span>
+            <i class="fa-solid fa-people-group"></i>
+          </a>
+          <a href="#partners">
+            <span>nos partenaires</span>
+            <i class="fa-solid fa-handshake"></i>
+          </a>
+          <a href="#contacts">
+            <span>contacts</span>
+            <i class="fa-solid fa-address-book"></i>
+          </a>
         </div>
       </nav>
-    </header>
-    <section class="intro">
       <video autoplay muted loop id="teaser">
-        <source src="./assets/videos/teaser.mp4" type="video/mp4" />
+        <source src="./assets/teaser.mp4" type="video/mp4" />
       </video>
-      <div class="container">
-        <h1 class="title">Projet Avenir</h1>
-        <span class="subtitle">
-          ... car l'urgence est là et l'avenir ne tient qu'à un fil !
-        </span>
+      <div class="title">
+        <h1 class="primary">plaintel</h1>
+        <h1 class="secondary">aventure</h1>
+        <a href="#trail">
+          <div class="event">
+            <div class="subtitle">trail du 11 novembre</div>
+          </div>
+        </a>
       </div>
     </section>
-    <section class="videos">
-      <div>
-        <video controls poster="./assets/img/oeuvre.webp" class="presentation">
-          <source src="./assets/videos/presentation.mp4" type="video/mp4" />
-        </video>
-        <h2>Presentation</h2>
+    <section id="trail">
+      <div class="title">
+        <div class="skew"></div>
+        <h1>
+          le trail du 11 novembre <i class="fa-solid fa-person-running"></i>
+        </h1>
       </div>
-      <div class="dossier">
-        <div onclick="openFolder()" class="folder"></div>
-        <div class="folder-popup">
-          <i onclick="closeFolder()" class="fa-solid fa-xmark close"></i>
-          <i class="fas fa-circle-notch fa-spin load"></i>
-          <embed
-            src="./assets/documents/presentation.pdf#toobar=0"
-            type="application/pdf"
-          />
+      <div class="content">
+        <div>
+          <div class="card">
+            <h2>12 km</h2>
+            <span class="d">270m D+</span>
+            <span class="ravitos">1 ravito (liquides/solides)</span>
+            <span class="runners">
+              550 coureurs
+              <i class="fa-solid fa-person-running"></i>
+            </span>
+            <span class="price">12 €</span>
+          </div>
         </div>
-        <h2>Dossier</h2>
+        <div>
+          <div class="card">
+            <h2>25 km</h2>
+            <span class="d">510m D+</span>
+            <span class="ravitos">2 ravitos (2 liquides/solides)</span>
+            <span class="runners">
+              300 coureurs
+              <i class="fa-solid fa-person-running"></i>
+            </span>
+            <span class="price">15 €</span>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <h2>42 km</h2>
+            <span class="d">1000m D+</span>
+            <span class="ravitos">
+              4 ravitos (2 liquides et 2 liquides/solides)
+            </span>
+            <span class="runners">
+              150 coureurs
+              <i class="fa-solid fa-person-running"></i>
+            </span>
+            <span class="price">26 €</span>
+          </div>
+        </div>
       </div>
-    </section>
-    <section id="about" class="about">
-      <h1>L'Avenir ne tient qu'à un fil</h1>
-      <span class="subtitle">
-        Si la science ne convainc pas, alors est-ce que l’art peut le faire ?
-      </span>
-      <p>
-        "L'avenir ne tient qu'à un fil" est la réalisation d'oeuvres engagées
-        pour la protection de notre vaisseau terre, résultat d'une symphonie
-        d'univers aux apparences bien différentes, en particulier celui de l'art
-        et de la montagne.
-      </p>
-      <p>
-        La réalisation de ces oeuvres sera un véritable tremplin pour un grand
-        nombre de supports de diffusion ( films, photos, documentaires,
-        chorégraphies, spectacles, livres... )
-      </p>
-    </section>
-    <section id="interpretation" class="interpretation">
-      <div class="background"></div>
-      <h1>Interprétation</h1>
-      <div class="board">
-        <div>
-          <div class="img-box">
-            <img src="./assets/img/1.germination.webp" alt="HIGHLINE" />
+      <div class="inscription">
+        <div class="skew"><button>s'inscrire</button></div>
+      </div>
+      <div class="faq">
+        <h2>Foire aux questions</h2>
+        <div class="question-container">
+          <div class="question-title">
+            <span class="question-icon closed">
+              <i class="fa-solid fa-plus"></i>
+            </span>
+            <span class="question-icon opened">
+              <i class="fa-solid fa-minus"></i>
+            </span>
+            <span>Ici un exemple de question récurrente ?</span>
           </div>
-          <h3>
-            01 <br />
-            _ <br />
-            PRISE DE CONSCIENCE
-          </h3>
-          <span class="subtitle">HIGHLINE</span>
-          <p class="intro">
-            " Prends conscience que l’avenir est aussi entre tes mains, et que
-            si tu lâches prise, l’avenir s’envole ... "
-          </p>
-          <p>
-            Beaucoup se retrouvent déconnectés du vivant, sur une véritable
-            parallèle au monde réel.
-          </p>
-          <p>
-            Mais il est temps que chacun d'entre nous réaccorde son violon et
-            réalise de nouveau, que chaque note qu'il joue, impacte la vibration
-            de notre partition.
-          </p>
-          <p>
-            A travers cette oeuvre n°1, nous voulons faire prendre conscience de
-            notre appartenance au vivant et revaloriser le pouvoir et l'impact
-            de chacun sur le petit monde qui l'entoure. Nous souhaitons mettre
-            fin à ce schéma de pensée que l'on appelle " l'impuissance acquise",
-            le fait d'être convaincu que quoique l'on fasse, nous n'aurons aucun
-            impact sur cette problématique environnementale et le monde qui nous
-            entoure.
-          </p>
-
-          <p>
-            "Nous ne pouvons pas changer le monde, mais nous pouvons changer
-            notre petit monde"
-          </p>
-
-          <p>
-            Nous tenons tous entre nos mains une partie de l'humanité, nous
-            avons tous notre part de responsabilité.
-          </p>
+          <div class="question-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            eos ullam distinctio, quos ipsam nisi eius, fuga possimus eaque
+            rerum dolorem expedita dolore similique consequuntur! Quos omnis in
+            obcaecati deleniti!
+          </div>
         </div>
-        <div>
-          <div class="img-box">
-            <img src="./assets/img/2.croissance.webp" alt="ROPE JUMP" />
+        <div class="question-container">
+          <div class="question-title">
+            <span class="question-icon closed">
+              <i class="fa-solid fa-plus"></i>
+            </span>
+            <span class="question-icon opened">
+              <i class="fa-solid fa-minus"></i>
+            </span>
+            <span>Ici un exemple de question récurrente ?</span>
           </div>
-          <h3>
-            02 <br />
-            _ <br />
-            L'ACTION INDIVIDUELLE
-          </h3>
-          <span class="subtitle">ROPE JUMP</span>
-          <p class="intro">
-            " Maintenant que tu as compris que l’avenir dépend aussi de toi,
-            jette-toi dans l’inconnu pour essayer de la sauver… "
-          </p>
-          <p>
-            À travers cette deuxième oeuvre nous voulons donner envie de faire
-            le premier pas vers l'action mais aussi montrer que faire germer
-            cette graine demande un engagement particulier.
-          </p>
-          <p>
-            Nous montrerons qu'il faut tout simplement sortir de sa zone de
-            confort et se jeter dans l'inconnu vers un monde reconnecté.
-          </p>
-          <p>
-            Dans cette oeuvre, nous ne souhaitons pas apporter des solutions.
-            Nous souhaitons qu'après la prise de conscience, chacun ait envie
-            d'agir, avec son propre potentiel de possibilités et de
-            savoir-faire. Nous souhaitons faire prendre conscience que nous
-            avons tous des compétences à mettre au service du changement et
-            qu'en plus de cela, nous pouvons le faire en nous amusant.
-          </p>
-          <p>
-            Nous opérerons donc un parallèle entre l’oeuvre, la peur du vide, la
-            prise de décision de sauter, puis le bonheur que le saut peut
-            procurer.
-          </p>
+          <div class="question-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            eos ullam distinctio, quos ipsam nisi eius, fuga possimus eaque
+            rerum dolorem expedita dolore similique consequuntur! Quos omnis in
+            obcaecati deleniti!
+          </div>
         </div>
-        <div>
-          <div class="img-box">
-            <img src="./assets/img/3.pollinisation.webp" alt="ALPINISME" />
+        <div class="question-container">
+          <div class="question-title">
+            <span class="question-icon closed">
+              <i class="fa-solid fa-plus"></i>
+            </span>
+            <span class="question-icon opened">
+              <i class="fa-solid fa-minus"></i>
+            </span>
+            <span>Ici un exemple de question récurrente ?</span>
           </div>
-          <h3>
-            03 <br />
-            _ <br />
-            L'ACTION COLLECTIVE
-          </h3>
-          <span class="subtitle">ALPINISME</span>
-          <p class="intro">
-            " ...et prend conscience qu’ensemble nous pouvons accomplir des
-            miracles et atteindre des sommets ! "
-          </p>
-          <p>
-            L'ascension du Mont Blanc avec une grande cordée d’alpinistes pour
-            amener pleins de petits mondes au sommet, à la différence que cette
-            fois-ci, tous ces petits mondes seront encordés.
-          </p>
-          <p>
-            La montagne comme symbole d'un projet et l'ascension pour imager
-            toute les synergies d'une équipe pour y arriver.
-          </p>
-          <p>
-            Au travers de cette troisième oeuvre, nous souhaitons montrer
-            qu'ensemble nous pouvons aller plus loin et réaliser de plus gros
-            projets pour la sauvegarde de la nature et notre humanité.
-          </p>
-          <p>
-            C'est en créant une véritable symbiose que nous ferons naitre les
-            plus beaux projets.
-          </p>
-          <p>
-            Nous montrerons une fois de plus les bienfaits apportés, car tu es
-            loin de t'imaginer toutes les rencontres, le plaisir et de bonheur
-            que cela va t'apporter.
-          </p>
-          <p>
-            Le Mont blanc, toit de l'Europe, pour amener une dimension
-            européenne au projet.
-          </p>
-        </div>
-        <div>
-          <div class="img-box">
-            <img src="./assets/img/4.plan.webp" alt="EXPEDITION ARCTIQUE" />
+          <div class="question-content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+            eos ullam distinctio, quos ipsam nisi eius, fuga possimus eaque
+            rerum dolorem expedita dolore similique consequuntur! Quos omnis in
+            obcaecati deleniti!
           </div>
-          <h3>
-            04 <br />
-            _ <br />
-            LE RESUME <br />
-            <span></span>
-          </h3>
-          <span class="subtitle">EXPEDITION ARCTIQUE </span>
-          <p class="intro">
-            " La dernière oeuvre sera un résumé des trois premières, elle
-            illustrera tout le cheminement de pensée pour prendre conscience,
-            agir individuellement puis collectivement. "
-          </p>
-          <p>
-            Malheureusement le problème n'est pas localisé. Il n’est pas à
-            l’échelle d’un homme, d’un continent ou d’une communauté, mais bel
-            et bien à l’échelle de l’Humanité.
-          </p>
-          <p>
-            Nous rejoindrons l'Arctique, pour réaliser la dernière œuvre dans
-            les eaux internationales entre les glaciers pour espérer une
-            interprétation d’une toute autre dimension.
-          </p>
-          <p>Nous réaliserons une partie du film durant cette expédition.</p>
-          <p>
-            Les glaciers comme le symbole de la temporalité, le globe au dessus
-            du vide accroché à un fil comme symbole de l'urgence dans laquelle
-            nous sommes, les hommes comme symbole des trois thématiques que nous
-            avons précédemment abordées. La prise de conscience (à gauche), avec
-            l'action individuelle (homme sur le fil), et collective (la chaine
-            humaine solidaire et aidante).
-          </p>
         </div>
       </div>
     </section>
     <div class="separator"></div>
-    <section class="timeline">
-      <h1>Temporalité</h1>
-      <div class="time">
-        <div class="date">
-          <span class="subtitle">SEP 2022 - SEP 2023</span>
-          <span class="subsubtitle">Organisation et plannification</span>
-        </div>
-        <p>
-          Ecriture des films et des livres / Pré-production / Contenus
-          pédagogiques / Illustrations des livres / Préparation des expéditions
-          et des évènements / Plan de communication et de diffusion des oeuvres
-          / Création de spectacles.
-        </p>
+    <section id="club">
+      <div class="title">
+        <div class="skew"></div>
+        <h1>le club <i class="fa-solid fa-people-group"></i></h1>
       </div>
-      <div class="time">
-        <div class="date">
-          <span class="subtitle">SEP 2023 - SEP 2024</span>
-          <span class="subsubtitle"
-            >Réalisation des trois premières oeuvres</span
-          >
-        </div>
-        <p>
-          Réalisation des trois premières oeuvres / Réalisation et diffusion des
-          trois premiers documentaires / Edition et distribution des trois
-          premiers livres / Réalisation des premières vidéos artistiques / 3
-          premiers évènements partenaires / 3 premières expositions / Diffusion
-          des contenus pédagogiques tout au long de l'année scolaire / Tournée
-          du spectacle.
-        </p>
-      </div>
-      <div class="time">
-        <div class="date">
-          <span class="subtitle">SEP 2024 - SEP 2025</span>
-          <span class="subsubtitle"
-            >Expédition Réalisation de la dernière oeuvre</span
-          >
-        </div>
-        <p>
-          Expédition en Arctique pour réaliser la dernière oeuvre. Tournage du
-          film, " L'avenir ne tient qu'à un fil "
-        </p>
-      </div>
-    </section>
-    <section id="actors" class="actors">
-      <h1>Les Acteurs</h1>
-      <div class="presentation">
-        <div>
-          <div class="img-box">
-            <img src="./assets/img/loic.webp" alt="Profile de Loïc" />
-          </div>
-          <h3>Loïc Forques</h3>
-          <span class="role">Fondateur</span>
+      <div class="content">
+        <div class="about">
+          <h2>A propos</h2>
           <p>
-            🌱 Entrepreneur dans l'âme, j'ai fait le choix de mettre "nos
-            compétences au service du bon sens" afin d'appuyer les projets
-            d'aventure en faveur de l'environnement. <br />
-            <br />
-            🎥 Producteur / Réalisateur de l'agence de communication et de
-            production audiovisuelle à impact "Umber studio" (Bientôt
-            Passerelle), nous mettons sur le devant de la scène des leaders
-            inspirants et des projets novateurs !
-          </p>
-          <div class="social">
-            <a href="https://www.instagram.com/loic_forques/">
-              <i class="fa-brands fa-square-instagram"></i>
-            </a>
-          </div>
-        </div>
-        <div>
-          <div class="img-box">
-            <img src="./assets/img/amael.webp" alt="Profile d'Amaël" />
-          </div>
-          <h3>Amaël Babonneau</h3>
-          <span class="role">Grimpeur Pro</span>
-          <p>
-            🤙 Born to ride ! Je suis un explo-rider passionné de sports
-            extrêmes, fondateur du collectif A BLOC qui se rend à la rencontre
-            des athlètes de notre planète, pour échanger avec eux sur leurs
-            visions de l'océan & de la montagne. <br />
-            <br />
-            🧗‍♂️ Lorsque je ne suis pas saucissonné dans mon baudrier, et fort de
-            mes expériences de directeur de salles d'escalade chez Arkose, je
-            suis derrière mon Pc afin de vous partager nos plus belles émotions.
-          </p>
-          <div class="social">
-            <a href="https://www.instagram.com/ablocinsta/">
-              <i class="fa-brands fa-square-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com/@ABLOC/videos">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-          </div>
-        </div>
-        <div>
-          <div class="img-box">
-            <img src="./assets/img/joffrey.webp" alt="Profile de Joffrey" />
-          </div>
-          <h3>Joffrey Maluski</h3>
-          <span class="role">Créateur</span>
-          <p>
-            📸 Photographe / Aventurier engagé au service de l'humain, de
-            l'environnement et de l'innovation, je fais de mon objectif votre
-            objectif. <br />
-            <br />
-            🚴 Ma passion ! Le bikepacking dans les milieux les plus
-            inhospitaliers...
-          </p>
-          <div class="social">
-            <a href="https://www.instagram.com/joffreymaluski/">
-              <i class="fa-brands fa-square-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="participate" class="participation">
-      <div class="bank">
-        <div class="donation">
-          <h1>Participer à l'Aventure</h1>
-          <img src="./assets/img/leetchi.webp" alt="Logo de leetchi" />
-          <a href="https://www.leetchi.com/c/projetavenir">Je Participe !</a>
-        </div>
-        <div class="explenation">
-          <p>En collaborant avec nous, vous deviendrez acteur du projet.</p>
-          <p>
-            À ce titre, nous nous engageons à fournir un réel retour sur votre
-            investissement et un travail en collaboration afin de garantir une
-            réelle mise en visibilité tout au long du projet. Des contreparties
-            peuvent être imaginées ensemble et la mise en visibilité sera
-            proportionnelle à votre implication dans le projet. Nous vous
-            mettrons en avant au travers de nos films, nos aventures, nos
-            oeuvres, notre communication sur les réseaux sociaux, les médias,
-            presse, radio, TV, auprès des grands artistes avec qui nous allons
-            collaborer, toute notre communauté, notre travail dans les écoles,
-            nos expositions, spectacles, affiches et bien d'autres...
+            En tant que club de trail des Côtes d'Armor, nous accueillons des
+            sportifs amateurs partageant la même passion. Notre principal
+            objectif est de prendre du plaisir ensemble, tout en gardant notre
+            esprit compétitif. Lors de nos sorties en groupe, notre devise est
+            simple : nous partons ensemble, nous rentrons ensemble. Nous
+            valorisons l'esprit d'équipe et l'entraide sur les sentiers.
           </p>
           <p>
-            Il s'agit là du coeur de notre projet, générer le maximum de
-            visibilité donc si vous le souhaitez, il n'est pas encore trop tard
-            pour embarquer.
+            Rejoignez-nous pour vivre des expériences trail enrichissantes, où
+            l'importance est accordé à l'esprit de camaraderie. Au sein de notre
+            club, vous trouverez un environnement chaleureux où échanger des
+            conseils précieux et créer des souvenirs mémorables.
+          </p>
+          <p>A bientôt sur les sentiers Plaintelais !</p>
+        </div>
+        <div class="map">
+          <img src="./assets/breizh.png" alt="" />
+          <span id="stb">Saint-Brieuc</span>
+          <div class="dot" id="stb-dot"></div>
+          <span id="plt">Plaintel</span>
+          <div class="dot" id="plt-dot"></div>
+        </div>
+        <div class="program">
+          <h2>Programme de la semaine</h2>
+          <p>
+            <span class="day">Lundi</span>
+            <span>09h30 sortie 1h maxi</span>
           </p>
           <p>
-            Ce qui est sûr, c'est que notre projet ne passera pas inaperçu, et
-            si vous le souhaitez, vous non plus !
+            <span class="day">Jeudi</span>
+            <span>18h30 sortie 1h maxi</span>
+          </p>
+          <p>
+            <span class="day">Dimanche</span>
+            <span>9h00 sortie d’environ 20 km </span>
+            <span>9h30 sortie d’environ 12 km </span>
           </p>
         </div>
       </div>
     </section>
-    <section class="parteners">
-      <h2>Partenaires</h2>
-      <div class="list">
-        <img src="./assets/img/UMBER_SITE.webp" alt="logo d'Umber" />
-        <img src="./assets/img/AGIR_SITE.webp" alt="logo d'Agir" />
-        <img src="./assets/img/POW_SITE.webp" alt="logo de Pow" />
+    <section id="partners">
+      <div class="title">
+        <div class="skew"></div>
+        <h1>nos partenaires <i class="fa-solid fa-handshake"></i></h1>
+      </div>
+      <div class="content">
+        <img src="./assets/logo.png" alt="" />
+        <img src="./assets/run-avenutre.jpg" alt="" />
       </div>
     </section>
-    <footer id="contact">
-      <div class="cover"></div>
-      <div class="container">
-        <h1>Contact</h1>
-        <div class="grid">
-          <div class="contacts">
-            <div class="contact">
-              <i class="fa-solid fa-envelopes-bulk"></i>
-              <span>avenir.artproject@gmail.com</span>
-            </div>
-            <div class="contact">
-              <i class="fa-solid fa-phone"></i>
-              <span>06 27 35 86 74 - Loïc</span>
-            </div>
-            <div class="contact">
-              <i class="fa-solid fa-phone"></i>
-              <span>06 66 06 43 36 - Amaël</span>
-            </div>
-          </div>
-          <div class="social">
-            <a href="https://www.instagram.com/avenir_artproject/">
-              <i class="fa-brands fa-square-instagram"></i
-            ></a>
-          </div>
-          <div class="contacts">
-            <div class="contact webdesign">
-              <i class="fa-solid fa-compass-drafting"></i>
-              <span>Webdesign</span>
-            </div>
-            <div class="contact webdesign">
-              <a href="https://matisse-babonneau.fr">
-                www.matisse-babonneau.fr
-              </a>
-            </div>
-          </div>
+    <section id="contacts">
+      <div class="background"></div>
+      <div class="content">
+        <div class="banner">
+          <h2>TENEZ-VOUS INFORMÉ DES PROCHAINES SESSIONS & Actualités</h2>
+          <hr />
+          <span>Plaintel Aventure vous informe sur les réseaux sociaux</span>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/profile.php?id=100057047937204">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/plaintel_aventure/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.strava.com/clubs/1073853">
+            <i class="fa-brands fa-strava"></i>
+          </a>
         </div>
       </div>
-    </footer>
-    <section class="tagline">
-      <span>
-        Notre site web a été conçu avec soin pour offrir une expérience optimale
-        ⚡, respectueuse de l'environnement 🌱 et accessible à tous !
-      </span>
+    </section>
+    <section id="eco">
+      Notre site web a été conçu avec soin pour offrir une expérience optimale
+      ⚡, respectueuse de l'environnement 🌱 et accessible à tous !
     </section>
     <script src="./scripts/script.js"></script>
   </body>

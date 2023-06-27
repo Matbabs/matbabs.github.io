@@ -1,0 +1,578 @@
+:root {
+  --red: #de0a3d;
+  --yellow: #f9ec56;
+  --black: #161d28;
+  --white: white;
+  --grey: #f3f3f3;
+  --grey-lighter: #c5c5c5;
+  --grey-darker: #525252;
+  --spacing: 25px;
+  --radius: 5px;
+  --transition: 250ms;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 89px;
+  min-height: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+.title {
+  padding: var(--spacing);
+  width: fit-content;
+  color: var(--white);
+}
+
+.title .skew {
+  background: var(--red);
+  position: absolute;
+  top: 0;
+  left: -100;
+  right: -50;
+  height: 100%;
+  transform: skew(-30deg);
+}
+
+.title h1 i {
+  position: absolute;
+  margin-left: calc(var(--spacing) / 1.5);
+  font-size: 1.6rem;
+}
+
+.separator {
+  height: calc(var(--spacing) * 4);
+  background: var(--yellow);
+  background: url(../assets/path.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#home {
+  color: var(--white);
+  width: 100%;
+  height: 98vh;
+  background: url(../assets/rocks.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing);
+}
+
+#home nav {
+  z-index: 1;
+  top: 0;
+  background: var(--white);
+  color: var(--black);
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px -5px 10px var(--black);
+}
+
+#home nav #toggle {
+  display: none;
+}
+
+#home nav .skew {
+  background: var(--red);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -100;
+  width: 45vw;
+  transform: skew(-30deg);
+}
+
+@media screen and (max-width: 1700px) {
+  #home nav .skew {
+    width: 60vw;
+  }
+}
+
+#home nav .links {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 2);
+  padding: var(--spacing);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#home nav .links a {
+  text-decoration: none;
+  color: var(--white);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: all var(--transition);
+}
+
+#home nav .links a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#home nav .links a i {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1400px) {
+  #home nav .skew {
+    width: 190px;
+  }
+
+  #home nav #toggle {
+    display: block;
+    color: var(--white);
+    z-index: 4;
+    margin-right: var(--spacing);
+    font-size: 1.5rem;
+    transition: all var(--transition);
+  }
+
+  #home nav #toggle:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  #home nav .links {
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  #home nav .links.open {
+    position: absolute;
+    flex-direction: column;
+    background: #000000da;
+    height: 100vh;
+    left: 0;
+    justify-content: center;
+    font-size: 1.3rem;
+    overflow: none;
+    width: 100%;
+  }
+}
+
+#home #teaser {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 90%;
+}
+
+#home .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing);
+}
+
+#home h1 {
+  text-transform: uppercase;
+  text-shadow: 0px 0px 10px var(--black);
+  text-align: center;
+}
+
+#home h1.primary {
+  font-size: 7rem;
+  font-weight: 900;
+  line-height: 3.5rem;
+}
+
+#home h1.secondary {
+  font-size: 4.8rem;
+  font-weight: 100;
+  letter-spacing: 1.2rem;
+  margin-left: 1rem;
+}
+
+#home hr {
+  width: 5rem;
+}
+
+#home .event {
+  background: var(--red);
+  padding: var(--spacing);
+  padding-left: calc(var(--spacing) * 4);
+  padding-right: calc(var(--spacing) * 4);
+  transform: skew(-30deg);
+  box-shadow: 0px 5px 10px var(--black);
+}
+
+#home .event .subtitle {
+  transform: skew(30deg);
+  text-shadow: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 900;
+  transition: all var(--transition);
+}
+
+#home .event:hover .subtitle {
+  font-size: 1.6rem;
+}
+
+#trail .content {
+  padding: calc(var(--spacing) * 2);
+  display: flex;
+  gap: var(--spacing);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#trail .content .card {
+  padding: var(--spacing);
+  border: solid 1px var(--grey);
+  border-top: solid 3px var(--red);
+  box-shadow: 0px 3px 5px -3px grey;
+  gap: var(--spacing);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  min-width: 400px;
+}
+
+#trail .content .card h2 {
+  color: var(--red);
+  font-weight: 900;
+}
+
+#trail .content .card .d {
+  font-weight: 900;
+}
+
+#trail .content .card .runners {
+  font-weight: 900;
+}
+
+#trail .content .card .price {
+  background: var(--red);
+  padding: 10px;
+  border-radius: var(--radius);
+  color: var(--white);
+  font-weight: 900;
+}
+
+#trail .inscription {
+  width: 100%;
+  padding-bottom: var(--spacing);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#trail .inscription .skew {
+  transform: skew(-30deg);
+  display: flex;
+  justify-content: center;
+  width: 400;
+  color: var(--white);
+  background: var(--red);
+}
+
+#trail .inscription button {
+  border: none;
+  color: var(--white);
+  background: var(--red);
+  padding: var(--spacing);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: var(--radius);
+  width: 300;
+  transform: skew(30deg);
+}
+
+#trail .faq {
+  background: var(--grey);
+  margin: var(--spacing);
+  padding: var(--spacing);
+  border-radius: var(--radius);
+  color: var(--grey-darker);
+}
+
+#trail .faq .question-container {
+  margin: var(--spacing) 0;
+  padding: var(--spacing) 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-top: solid 1px var(--grey-lighter);
+  display: flex;
+  flex-direction: column;
+}
+
+#trail .faq .question-container * {
+  transition: all var(--transition);
+}
+
+#trail .faq .question-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  gap: var(--spacing);
+}
+
+#trail .faq .question-title .question-icon {
+  font-size: 1rem;
+}
+
+#trail .faq .question-title .question-icon.opened {
+  display: none;
+}
+
+#trail .faq .question-content {
+  height: 0;
+  overflow: hidden;
+}
+
+#trail .faq .question-container:hover .question-title {
+  color: var(--red);
+}
+
+#trail .faq .question-container:hover .question-icon.opened {
+  display: block;
+}
+
+#trail .faq .question-container:hover .question-icon.closed {
+  display: none;
+}
+
+#trail .faq .question-container:hover .question-content {
+  height: 3rem;
+  margin-top: var(--spacing);
+  overflow-y: auto;
+}
+
+#club {
+  background: var(--black);
+  color: var(--white);
+}
+
+#club .content {
+  padding: calc(var(--spacing) * 2);
+  gap: var(--spacing);
+  display: flex;
+  margin: auto;
+}
+
+#club .about {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+#club .about p {
+  font-style: italic;
+}
+
+#club .map {
+  position: relative;
+  margin: 50px;
+}
+
+#club .map img {
+  filter: invert(1);
+  width: 330px;
+  height: 190px;
+}
+
+#club .map span {
+  position: absolute;
+}
+
+#club .map .dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--red);
+  border-radius: 100%;
+}
+
+#club .map #stb-dot {
+  top: 39;
+  left: 186;
+}
+
+#club .map #stb {
+  top: 35;
+  left: 94;
+}
+
+#club .map #plt-dot {
+  top: 55;
+  left: 183;
+}
+
+#club .map #plt {
+  top: 55;
+  left: 197;
+}
+
+#club .program {
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  background: var(--grey-darker);
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  border-top: solid 3px var(--red);
+}
+
+#club .program p {
+  display: flex;
+  flex-direction: column;
+}
+
+#club .program p .day {
+  font-weight: 900;
+  margin-bottom: calc(var(--spacing) / 4);
+}
+
+#partners .content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing);
+  margin-bottom: 70px;
+}
+
+#partners .content img {
+  max-height: 150px;
+}
+
+#contacts {
+  background: var(--black);
+}
+
+#contacts .background {
+  position: absolute;
+  background: url(../assets/forest.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+#contacts .content {
+  padding: var(--spacing);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+#contacts .content .banner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  width: 50%;
+  align-items: center;
+  text-align: center;
+}
+
+#contacts .content .banner hr {
+  width: 250px;
+}
+
+#contacts .content .banner span {
+  font-size: 1.2rem;
+}
+
+#contacts .content .social {
+  width: 100%;
+  display: flex;
+  padding: var(--spacing);
+  gap: calc(var(--spacing) * 4);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#contacts .content .social a {
+  border: solid 2px var(--white);
+  padding: var(--spacing);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  height: 7rem;
+  width: 7rem;
+  font-size: 4rem;
+  transition: all var(--transition);
+}
+
+#contacts .content .social a:hover {
+  color: var(--red);
+  border-color: var(--red);
+}
+
+#eco {
+  background: var(--black);
+  color: var(--white);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,64 +1,17 @@
-let menuIsOpened = false;
+let isMenuOpen = false;
 
-const toggle = document.querySelector(".menu-toggle");
-const toggleOpen = toggle.querySelector(".open");
-const toggleClose = toggle.querySelector(".close");
-const menuItem = document.querySelector(".menu-item");
-
-toggleMenu();
-
-toggle.addEventListener("click", () => {
-  menuIsOpened = !menuIsOpened;
-  toggleMenu();
-});
+const menu = document.querySelector(".links");
+const toggleIcon = document.querySelector("#toggle-icon");
 
 function toggleMenu() {
-  if (!menuIsOpened) {
-    toggleOpen.style.display = "block";
-    toggleClose.style.display = "none";
-    menuItem.classList.remove("open");
+  if (!isMenuOpen) {
+    menu.classList.add("open");
+    toggleIcon.classList.remove("fa-bars");
+    toggleIcon.classList.add("fa-close");
   } else {
-    toggleOpen.style.display = "none";
-    toggleClose.style.display = "block";
-    menuItem.classList.add("open");
+    menu.classList.remove("open");
+    toggleIcon.classList.add("fa-bars");
+    toggleIcon.classList.remove("fa-close");
   }
-}
-
-const allLinks = document.querySelectorAll("a");
-
-allLinks.forEach((e) =>
-  e.addEventListener("click", () => {
-    menuIsOpened = false;
-    toggleMenu();
-  })
-);
-
-function scrollToTop() {
-  window.scrollTo(0, 0);
-}
-
-const folderPopUp = document.querySelector(".folder-popup");
-const folderEmbed = document.querySelector("embed");
-const folderLoad = document.querySelector(".load");
-
-function openFolder() {
-  folderLoad.style.opacity = "1";
-  folderPopUp.style.bottom = "0";
-  setTimeout(() => {
-    folderLoad.style.opacity = "0";
-    folderEmbed.style.opacity = "1";
-  }, 1000);
-}
-
-function closeFolder() {
-  folderPopUp.style.bottom = "100vh";
-  folderEmbed.style.opacity = "0";
-}
-
-function changeLanguage(language) {
-  if (language === "fr") {
-    window.location.href = "index.html";
-  } else if (language === "en") {
-    window.location.href = "index.en.html";
-  }
+  isMenuOpen = !isMenuOpen;
 }
