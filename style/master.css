@@ -524,6 +524,12 @@ h2 {
   left: 197;
 }
 
+@media screen and (max-width: 1400px) {
+  .map {
+    display: none;
+  }
+}
+
 #club .program {
   min-width: 400px;
   display: flex;
