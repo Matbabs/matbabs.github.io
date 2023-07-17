@@ -57,6 +57,7 @@ h2 {
   padding: var(--spacing);
   width: fit-content;
   color: var(--white);
+  transition: all var(--transition);
 }
 
 .title .skew {
@@ -73,6 +74,12 @@ h2 {
   position: absolute;
   margin-left: calc(var(--spacing) / 1.5);
   font-size: 1.6rem;
+}
+
+@media screen and (max-width: 1700px) {
+  h1 {
+    font-size: 1rem;
+  }
 }
 
 .separator {
@@ -235,6 +242,18 @@ h2 {
   margin-left: 1rem;
 }
 
+@media screen and (max-width: 1400px) {
+  #home .title {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #home .title {
+    transform: scale(0.5);
+  }
+}
+
 #home hr {
   width: 5rem;
 }
@@ -287,6 +306,7 @@ h2 {
 #trail .content .card h2 {
   color: var(--red);
   font-weight: 900;
+  text-align: center;
 }
 
 #trail .content .card .d {
@@ -303,6 +323,19 @@ h2 {
   border-radius: var(--radius);
   color: var(--white);
   font-weight: 900;
+}
+
+@media screen and (max-width: 1400px) {
+  #trail .content .card {
+    min-width: 320px;
+  }
+}
+
+#trail .associations {
+  text-align: center;
+  font-style: italic;
+  font-weight: bolder;
+  margin: 0 var(--spacing) var(--spacing) var(--spacing);
 }
 
 #trail .inscription {
@@ -333,6 +366,12 @@ h2 {
   border-radius: var(--radius);
   width: 300;
   transform: skew(30deg);
+}
+
+@media screen and (max-width: 1400px) {
+  #trail .inscription {
+    transform: scale(0.8);
+  }
 }
 
 #trail .faq {
@@ -407,6 +446,20 @@ h2 {
   margin: auto;
 }
 
+@media screen and (max-width: 1400px) {
+  #club .content {
+    flex-direction: column;
+  }
+
+  #club .content * {
+    text-align: center;
+  }
+
+  #club .program * {
+    text-align: left;
+  }
+}
+
 #club .about {
   text-align: justify;
   display: flex;
@@ -416,6 +469,16 @@ h2 {
 
 #club .about p {
   font-style: italic;
+}
+
+#club .more {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  background: var(--grey-darker);
+  border-radius: var(--radius);
+  padding: var(--spacing);
+  border-top: solid 3px var(--red);
 }
 
 #club .map {
@@ -462,7 +525,7 @@ h2 {
 }
 
 #club .program {
-  white-space: nowrap;
+  min-width: 400px;
   display: flex;
   flex-direction: column;
   gap: var(--spacing);
@@ -482,17 +545,32 @@ h2 {
   margin-bottom: calc(var(--spacing) / 4);
 }
 
+@media screen and (max-width: 1400px) {
+  #club .program {
+    min-width: 0px;
+  }
+}
+
 #partners .content {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
-  gap: var(--spacing);
+  gap: calc(2 * var(--spacing));
   margin-bottom: 70px;
+  flex-wrap: wrap;
 }
 
 #partners .content img {
   max-height: 150px;
+}
+
+#partners .info {
+  text-align: center;
+  margin: 0 calc(2 * var(--spacing)) calc(2 * var(--spacing))
+    calc(2 * var(--spacing));
+  font-style: italic;
+  font-weight: bold;
 }
 
 #contacts {
@@ -575,4 +653,5 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: var(--spacing);
 }
