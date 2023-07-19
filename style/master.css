@@ -301,6 +301,7 @@ h2 {
   justify-content: center;
   border-radius: var(--radius);
   min-width: 400px;
+  min-height: 315px;
 }
 
 #trail .content .card h2 {
@@ -323,6 +324,10 @@ h2 {
   border-radius: var(--radius);
   color: var(--white);
   font-weight: 900;
+}
+
+#trail .content .card .ravitos {
+  text-align: center;
 }
 
 @media screen and (max-width: 1400px) {
@@ -353,6 +358,15 @@ h2 {
   width: 400;
   color: var(--white);
   background: var(--red);
+}
+
+#trail .inscription .skew * {
+  transition: all var(--transition);
+}
+
+#trail .inscription .skew:hover,
+#trail .inscription .skew:hover * {
+  cursor: pointer;
 }
 
 #trail .inscription button {
