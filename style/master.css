@@ -344,11 +344,17 @@ h2 {
 }
 
 #trail .inscription {
-  width: 100%;
   padding-bottom: var(--spacing);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all var(--transition);
+  max-width: 400px;
+  margin: auto;
+}
+
+#trail .inscription:hover {
+  transform: scale(1.1);
 }
 
 #trail .inscription .skew {
