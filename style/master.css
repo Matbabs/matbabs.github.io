@@ -290,18 +290,73 @@ h2 {
 }
 
 #trail .content .card {
-  padding: var(--spacing);
   border: solid 1px var(--grey);
   border-top: solid 3px var(--red);
   box-shadow: 0px 3px 5px -3px grey;
+  height: 315px;
+  width: 400px;
+  overflow: hidden;
+}
+
+#trail .card .first,
+#trail .card .first-only,
+#trail .card .secondary {
+  height: 315px;
+  width: 400px;
+  transition: all var(--transition);
+}
+
+#trail .content .card .first,
+#trail .content .card .first-only {
+  padding: var(--spacing);
   gap: var(--spacing);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: var(--radius);
-  min-width: 400px;
-  min-height: 315px;
+}
+
+#trail .card .secondary {
+  background-color: var(--black);
+  color: var(--white);
+  display: none;
+  padding: var(--spacing);
+  text-align: justify;
+}
+
+#trail .card .secondary .bg-img {
+  position: absolute;
+  top: -50;
+  right: -50;
+  left: -50;
+  bottom: -50;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.25;
+}
+
+#trail .trail1 {
+  background: url(../assets/trail-1.jpg);
+}
+
+#trail .trail2 {
+  background: url(../assets/trail-2.jpg);
+}
+
+#trail .trail3 {
+  background: url(../assets/trail-3.jpg);
+}
+
+#trail .content .card:hover {
+  .first {
+    display: none;
+  }
+
+  .secondary {
+    display: block;
+  }
 }
 
 #trail .content .card h2 {
@@ -332,7 +387,18 @@ h2 {
 
 @media screen and (max-width: 1400px) {
   #trail .content .card {
-    min-width: 320px;
+    max-width: 320px;
+  }
+
+  #trail .card .secondary {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  #trail .card .first,
+  #trail .card .first-only,
+  #trail .card .secondary {
+    max-width: 320px;
   }
 }
 
