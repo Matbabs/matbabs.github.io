@@ -86,7 +86,7 @@ section {
   align-items: center;
   gap: var(--spacer);
   text-transform: uppercase;
-  box-shadow: 0px 0px 20px -5px var(--dark);
+  box-shadow: 0px 0px 15px -5px var(--dark);
   transition: all 250ms;
   user-select: none;
   pointer-events: none;
@@ -203,12 +203,13 @@ section {
 #home {
   height: 85vh;
   font-family: "Bebas Neue", sans-serif;
+  text-shadow: 0px 0px 2px var(--dark);
 
   .background-color {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: var(--primary);
+    background: var(--dark);
   }
 
   .background-texture {
@@ -241,12 +242,13 @@ section {
 
     .title {
       margin-left: var(--spacer);
-      font-weight: 400;
       font-style: normal;
 
       h1 {
         text-transform: uppercase;
         font-size: 5vw;
+
+        color: var(--blue);
       }
       h2 {
         font-size: 2vw;
@@ -259,11 +261,10 @@ section {
     position: absolute;
     bottom: -5vh;
     left: 30vw;
-    /* transform: translateX(30vw); */
   }
 
   .container {
-    margin-top: var(--spacer);
+    margin-top: calc(var(--spacer) / 2);
     width: 100%;
     display: flex;
     justify-content: end;
@@ -282,7 +283,7 @@ section {
 
       a {
         display: flex;
-        gap: var(--spacer);
+        gap: calc(var(--spacer) / 2);
         text-decoration: none;
         color: var(--light);
       }
@@ -334,13 +335,12 @@ section {
     }
 
     .container {
+      padding-right: 25px;
       .menu {
         gap: 25px;
-
         a {
           gap: 10px;
-
-          font-size: 1.2rem;
+          font-size: 1.5rem;
         }
       }
     }
@@ -350,11 +350,32 @@ section {
 @media screen and (max-width: 400px) {
   #home {
     .photo {
-      height: 300px;
+      height: 300px !important;
     }
     .container {
       .menu {
-        font-size: 1rem;
+        font-size: 1rem !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-height: 780px) {
+  #home {
+    .photo {
+      height: 60vh;
+      left: 10vw;
+    }
+    .container {
+      .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: end;
+        width: 50%;
+        gap: 25px;
+        a {
+          gap: 5px;
+        }
       }
     }
   }
@@ -414,7 +435,7 @@ section {
       transform: scale(1.05);
 
       img {
-        box-shadow: 0px 0px 20px 0px var(--blue);
+        box-shadow: 0px 0px 15px 0px var(--blue);
       }
     }
 
@@ -422,7 +443,7 @@ section {
       max-width: 100%;
       border-radius: var(--radius);
       transition: all 250ms;
-      box-shadow: 0px 0px 20px -5px var(--dark);
+      box-shadow: 0px 0px 15px -5px var(--dark);
     }
 
     span {
@@ -637,6 +658,9 @@ section {
 @media screen and (max-width: 1000px) {
   #actus {
     padding: 25px;
+    h3 {
+      text-align: center;
+    }
   }
 }
 
@@ -724,6 +748,7 @@ section {
   background: var(--dark);
   color: var(--light);
   width: 100%;
+  background: var(--primary);
 
   p {
     text-align: center;
