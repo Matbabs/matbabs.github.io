@@ -368,7 +368,7 @@ section {
   }
 }
 
-@media screen and (max-height: 780px) {
+@media screen and (min-aspect-ratio: 1/1) {
   #home {
     .photo {
       height: 60vh;
@@ -384,9 +384,6 @@ section {
 
         width: 50%;
         gap: 25px;
-        a {
-          gap: 5px;
-        }
       }
     }
   }
