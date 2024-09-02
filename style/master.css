@@ -120,7 +120,8 @@ section {
   height: 100vh;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  padding-top: 25px;
   color: var(--light);
   font-family: "Bebas Neue", sans-serif;
 
@@ -283,6 +284,21 @@ section {
 
 @media screen and (max-width: 1000px) {
   #home {
+    .head {
+      .title {
+        h1 {
+          text-transform: uppercase;
+          font-size: 6vw;
+        }
+        h2 {
+          font-size: 4vw;
+        }
+      }
+      img {
+        height: 20vw;
+      }
+    }
+
     .photo {
       left: 10vw;
       height: 450px;
