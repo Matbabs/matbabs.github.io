@@ -418,6 +418,7 @@ section {
       max-width: 100%;
       border-radius: var(--radius);
       transition: all 250ms;
+      box-shadow: 0px 0px 20px -5px var(--dark);
     }
 
     span {
@@ -574,11 +575,43 @@ section {
   }
 }
 
+#jerseys {
+  padding: var(--spacer);
+  width: 100%;
+
+  img {
+    max-width: 300px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--spacer) * 2);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #jerseys {
+    padding: 25px;
+    .container {
+      gap: 25px;
+    }
+  }
+}
+
 #actus {
   padding: calc(var(--spacer) * 2);
   padding-left: calc(var(--spacer) * 6);
   padding-right: calc(var(--spacer) * 6);
   width: 100%;
+  background: var(--dark);
+  color: var(--light);
+
+  h3 {
+    color: var(--light);
+  }
 
   .wrapper {
     margin-top: var(--spacer);
