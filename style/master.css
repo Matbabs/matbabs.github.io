@@ -529,12 +529,12 @@ section {
   }
 
   .others {
-    margin-top: calc(var(--spacer) * 4);
+    margin-top: calc(var(--spacer) * 2);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-
+    justify-content: center;
+    gap: calc(var(--spacer) * 2);
     img {
       height: 100px;
     }
