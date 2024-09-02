@@ -342,7 +342,6 @@ section {
       .menu {
         gap: 25px;
         a {
-          gap: 10px;
           font-size: 1.5rem;
         }
       }
