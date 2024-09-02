@@ -56,7 +56,13 @@ h3 {
 }
 
 section {
-  scroll-margin-top: -5px;
+  scroll-margin-top: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  section {
+    scroll-margin-top: 50px;
+  }
 }
 
 #navBar {
@@ -125,7 +131,7 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(../assets/asphalte.jpg);
+    background-image: url(../assets/asphalte.jpg.webp);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -386,7 +392,7 @@ section {
 
 .paralax {
   height: calc(var(--spacer) * 4);
-  background: url(../assets/team.jpg);
+  background: url(../assets/team.jpg.webp);
   background-attachment: fixed;
   width: 100%;
 
@@ -493,7 +499,7 @@ section {
   gap: var(--spacer);
 
   .background-photo {
-    background: url(../assets/team.jpg);
+    background: url(../assets/team.jpg.webp);
     position: absolute;
     top: 0;
     bottom: 0;
