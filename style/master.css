@@ -266,12 +266,17 @@ section {
   }
 
   .container {
-    margin-top: calc(var(--spacer) / 2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     display: flex;
     justify-content: end;
+    align-items: center;
+    padding-right: calc(var(--spacer) * 4);
     color: white;
-    padding-right: calc(var(--spacer) * 2);
 
     .menu {
       display: flex;
@@ -334,7 +339,7 @@ section {
 
     .photo {
       left: 10vw;
-      height: 450px;
+      height: 400px;
     }
 
     .container {
@@ -369,10 +374,13 @@ section {
       left: 10vw;
     }
     .container {
+      padding-bottom: var(--spacer);
+      align-items: end;
       .menu {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: end;
+
         width: 50%;
         gap: 25px;
         a {
