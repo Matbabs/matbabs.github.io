@@ -417,10 +417,11 @@ section {
       font-size: 1.5rem;
       font-weight: 900;
       text-align: center;
+      font-weight: bold;
     }
 
     .small {
-      color: grey;
+      color: var(--orange);
       font-size: 1.2rem;
     }
   }
