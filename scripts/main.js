@@ -8,7 +8,6 @@ window.addEventListener("scroll", () => {
 });
 
 navBar.addEventListener("click", (event) => {
-  console.log(navBar.classList);
   if (
     navBar.classList.contains("mobile") &&
     event.target.id != "hamburger" &&
@@ -19,8 +18,6 @@ navBar.addEventListener("click", (event) => {
 });
 
 menu.addEventListener("click", (event) => {
-  console.log(event);
-
   menuIsOpen = !menuIsOpen;
   if (menuIsOpen) {
     menu.classList.add("fa-xmark");

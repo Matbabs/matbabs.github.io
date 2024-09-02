@@ -82,6 +82,23 @@ section {
   transition: all 250ms;
   user-select: none;
   pointer-events: none;
+  padding-top: 1.5rem;
+
+  .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1.5rem;
+    background: var(--dark);
+    text-align: center;
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+  }
 
   #hamburger {
     display: none;
@@ -124,6 +141,10 @@ section {
   padding-top: 25px;
   color: var(--light);
   font-family: "Bebas Neue", sans-serif;
+
+  .banner {
+    opacity: 0;
+  }
 
   img {
     height: 150px;
