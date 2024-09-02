@@ -606,18 +606,21 @@ section {
   padding-left: calc(var(--spacer) * 6);
   padding-right: calc(var(--spacer) * 6);
   width: 100%;
-  background: var(--dark);
-  color: var(--light);
 
-  h3 {
-    color: var(--light);
+  .instagram-media {
+    margin-top: var(--spacer);
   }
 
-  .wrapper {
-    margin-top: var(--spacer);
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
+  iframe {
+    margin-top: var(--spacer) !important;
+    max-width: none !important;
+    border-radius: 10px !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #actus {
+    padding: 25px;
   }
 }
 
