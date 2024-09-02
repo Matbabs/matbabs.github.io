@@ -47,11 +47,19 @@ h3 {
 h3 {
   font-size: 3rem;
   color: var(--dark);
+
+  i {
+    margin-right: var(--spacer);
+  }
 }
 
 @media screen and (max-width: 1000px) {
   h3 {
     font-size: 1.5rem;
+
+    i {
+      margin-right: 15px;
+    }
   }
 }
 
@@ -330,7 +338,7 @@ section {
         gap: 25px;
 
         a {
-          gap: 25px;
+          gap: 10px;
 
           font-size: 1.2rem;
         }
