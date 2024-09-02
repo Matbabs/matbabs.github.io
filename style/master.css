@@ -412,6 +412,10 @@ section {
 
     div:hover {
       transform: scale(1.05);
+
+      img {
+        box-shadow: 0px 0px 20px 0px var(--blue);
+      }
     }
 
     img {
