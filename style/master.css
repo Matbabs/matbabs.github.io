@@ -231,10 +231,11 @@ section {
     .container {
       .menu {
         gap: 25px;
-        font-size: 1.5rem;
 
         a {
           gap: 25px;
+
+          font-size: 1.2rem;
         }
       }
     }
@@ -375,7 +376,7 @@ section {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 350px) {
   #team {
     .grid {
       grid-template-columns: repeat(1, 1fr);
