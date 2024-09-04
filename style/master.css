@@ -715,6 +715,7 @@ section {
     width: 100%;
     filter: grayscale(1);
     transition: all 100ms;
+    font-size: 0;
 
     img {
       width: 100%;
@@ -790,6 +791,7 @@ section {
     flex-wrap: wrap;
     gap: calc(var(--spacer) * 4);
     justify-content: center;
+    font-size: 0;
 
     a {
       text-decoration: none;
