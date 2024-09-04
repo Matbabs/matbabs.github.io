@@ -1,6 +1,6 @@
-const navBar = document.getElementById("navBar");
-const menu = document.getElementById("hamburger");
-const menuIsOpen = false;
+let navBar = document.getElementById("navBar");
+let menu = document.getElementById("hamburger");
+let menuIsOpen = false;
 
 window.addEventListener("scroll", () => {
   navBar.style.opacity = this.scrollY > 50 ? "100" : "0";
@@ -35,8 +35,8 @@ function returnHome() {
 }
 
 function waitForInstagramIframe() {
-  const interval = setInterval(() => {
-    const iframe = document.getElementById("instagram-embed-0");
+  let interval = setInterval(() => {
+    let iframe = document.getElementById("instagram-embed-0");
     if (iframe) {
       iframe.title = "instagram feed iframe";
       clearInterval(interval);
