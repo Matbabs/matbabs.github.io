@@ -1,10 +1,31 @@
 let navBar = document.getElementById("navBar");
 let menu = document.getElementById("hamburger");
 let menuIsOpen = false;
+let isShop = String(window.location.href).includes("shop");
+
+function displayNavBar(condition) {
+  navBar.style.opacity = condition ? "100" : "0";
+  navBar.style.pointerEvents = condition ? "all" : "none";
+}
+
+function returnHome() {
+  window.scrollTo({ top: 0 });
+}
+
+function waitForInstagramIframe() {
+  let interval = setInterval(() => {
+    let iframe = document.getElementById("instagram-embed-0");
+    if (iframe) {
+      iframe.title = "instagram feed iframe";
+      clearInterval(interval);
+    }
+  }, 1);
+}
+
+displayNavBar(isShop);
 
 window.addEventListener("scroll", () => {
-  navBar.style.opacity = this.scrollY > 50 ? "100" : "0";
-  navBar.style.pointerEvents = this.scrollY > 50 ? "all" : "none";
+  displayNavBar(this.scrollY > 50 || isShop);
 });
 
 navBar.addEventListener("click", (event) => {
@@ -30,17 +51,4 @@ menu.addEventListener("click", (event) => {
   }
 });
 
-function returnHome() {
-  window.scrollTo({ top: 0 });
-}
-
-function waitForInstagramIframe() {
-  let interval = setInterval(() => {
-    let iframe = document.getElementById("instagram-embed-0");
-    if (iframe) {
-      iframe.title = "instagram feed iframe";
-      clearInterval(interval);
-    }
-  }, 1);
-}
 waitForInstagramIframe();
