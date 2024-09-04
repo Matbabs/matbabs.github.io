@@ -604,6 +604,10 @@ section {
     color: var(--light);
   }
 
+  * {
+    border-radius: var(--radius);
+  }
+
   .principals {
     margin-top: var(--spacer);
     width: 100%;
