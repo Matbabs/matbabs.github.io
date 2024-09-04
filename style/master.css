@@ -5,6 +5,7 @@
   --blue: #69ccd7;
   --light: white;
   --dark: #090b24;
+  --grey: #dbdbdb;
   --spacer: 2rem;
   --radius: 10px;
 }
@@ -464,9 +465,11 @@ section {
   padding: calc(var(--spacer) * 2);
   padding-left: calc(var(--spacer) * 6);
   padding-right: calc(var(--spacer) * 6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacer);
 
   .grid {
-    margin-top: var(--spacer);
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -512,6 +515,7 @@ section {
 @media screen and (max-width: 1200px) {
   #team {
     padding: 60px;
+    gap: 25px;
 
     h3 {
       text-align: center;
@@ -703,7 +707,7 @@ section {
   gap: var(--spacer);
 
   .dv {
-    max-width: 600px;
+    max-width: 400px;
     width: 100%;
     filter: grayscale(1);
     transition: all 100ms;
@@ -719,13 +723,15 @@ section {
 
   iframe {
     max-width: none !important;
-    border-radius: 10px !important;
+    border-radius: var(--radius) !important;
   }
 }
 
 @media screen and (max-width: 1000px) {
   #actus {
     padding: 25px;
+    gap: 25px;
+    align-items: center;
     h3,
     h4 {
       text-align: center;
