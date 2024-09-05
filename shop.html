@@ -54,6 +54,9 @@
         ><span>contacts</span><i class="fa-solid fa-address-book"></i
       ></a>
     </div>
+    <div id="bucket">
+      <i class="fa-solid fa-cart-shopping"></i>
+    </div>
     <section id="shop">
       <h3><i class="fa-solid fa-shop"></i>nos produits d'équipe</h3>
       <div class="grid">
@@ -62,6 +65,21 @@
           <span class="title">t-shirt</span>
           <span class="size">unisex: XS à 5XL</span>
           <span class="price">15 €</span>
+          <label for="qt-select">Quantité</label>
+          <input type="number" min="1" max="10" value="1" id="qt-select" />
+          <label for="qt-select">Taille</label>
+          <select name="sizes" id="sz-select">
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+            <option value="XXXL">XXXL</option>
+            <option value="XXXXL">XXXXL</option>
+            <option value="XXXXXL">XXXXXL</option>
+          </select>
+          <button>ajouter au panier</button>
         </div>
         <div>
           <img src="./assets/shop/polo.png.webp" alt="" />
@@ -70,6 +88,7 @@
           <span class="size">femme: XS à 2XL</span>
           <span class="size">enfant: 3-4 à 13-14</span>
           <span class="price">25 €</span>
+          <button>ajouter au panier</button>
         </div>
         <div>
           <img src="./assets/shop/sweat.png.webp" alt="" />
@@ -77,12 +96,14 @@
           <span class="size">homme: XS à 5XL</span>
           <span class="size">femme: XS à 2XL</span>
           <span class="price">40 €</span>
+          <button>ajouter au panier</button>
         </div>
         <div>
           <img src="./assets/shop/sweat-c.png.webp" alt="" />
           <span class="title">sweat zippé capuche</span>
           <span class="size">unisex: S à 5XL</span>
           <span class="price">40 €</span>
+          <button>ajouter au panier</button>
         </div>
         <div>
           <img src="./assets/shop/softshell.png.webp" alt="" />
@@ -90,6 +111,7 @@
           <span class="size">homme: XS à 3XL</span>
           <span class="size">femme: XS à 3XL</span>
           <span class="price">40 €</span>
+          <button>ajouter au panier</button>
         </div>
         <div>
           <img src="./assets/shop/casquette.png.webp" alt="" />
@@ -97,6 +119,7 @@
           <span class="size">adulte: taille unique</span>
           <span class="size">enfant: taille unique</span>
           <span class="price">20 €</span>
+          <button>ajouter au panier</button>
         </div>
       </div>
     </section>

@@ -903,6 +903,29 @@ section {
   }
 }
 
+#bucket {
+  position: fixed;
+  z-index: 10;
+  top: 100px;
+  right: var(--mobile);
+  height: 3.5rem;
+  width: 3.5rem;
+  background: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  color: var(--light);
+  font-size: 1.5rem;
+  box-shadow: 0px 5px 10px -2px var(--blue);
+  transition: all 250ms;
+}
+
+#bucket:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 #shop {
   margin-top: calc(var(--spacer) * 2);
   padding: calc(var(--spacer) * 2);
@@ -940,11 +963,44 @@ section {
       }
 
       .size {
-        color: rgb(177, 177, 177);
+        color: #b1b1b1;
       }
 
       .price {
         font-weight: bold;
+      }
+
+      label {
+        color: var(--primary);
+        font-size: 0.8rem;
+        text-transform: lowercase;
+      }
+
+      select,
+      input {
+        margin-top: auto;
+        padding: 0.4rem;
+        border-radius: var(--radius);
+        border: none;
+        background: #ebebeb;
+      }
+
+      button {
+        margin-top: auto;
+        padding: 0.5rem;
+        border-radius: var(--radius);
+        border: none;
+        background: var(--primary);
+        color: var(--light);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        box-shadow: 0px 5px 10px -2px var(--blue);
+        transition: all 250ms;
+      }
+
+      button:hover {
+        cursor: pointer;
+        transform: scale(1.05);
       }
     }
   }
