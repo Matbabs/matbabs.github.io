@@ -22,8 +22,6 @@ function waitForInstagramIframe() {
   }, 1);
 }
 
-displayNavBar(isShop);
-
 window.addEventListener("scroll", () => {
   displayNavBar(this.scrollY > 50 || isShop);
 });
@@ -38,7 +36,7 @@ navBar.addEventListener("click", (event) => {
   }
 });
 
-menu.addEventListener("click", (event) => {
+menu.addEventListener("click", () => {
   menuIsOpen = !menuIsOpen;
   if (menuIsOpen) {
     menu.classList.add("fa-xmark");
@@ -51,4 +49,5 @@ menu.addEventListener("click", (event) => {
   }
 });
 
+displayNavBar(isShop);
 waitForInstagramIframe();

@@ -9,6 +9,7 @@
     />
     <title>Team Deux-Sèvres</title>
     <link rel="stylesheet" href="style/master.css" />
+    <link rel="stylesheet" href="style/shop.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -54,8 +55,26 @@
         ><span>contacts</span><i class="fa-solid fa-address-book"></i
       ></a>
     </div>
-    <div id="bucket">
+    <div id="checkout">
+      <i id="close" class="fa-solid fa-xmark" onclick="displayCart()"></i>
+      <div class="card">
+        <h4>Résumé de votre panier</h4>
+        <div class="responsive">
+          <table id="list">
+            <tr>
+              <th>Nom du produit</th>
+              <th>Quantité</th>
+              <th>Taille</th>
+              <th>Prix unitaire</th>
+              <th>Prix total</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div id="cart" onclick="displayCart()">
       <i class="fa-solid fa-cart-shopping"></i>
+      <span id="counter"></span>
     </div>
     <section id="shop">
       <h3><i class="fa-solid fa-shop"></i>nos produits d'équipe</h3>
@@ -66,9 +85,9 @@
           <span class="size">unisex: XS à 5XL</span>
           <span class="price">15 €</span>
           <label for="qt-select">Quantité</label>
-          <input type="number" min="1" max="10" value="1" id="qt-select" />
+          <input type="number" min="1" max="10" value="1" id="ts-q" />
           <label for="qt-select">Taille</label>
-          <select name="sizes" id="sz-select">
+          <select name="sizes" id="ts-s">
             <option value="XS">XS</option>
             <option value="S">S</option>
             <option value="M">M</option>
@@ -79,7 +98,9 @@
             <option value="4XL">4XL</option>
             <option value="5XL">5XL</option>
           </select>
-          <button>ajouter au panier</button>
+          <button onclick="addToCart('ts', 'ts-q', 'ts-s')">
+            ajouter au panier
+          </button>
         </div>
         <div>
           <img src="./assets/shop/polo.png.webp" alt="" />
@@ -130,5 +151,6 @@
       </p>
     </div>
     <script src="./scripts/main.js"></script>
+    <script src="./scripts/shop.js"></script>
   </body>
 </html>
