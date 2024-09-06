@@ -176,7 +176,7 @@
     width: 100%;
     background: var(--light);
     border-radius: var(--radius);
-    padding: var(--spacer);
+    padding: var(--mobile);
     display: flex;
     flex-direction: column;
     gap: var(--mobile);
@@ -204,13 +204,6 @@
         border-bottom: 1px solid #ddd;
       }
     }
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  #checkout {
-    padding: var(--mobile) !important;
-    padding-top: calc(var(--mobile) * 3) !important;
   }
 }
 

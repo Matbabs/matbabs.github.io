@@ -1,4 +1,12 @@
+const pricing = [
+  {
+    itemId: "ts",
+    value: 15,
+  },
+];
+
 let sessionCart = [];
+let sessionPrice = 0;
 let cartIsOpen = false;
 let counter = document.getElementById("counter");
 let cart = document.getElementById("cart");
@@ -25,11 +33,12 @@ function addToCart(itemId, quantityId, sizeId) {
 function displayCart() {
   cartIsOpen = !cartIsOpen;
   if (cartIsOpen) {
-    checkout.style.padding = "calc(var(--spacer) * 2)";
+    sessionPrice = 0;
+    checkout.style.padding = "var(--mobile)";
+    checkout.style.paddingTop = "calc(var(--spacer) * 2)";
     checkout.style.opacity = "1";
     checkout.style.height = "100dvh";
     document.body.classList.add("stop-scrolling");
-
     sessionCart.forEach((i) => {
       let item = document.createElement("tr");
       let name = document.createElement("td");
@@ -38,16 +47,27 @@ function displayCart() {
       quantity.innerText = i.quantity;
       let size = document.createElement("td");
       size.innerText = i.size;
+      let uprice = document.createElement("td");
+      uprice.innerText = pricing.filter((e) => e.itemId === i.itemId)[0].value;
+      let tprice = document.createElement("td");
+      tprice.innerText = Number(quantity.innerText) * Number(uprice.innerText);
+      sessionPrice += Number(tprice.innerText);
       item.appendChild(name);
       item.appendChild(quantity);
       item.appendChild(size);
+      item.appendChild(uprice);
+      item.appendChild(tprice);
       list.appendChild(item);
     });
   } else {
     checkout.style.padding = "0";
+    checkout.style.paddingTop = "0";
     checkout.style.opacity = "0";
     checkout.style.height = "0px";
     document.body.classList.remove("stop-scrolling");
+    while (list.lastChild && list.lastChild.nodeName === "TR") {
+      list.removeChild(list.lastChild);
+    }
   }
 }
 
