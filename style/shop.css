@@ -207,6 +207,13 @@
   }
 }
 
+@media screen and (max-width: 1000px) {
+  #checkout {
+    padding: var(--mobile) !important;
+    padding-top: calc(var(--mobile) * 3) !important;
+  }
+}
+
 .stop-scrolling {
   height: 100dvh;
   overflow: hidden;
