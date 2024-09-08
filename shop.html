@@ -58,18 +58,20 @@
     <div id="checkout">
       <i id="close" class="fa-solid fa-xmark" onclick="displayCart()"></i>
       <div class="card">
-        <h4>Résumé de votre panier</h4>
+        <h4>Votre panier</h4>
         <div class="responsive">
           <table id="list">
             <tr>
-              <th>Nom du produit</th>
+              <th>Produit</th>
               <th>Quantité</th>
               <th>Taille</th>
-              <th>Prix unitaire</th>
-              <th>Prix total</th>
+              <th>Unitaire</th>
+              <th>Total</th>
             </tr>
           </table>
         </div>
+        <span id="ch-price"></span>
+        <div id="paypal-button-container"></div>
       </div>
     </div>
     <div id="cart" onclick="displayCart()">
@@ -150,6 +152,7 @@
         ⚡, respectueuse de l'environnement 🌱 et accessible à tous !
       </p>
     </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=AXnjAMPdu51aiSnf5d_Bz5zpFGSXWRncngouAhXdYtwVyNXOG2vdSsnvHamQvAkYZwnKXDHz70eZDNp_&currency=EUR"></script>
     <script src="./scripts/main.js"></script>
     <script src="./scripts/shop.js"></script>
   </body>

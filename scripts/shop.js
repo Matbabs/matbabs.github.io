@@ -13,6 +13,7 @@ let cart = document.getElementById("cart");
 let checkout = document.getElementById("checkout");
 let close = document.getElementById("close");
 let list = document.getElementById("list");
+let displayPrice = document.getElementById("ch-price");
 
 function displayCounter() {
   counter.style.display = sessionCart.length > 0 ? "block" : "none";
@@ -58,6 +59,7 @@ function displayCart() {
       item.appendChild(uprice);
       item.appendChild(tprice);
       list.appendChild(item);
+      displayPrice.innerText = `Total à payer: ${sessionPrice} €`;
     });
   } else {
     checkout.style.padding = "0";
@@ -70,5 +72,31 @@ function displayCart() {
     }
   }
 }
+
+paypal
+  .Buttons({
+    style: {
+      shape: "rect",
+      color: "blue",
+      label: "paypal",
+    },
+    createOrder: function (data, actions) {
+      return actions.order.create({
+        purchase_units: [
+          {
+            amount: {
+              value: 10,
+            },
+          },
+        ],
+      });
+    },
+    onApprove: function (data, actions) {
+      return actions.order.capture().then(function (details) {
+        alert("ok");
+      });
+    },
+  })
+  .render("#paypal-button-container");
 
 displayCounter();
