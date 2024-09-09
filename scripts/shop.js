@@ -105,7 +105,7 @@ paypal
         purchase_units: [
           {
             amount: {
-              value: 10,
+              value: sessionPrice,
             },
           },
         ],
