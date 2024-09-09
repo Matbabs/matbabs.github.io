@@ -1,7 +1,27 @@
 const pricing = [
   {
-    itemId: "ts",
+    itemId: "t-shirt",
     value: 15,
+  },
+  {
+    itemId: "polo",
+    value: 25,
+  },
+  {
+    itemId: "sweat-zipp",
+    value: 40,
+  },
+  {
+    itemId: "sweat-zipp-capuche",
+    value: 40,
+  },
+  {
+    itemId: "softshell",
+    value: 40,
+  },
+  {
+    itemId: "casquette",
+    value: 20,
   },
 ];
 

@@ -46,7 +46,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: var(--spacer);
 
-    div {
+    div:not(.form) {
       padding: var(--spacer);
       display: flex;
       flex-direction: column;
@@ -74,6 +74,13 @@
 
       .price {
         font-weight: bold;
+      }
+
+      .form {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
       }
 
       label {
@@ -176,7 +183,7 @@
     width: 100%;
     max-height: 80dvh;
     background: var(--light);
-    border-radius: var(--radius);
+    border-radius: calc(var(--radius) / 2);
     padding: var(--mobile);
     display: flex;
     flex-direction: column;
@@ -187,6 +194,10 @@
       text-transform: uppercase;
       font-weight: bold;
       color: var(--primary);
+
+      i {
+        margin-right: 15px;
+      }
     }
 
     .responsive {
@@ -197,11 +208,20 @@
 
     #list {
       width: 100%;
+      border-radius: var(--radius);
+      overflow: hidden;
+
+      th {
+        background: var(--primary);
+        color: var(--light);
+        text-transform: uppercase;
+        font-size: 0.8rem;
+      }
 
       th,
       td {
         padding: 10px;
-        padding-left: 0;
+        /* padding-left: 0; */
         text-align: left;
         border-bottom: 1px solid #ddd;
       }
@@ -214,7 +234,7 @@
     }
 
     #paypal-button-container {
-      margin-top: var(--mobile);
+      /* margin-top: var(--mobile); */
     }
   }
 }

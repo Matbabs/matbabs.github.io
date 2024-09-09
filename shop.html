@@ -58,7 +58,7 @@
     <div id="checkout">
       <i id="close" class="fa-solid fa-xmark" onclick="displayCart()"></i>
       <div class="card">
-        <h4>Votre panier</h4>
+        <h4><i class="fa-solid fa-cart-shopping"></i>Votre panier</h4>
         <div class="responsive">
           <table id="list">
             <tr>
@@ -86,23 +86,25 @@
           <span class="title">t-shirt</span>
           <span class="size">unisex: XS à 5XL</span>
           <span class="price">15 €</span>
-          <label for="qt-select">Quantité</label>
-          <input type="number" min="1" max="10" value="1" id="ts-q" />
-          <label for="qt-select">Taille</label>
-          <select name="sizes" id="ts-s">
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="2XL">2XL</option>
-            <option value="3XL">3XL</option>
-            <option value="4XL">4XL</option>
-            <option value="5XL">5XL</option>
-          </select>
-          <button onclick="addToCart('ts', 'ts-q', 'ts-s')">
-            ajouter au panier
-          </button>
+          <div class="form">
+            <label for="q">Quantité</label>
+            <input type="number" min="1" max="10" value="1" id="t-shirt-q" />
+            <label for="s">Taille</label>
+            <select name="sizes" id="t-shirt-s">
+              <option value="XS">XS</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="2XL">2XL</option>
+              <option value="3XL">3XL</option>
+              <option value="4XL">4XL</option>
+              <option value="5XL">5XL</option>
+            </select>
+            <button onclick="addToCart('t-shirt', 't-shirt-q', 't-shirt-s')">
+              ajouter au panier
+            </button>
+          </div>
         </div>
         <div>
           <img src="./assets/shop/polo.png.webp" alt="" />
@@ -111,7 +113,37 @@
           <span class="size">femme: XS à 2XL</span>
           <span class="size">enfant: 3-4 à 13-14</span>
           <span class="price">25 €</span>
-          <button>ajouter au panier</button>
+          <div class="form">
+            <label for="q">Quantité</label>
+            <input type="number" min="1" max="10" value="1" id="polo-q" />
+            <label for="s">Taille</label>
+            <select name="sizes" id="polo-s">
+              <option value="homme - XS">homme - XS</option>
+              <option value="homme - S">homme - S</option>
+              <option value="homme - M">homme - M</option>
+              <option value="homme - L">homme - L</option>
+              <option value="homme - XL">homme - XL</option>
+              <option value="homme - 2XL">homme - 2XL</option>
+              <option value="homme - 3XL">homme - 3XL</option>
+              <option value="homme - 4XL">homme - 4XL</option>
+              <option value="homme - 5XL">homme - 5XL</option>
+              <option value="femme - XS">femme - XS</option>
+              <option value="femme - S">femme - S</option>
+              <option value="femme - M">femme - M</option>
+              <option value="femme - L">femme - L</option>
+              <option value="femme - XL">femme - XL</option>
+              <option value="femme - 2XL">femme - 2XL</option>
+              <option value="enfant - 3-4">enfant - 3-4</option>
+              <option value="enfant - 5-6">enfant - 5-6</option>
+              <option value="enfant - 7-8">enfant - 7-8</option>
+              <option value="enfant - 9-10">enfant - 9-10</option>
+              <option value="enfant - 11-12">enfant - 11-12</option>
+              <option value="enfant - 13-14">enfant - 13-14</option>
+            </select>
+            <button onclick="addToCart('polo', 'polo-q', 'polo-s')">
+              ajouter au panier
+            </button>
+          </div>
         </div>
         <div>
           <img src="./assets/shop/sweat.png.webp" alt="" />
@@ -119,14 +151,65 @@
           <span class="size">homme: XS à 5XL</span>
           <span class="size">femme: XS à 2XL</span>
           <span class="price">40 €</span>
-          <button>ajouter au panier</button>
+          <div class="form">
+            <label for="q">Quantité</label>
+            <input type="number" min="1" max="10" value="1" id="sweat-zipp-q" />
+            <label for="s">Taille</label>
+            <select name="sizes" id="sweat-zipp-s">
+              <option value="homme - XS">homme - XS</option>
+              <option value="homme - S">homme - S</option>
+              <option value="homme - M">homme - M</option>
+              <option value="homme - L">homme - L</option>
+              <option value="homme - XL">homme - XL</option>
+              <option value="homme - 2XL">homme - 2XL</option>
+              <option value="homme - 3XL">homme - 3XL</option>
+              <option value="homme - 4XL">homme - 4XL</option>
+              <option value="homme - 5XL">homme - 5XL</option>
+              <option value="femme - XS">femme - XS</option>
+              <option value="femme - S">femme - S</option>
+              <option value="femme - M">femme - M</option>
+              <option value="femme - L">femme - L</option>
+              <option value="femme - XL">femme - XL</option>
+              <option value="femme - 2XL">femme - 2XL</option>
+            </select>
+            <button
+              onclick="addToCart('sweat-zipp', 'sweat-zipp-q', 'sweat-zipp-s')"
+            >
+              ajouter au panier
+            </button>
+          </div>
         </div>
         <div>
           <img src="./assets/shop/sweat-c.png.webp" alt="" />
           <span class="title">sweat zippé capuche</span>
           <span class="size">unisex: S à 5XL</span>
           <span class="price">40 €</span>
-          <button>ajouter au panier</button>
+          <div class="form">
+            <label for="q">Quantité</label>
+            <input
+              type="number"
+              min="1"
+              max="10"
+              value="1"
+              id="sweat-zipp-capuche-q"
+            />
+            <label for="s">Taille</label>
+            <select name="sizes" id="sweat-zipp-capuche-s">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+              <option value="2XL">2XL</option>
+              <option value="3XL">3XL</option>
+              <option value="4XL">4XL</option>
+              <option value="5XL">5XL</option>
+            </select>
+            <button
+              onclick="addToCart('sweat-zipp-capuche', 'sweat-zipp-capuche-q', 'sweat-zipp-capuche-s')"
+            >
+              ajouter au panier
+            </button>
+          </div>
         </div>
         <div>
           <img src="./assets/shop/softshell.png.webp" alt="" />
@@ -134,7 +217,32 @@
           <span class="size">homme: XS à 3XL</span>
           <span class="size">femme: XS à 3XL</span>
           <span class="price">40 €</span>
-          <button>ajouter au panier</button>
+          <div class="form">
+            <label for="q">Quantité</label>
+            <input type="number" min="1" max="10" value="1" id="softshell-q" />
+            <label for="s">Taille</label>
+            <select name="sizes" id="softshell-s">
+              <option value="homme - XS">homme - XS</option>
+              <option value="homme - S">homme - S</option>
+              <option value="homme - M">homme - M</option>
+              <option value="homme - L">homme - L</option>
+              <option value="homme - XL">homme - XL</option>
+              <option value="homme - 2XL">homme - 2XL</option>
+              <option value="homme - 3XL">homme - 3XL</option>
+              <option value="femme - XS">femme - XS</option>
+              <option value="femme - S">femme - S</option>
+              <option value="femme - M">femme - M</option>
+              <option value="femme - L">femme - L</option>
+              <option value="femme - XL">femme - XL</option>
+              <option value="femme - 2XL">femme - 2XL</option>
+              <option value="femme - 3XL">femme - 3XL</option>
+            </select>
+            <button
+              onclick="addToCart('softshell', 'softshell-q', 'softshell-s')"
+            >
+              ajouter au panier
+            </button>
+          </div>
         </div>
         <div>
           <img src="./assets/shop/casquette.png.webp" alt="" />
@@ -142,7 +250,20 @@
           <span class="size">adulte: taille unique</span>
           <span class="size">enfant: taille unique</span>
           <span class="price">20 €</span>
-          <button>ajouter au panier</button>
+          <div class="form">
+            <label for="q">Quantité</label>
+            <input type="number" min="1" max="10" value="1" id="casquette-q" />
+            <label for="s">Taille</label>
+            <select name="sizes" id="casquette-s">
+              <option value="adulte">adulte</option>
+              <option value="enfant">enfant</option>
+            </select>
+            <button
+              onclick="addToCart('casquette', 'casquette-q', 'casquette-s')"
+            >
+              ajouter au panier
+            </button>
+          </div>
         </div>
       </div>
     </section>
