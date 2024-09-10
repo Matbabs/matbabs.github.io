@@ -60,7 +60,10 @@ h3 {
 h4 {
   font-size: 1.2rem;
   color: var(--dark);
-  text-transform: capitalize;
+  border-top: solid 1px var(--primary);
+  padding-top: 5px;
+  color: var(--primary);
+  text-transform: uppercase;
 
   i {
     margin-right: var(--spacer);
@@ -539,7 +542,7 @@ section {
 
     span {
       color: var(--dark);
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 900;
       text-align: center;
       font-weight: bold;
@@ -553,7 +556,7 @@ section {
 
     .small {
       color: var(--orange);
-      text-transform: uppercase;
+      text-transform: capitalize;
       white-space: nowrap;
     }
 
@@ -614,10 +617,20 @@ section {
 
 @media screen and (max-width: 600px) {
   #team {
-    padding-left: calc(var(--spacer) * 3);
-    padding-right: calc(var(--spacer) * 3);
+    padding-left: calc(var(--spacer) * 2);
+    padding-right: calc(var(--spacer) * 2);
+
+    h4 {
+      text-align: center;
+    }
+
     .grid {
       grid-template-columns: repeat(1, 1fr);
+
+      img:not(.user),
+      .unknown {
+        margin-bottom: 5px;
+      }
     }
   }
 }
