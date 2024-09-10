@@ -93,6 +93,18 @@ function displayCart() {
   }
 }
 
+function sendEmail() {
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "matbabs78@gmail.com",
+    Password: "_",
+    To: "matbabs78@gmail.com",
+    From: "matbabs78@gmail.com",
+    Subject: "Test email",
+    Body: "<html><h2>Header</h2><strong>Bold text</strong><br/></br><em>Italic</em></html>",
+  }).then((message) => console.log(message));
+}
+
 paypal
   .Buttons({
     style: {
