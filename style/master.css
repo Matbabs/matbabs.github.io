@@ -51,6 +51,7 @@ h3 {
 h3 {
   font-size: 3rem;
   color: var(--dark);
+
   i {
     margin-right: var(--spacer);
   }
@@ -59,6 +60,8 @@ h3 {
 h4 {
   font-size: 1.2rem;
   color: var(--dark);
+  text-transform: capitalize;
+
   i {
     margin-right: var(--spacer);
   }
@@ -225,6 +228,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
+
     img {
       display: none;
     }
@@ -280,6 +284,7 @@ section {
 
         color: var(--blue);
       }
+
       h2 {
         font-size: 2vw;
       }
@@ -357,10 +362,12 @@ section {
           text-transform: uppercase;
           font-size: 6vw;
         }
+
         h2 {
           font-size: 4vw;
         }
       }
+
       img {
         height: 20vw;
       }
@@ -373,8 +380,10 @@ section {
 
     .container {
       padding-right: var(--mobile);
+
       .menu {
         gap: var(--mobile);
+
         a {
           font-size: 1.5rem;
         }
@@ -388,6 +397,7 @@ section {
     .photo {
       height: 300px !important;
     }
+
     .container {
       .menu {
         a {
@@ -403,6 +413,7 @@ section {
     .photo {
       height: 200px !important;
     }
+
     .container {
       .menu {
         a {
@@ -419,9 +430,11 @@ section {
       height: 60dvh;
       left: 10vw;
     }
+
     .container {
       padding-bottom: var(--spacer);
       align-items: end;
+
       .menu {
         flex-direction: row;
         flex-wrap: wrap;
@@ -491,19 +504,37 @@ section {
       transition: all 250ms;
     }
 
-    div:hover {
-      transform: scale(1.05);
-
-      img {
-        box-shadow: 0px 0px 15px 0px var(--blue);
-      }
-    }
-
-    img {
-      max-width: 100%;
+    img:not(.user) {
+      width: 100%;
+      height: 100%;
+      min-height: 400px;
+      object-fit: cover;
       border-radius: var(--radius);
       transition: all 250ms;
       box-shadow: 0px 0px 15px -5px var(--dark);
+      margin-bottom: var(--mobile);
+    }
+
+    .unknown {
+      width: 100%;
+      height: 100%;
+      min-height: 400px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      transition: all 250ms;
+      box-shadow: 0px 0px 15px -5px var(--dark);
+      margin-bottom: var(--mobile);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: var(--primary);
+      color: var(--light);
+      font-size: 10rem;
+
+      img {
+        width: 80%;
+      }
     }
 
     span {
@@ -514,9 +545,26 @@ section {
       font-weight: bold;
     }
 
+    .name {
+      margin-top: auto;
+      text-transform: capitalize;
+      white-space: nowrap;
+    }
+
     .small {
       color: var(--orange);
       font-size: 1.2rem;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    div:hover {
+      transform: scale(1.05);
+
+      img:not(.user),
+      .unknown {
+        box-shadow: 0px 0px 15px 0px var(--blue);
+      }
     }
   }
 }
@@ -596,6 +644,7 @@ section {
 @media screen and (max-width: 1000px) {
   .paralax {
     height: calc(var(--spacer) * 2);
+
     .background-color {
       height: calc(var(--spacer) * 2);
     }
@@ -677,6 +726,7 @@ section {
 
   .principals {
     margin-top: var(--spacer);
+    margin-bottom: calc(var(--spacer) * 4);
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -689,12 +739,14 @@ section {
   }
 
   .others {
-    margin-top: calc(var(--spacer) * 2);
-    width: 100%;
+    /* margin-top: calc(var(--spacer) * 2); */
+    margin: auto;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: calc(var(--spacer) * 2);
+
     img {
       height: 100px;
     }
@@ -717,6 +769,7 @@ section {
     }
 
     .principals {
+      margin-bottom: calc(var(--mobile) * 2);
       gap: var(--mobile);
       justify-content: center;
       align-items: center;
@@ -727,7 +780,6 @@ section {
     }
 
     .others {
-      margin-top: 50px;
       gap: var(--mobile);
       justify-content: center;
       align-items: center;
@@ -759,9 +811,11 @@ section {
 @media screen and (max-width: 1000px) {
   #jerseys {
     padding: var(--mobile);
+
     img {
       max-width: 150px;
     }
+
     .container {
       gap: var(--mobile);
     }
@@ -883,6 +937,19 @@ section {
 
     i {
       font-size: 4rem;
+    }
+  }
+
+  .mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--mobile);
+    font-size: 1.3rem;
+
+    i {
+      margin-right: calc(var(--mobile) / 2);
     }
   }
 }
