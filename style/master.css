@@ -617,7 +617,7 @@ section {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 600px) {
   #team {
     .grid {
       grid-template-columns: repeat(1, 1fr);
@@ -980,6 +980,10 @@ section {
 
     .socials {
       gap: var(--mobile);
+    }
+
+    .mail {
+      font-size: 1.1rem;
     }
   }
 }
