@@ -693,6 +693,26 @@ section {
   .bg2 {
     background-image: url(../assets/bg2.jpeg);
   }
+
+  .bg3 {
+    background-image: url(../assets/t2s.jpeg);
+  }
+
+  .bg4 {
+    background-image: url(../assets/t2s3.jpeg);
+  }
+
+  .bg5 {
+    background-image: url(../assets/t2s4.jpeg);
+  }
+
+  .bg6 {
+    background-image: url(../assets/t2s2.jpeg);
+  }
+
+  .bg7 {
+    background-image: url(../assets/t2s5.jpeg);
+  }
 }
 
 @media screen and (max-width: 1000px) {
