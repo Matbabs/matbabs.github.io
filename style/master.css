@@ -539,7 +539,7 @@ section {
 
     span {
       color: var(--dark);
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 900;
       text-align: center;
       font-weight: bold;
@@ -553,7 +553,6 @@ section {
 
     .small {
       color: var(--orange);
-      font-size: 1.2rem;
       text-transform: uppercase;
       white-space: nowrap;
     }
@@ -585,10 +584,6 @@ section {
       span {
         font-size: 0.9rem;
       }
-
-      .small {
-        font-size: 0.8rem;
-      }
     }
   }
 }
@@ -619,6 +614,8 @@ section {
 
 @media screen and (max-width: 600px) {
   #team {
+    padding-left: calc(var(--spacer) * 3);
+    padding-right: calc(var(--spacer) * 3);
     .grid {
       grid-template-columns: repeat(1, 1fr);
     }
