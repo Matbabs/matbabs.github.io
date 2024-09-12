@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Site e-commerce du Team Deux-Sèvres cyclisme."
-    />
+      content="Site e-commerce du Team Deux-Sèvres cyclisme." />
     <title>Team Deux-Sèvres</title>
     <link rel="stylesheet" href="style/master.css" />
     <link rel="stylesheet" href="style/shop.css" />
@@ -14,15 +13,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       integrity="sha312-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="a3onymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
@@ -36,24 +33,19 @@
       <img
         src="./assets/logo.png.webp"
         alt="logo du team deux-sèvres"
-        onclick="returnHome()"
-      />
+        onclick="returnHome()" />
       <a href="./index.html#about">
         <span>à propos</span><i class="fa-solid fa-bicycle"></i>
       </a>
-      <a href="./index.html#team"
-        ><span>l'équipe</span><i class="fa-solid fa-people-group"></i
-      ></a>
-      <a href="./index.html#partners"
-        ><span>les partenaires</span><i class="fa-brands fa-font-awesome"></i
-      ></a>
-      <a href="./index.html#actus"
-        ><span>les actus</span><i class="fa-solid fa-newspaper"></i
-      ></a>
+      <a href="./index.html#team"><span>l'équipe</span><i
+          class="fa-solid fa-people-group"></i></a>
+      <a href="./index.html#partners"><span>les partenaires</span><i
+          class="fa-brands fa-font-awesome"></i></a>
+      <a href="./index.html#actus"><span>les actus</span><i
+          class="fa-solid fa-newspaper"></i></a>
       <a><span>le shop</span><i class="fa-solid fa-shop"></i></a>
-      <a href="./index.html#contacts"
-        ><span>contacts</span><i class="fa-solid fa-address-book"></i
-      ></a>
+      <a href="./index.html#contacts"><span>contacts</span><i
+          class="fa-solid fa-address-book"></i></a>
     </div>
     <div id="checkout">
       <i id="close" class="fa-solid fa-xmark" onclick="displayCart()"></i>
@@ -173,8 +165,7 @@
               <option value="femme - 2XL">femme - 2XL</option>
             </select>
             <button
-              onclick="addToCart('sweat-zipp', 'sweat-zipp-q', 'sweat-zipp-s')"
-            >
+              onclick="addToCart('sweat-zipp', 'sweat-zipp-q', 'sweat-zipp-s')">
               ajouter au panier
             </button>
           </div>
@@ -191,8 +182,7 @@
               min="1"
               max="10"
               value="1"
-              id="sweat-zipp-capuche-q"
-            />
+              id="sweat-zipp-capuche-q" />
             <label for="s">Taille</label>
             <select name="sizes" id="sweat-zipp-capuche-s">
               <option value="S">S</option>
@@ -205,8 +195,7 @@
               <option value="5XL">5XL</option>
             </select>
             <button
-              onclick="addToCart('sweat-zipp-capuche', 'sweat-zipp-capuche-q', 'sweat-zipp-capuche-s')"
-            >
+              onclick="addToCart('sweat-zipp-capuche', 'sweat-zipp-capuche-q', 'sweat-zipp-capuche-s')">
               ajouter au panier
             </button>
           </div>
@@ -214,8 +203,7 @@
         <div>
           <img
             src="./assets/shop/softshell.png.webp"
-            alt="article du magasin"
-          />
+            alt="article du magasin" />
           <span class="title">softshell</span>
           <span class="size">homme: XS à 3XL</span>
           <span class="size">femme: XS à 3XL</span>
@@ -241,8 +229,7 @@
               <option value="femme - 3XL">femme - 3XL</option>
             </select>
             <button
-              onclick="addToCart('softshell', 'softshell-q', 'softshell-s')"
-            >
+              onclick="addToCart('softshell', 'softshell-q', 'softshell-s')">
               ajouter au panier
             </button>
           </div>
@@ -250,8 +237,7 @@
         <div>
           <img
             src="./assets/shop/casquette.png.webp"
-            alt="article du magasin"
-          />
+            alt="article du magasin" />
           <span class="title">casquette</span>
           <span class="size">adulte: taille unique</span>
           <span class="size">enfant: taille unique</span>
@@ -265,8 +251,7 @@
               <option value="enfant">enfant</option>
             </select>
             <button
-              onclick="addToCart('casquette', 'casquette-q', 'casquette-s')"
-            >
+              onclick="addToCart('casquette', 'casquette-q', 'casquette-s')">
               ajouter au panier
             </button>
           </div>
@@ -279,7 +264,8 @@
         ⚡, respectueuse de l'environnement 🌱 et accessible à tous !
       </p>
     </div>
-    <script src="https://www.paypal.com/sdk/js?client-id=AXnjAMPdu51aiSnf5d_Bz5zpFGSXWRncngouAhXdYtwVyNXOG2vdSsnvHamQvAkYZwnKXDHz70eZDNp_&currency=EUR"></script>
+    <script
+      src="https://www.paypal.com/sdk/js?client-id=AXnjAMPdu51aiSnf5d_Bz5zpFGSXWRncngouAhXdYtwVyNXOG2vdSsnvHamQvAkYZwnKXDHz70eZDNp_&currency=EUR"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./scripts/main.js"></script>
     <script src="./scripts/shop.js"></script>
