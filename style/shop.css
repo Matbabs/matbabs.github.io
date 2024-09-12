@@ -125,21 +125,25 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media screen and (max-width: 1200px) {
   #shop {
     padding: 60px;
     gap: var(--mobile);
   }
+
   #shop .grid {
     gap: var(--mobile);
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 @media screen and (max-width: 600px) {
   #shop .grid {
     grid-template-columns: 1fr;
   }
 }
+
 #checkout {
   width: 100vw;
   height: 0;
@@ -218,7 +222,6 @@
 #checkout .card #list th,
 #checkout .card #list td {
   padding: 10px;
-  /* padding-left: 0; */
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
@@ -233,7 +236,3 @@
   height: 100dvh;
   overflow: hidden;
 }
-
-
-
-/*# sourceMappingURL=shop.css.map */
