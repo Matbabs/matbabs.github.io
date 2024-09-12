@@ -14,17 +14,17 @@
   font-size: 1.5rem;
   box-shadow: 0px 5px 10px -2px var(--blue);
   transition: all 250ms;
+}
 
-  #counter {
-    position: absolute;
-    background: var(--orange);
-    right: -5px;
-    bottom: -5px;
-    padding: 5px;
-    border-radius: var(--radius);
-    font-size: 0.8rem;
-    box-shadow: 0px 5px 10px -2px var(--orange);
-  }
+#cart #counter {
+  position: absolute;
+  background: var(--orange);
+  right: -5px;
+  bottom: -5px;
+  padding: 5px;
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+  box-shadow: 0px 5px 10px -2px var(--orange);
 }
 
 #cart:hover {
@@ -38,115 +38,108 @@
   padding-left: calc(var(--spacer) * 6);
   padding-right: calc(var(--spacer) * 6);
   width: 100%;
+}
 
-  .grid {
-    margin-top: var(--spacer);
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--spacer);
+#shop .grid {
+  margin-top: var(--spacer);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacer);
+}
 
-    div:not(.form) {
-      padding: var(--spacer);
-      display: flex;
-      flex-direction: column;
-      gap: var(--radius);
-      width: 100%;
-      border: solid 1px var(--grey);
-      border-radius: var(--radius);
-      overflow: hidden;
+#shop .grid div:not(.form) {
+  padding: var(--spacer);
+  display: flex;
+  flex-direction: column;
+  gap: var(--radius);
+  width: 100%;
+  border: solid 1px var(--grey);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
 
-      .img {
-        width: 100%;
-      }
+#shop .grid div:not(.form) .img {
+  width: 100%;
+}
 
-      .title {
-        margin-top: var(--spacer);
-        color: var(--primary);
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 1.1rem;
-      }
+#shop .grid div:not(.form) .title {
+  margin-top: var(--spacer);
+  color: var(--primary);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
 
-      .size {
-        color: #b1b1b1;
-      }
+#shop .grid div:not(.form) .size {
+  color: #b1b1b1;
+}
 
-      .price {
-        font-weight: bold;
-      }
+#shop .grid div:not(.form) .price {
+  font-weight: bold;
+}
 
-      .form {
-        margin-top: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
+#shop .grid div:not(.form) .form {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-      label {
-        color: var(--primary);
-        font-size: 0.8rem;
-        text-transform: lowercase;
-      }
+#shop .grid div:not(.form) label {
+  color: var(--primary);
+  font-size: 0.8rem;
+  text-transform: lowercase;
+}
 
-      select,
-      input {
-        margin-top: auto;
-        padding: 0.4rem;
-        border-radius: var(--radius);
-        border: none;
-        background: #ebebeb;
-      }
+#shop .grid div:not(.form) select,
+#shop .grid div:not(.form) input {
+  margin-top: auto;
+  padding: 0.4rem;
+  border-radius: var(--radius);
+  border: none;
+  background: #ebebeb;
+}
 
-      button {
-        margin-top: auto;
-        padding: 0.5rem;
-        border-radius: var(--radius);
-        border: none;
-        background: var(--primary);
-        color: var(--light);
-        font-size: 0.8rem;
-        text-transform: uppercase;
-        box-shadow: 0px 5px 10px -2px var(--blue);
-        transition: all 250ms;
-      }
+#shop .grid div:not(.form) button {
+  margin-top: auto;
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  border: none;
+  background: var(--primary);
+  color: var(--light);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 10px -2px var(--blue);
+  transition: all 250ms;
+}
 
-      button:hover {
-        cursor: pointer;
-        transform: scale(1.05);
-      }
-    }
-  }
+#shop .grid div:not(.form) button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 1400px) {
-  #shop {
-    .grid {
-      gap: var(--mobile);
-      grid-template-columns: repeat(3, 1fr);
-    }
+  #shop .grid {
+    gap: var(--mobile);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-
 @media screen and (max-width: 1200px) {
   #shop {
     padding: 60px;
     gap: var(--mobile);
-    .grid {
-      gap: var(--mobile);
-      grid-template-columns: repeat(2, 1fr);
-    }
+  }
+  #shop .grid {
+    gap: var(--mobile);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media screen and (max-width: 600px) {
-  #shop {
-    .grid {
-      grid-template-columns: 1fr;
-    }
+  #shop .grid {
+    grid-template-columns: 1fr;
   }
 }
-
 #checkout {
   width: 100vw;
   height: 0;
@@ -163,80 +156,84 @@
   justify-content: center;
   opacity: 100;
   overflow: hidden;
+}
 
-  #close {
-    display: block;
-    position: absolute;
-    top: var(--mobile);
-    right: var(--mobile);
-    color: var(--light);
-    font-size: 1.5rem;
-    transition: all 250ms;
-  }
+#checkout #close {
+  display: block;
+  position: absolute;
+  top: var(--mobile);
+  right: var(--mobile);
+  color: var(--light);
+  font-size: 1.5rem;
+  transition: all 250ms;
+}
 
-  #close:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-  }
+#checkout #close:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
 
-  .card {
-    width: 100%;
-    max-height: 80dvh;
-    background: var(--light);
-    border-radius: calc(var(--radius) / 2);
-    padding: var(--mobile);
-    display: flex;
-    flex-direction: column;
-    gap: var(--mobile);
-    overflow: auto;
+#checkout .card {
+  width: 100%;
+  max-height: 80dvh;
+  background: var(--light);
+  border-radius: calc(var(--radius) / 2);
+  padding: var(--mobile);
+  display: flex;
+  flex-direction: column;
+  gap: var(--mobile);
+  overflow: auto;
+}
 
-    h4 {
-      text-transform: uppercase;
-      font-weight: bold;
-      color: var(--primary);
+#checkout .card h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--primary);
+}
 
-      i {
-        margin-right: 15px;
-      }
-    }
+#checkout .card h4 i {
+  margin-right: 15px;
+}
 
-    .responsive {
-      width: 100%;
-      max-height: 300px;
-      min-height: 100px;
-      overflow: auto;
-    }
+#checkout .card .responsive {
+  width: 100%;
+  max-height: 300px;
+  min-height: 100px;
+  overflow: auto;
+}
 
-    #list {
-      width: 100%;
-      border-radius: var(--radius);
-      overflow: hidden;
+#checkout .card #list {
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
 
-      th {
-        background: var(--primary);
-        color: var(--light);
-        text-transform: uppercase;
-        font-size: 0.8rem;
-      }
+#checkout .card #list th {
+  background: var(--primary);
+  color: var(--light);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
 
-      th,
-      td {
-        padding: 10px;
-        /* padding-left: 0; */
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-      }
-    }
+#checkout .card #list th,
+#checkout .card #list td {
+  padding: 10px;
+  /* padding-left: 0; */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
 
-    #ch-price {
-      font-weight: bold;
-      text-transform: capitalize;
-      font-size: 1.5rem;
-    }
-  }
+#checkout .card #ch-price {
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 1.5rem;
 }
 
 .stop-scrolling {
   height: 100dvh;
   overflow: hidden;
 }
+
+
+
+/*# sourceMappingURL=shop.css.map */
