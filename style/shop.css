@@ -233,10 +233,6 @@
       text-transform: capitalize;
       font-size: 1.5rem;
     }
-
-    #paypal-button-container {
-      /* margin-top: var(--mobile); */
-    }
   }
 }
 
