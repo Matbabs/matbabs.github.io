@@ -751,7 +751,6 @@ section {
 }
 
 #partners .others {
-  /* margin-top: calc(var(--spacer) * 2); */
   margin: auto;
   width: 80%;
   display: flex;
@@ -768,7 +767,6 @@ section {
 #partners .others *:hover {
   transition: all 250ms;
   transform: scale(1.05);
-  cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {
