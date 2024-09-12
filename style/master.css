@@ -109,6 +109,9 @@ section {
   text-transform: uppercase;
   box-shadow: 0px 0px 15px -5px var(--dark);
   transition: all 250ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   pointer-events: none;
   padding-top: 1.5rem;
@@ -197,6 +200,9 @@ section {
   }
 
   a {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     pointer-events: all;
     color: var(--light) !important;
@@ -206,6 +212,9 @@ section {
 @media screen and (max-width: 1000px) {
   #navBar {
     a {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
       user-select: none;
       pointer-events: none;
       opacity: 0;
@@ -268,6 +277,7 @@ section {
     position: absolute;
     width: 100%;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
     opacity: 0.3;
   }
@@ -515,6 +525,7 @@ section {
       width: 100%;
       height: 100%;
       min-height: 400px;
+      -o-object-fit: cover;
       object-fit: cover;
       border-radius: var(--radius);
       transition: all 250ms;
@@ -526,6 +537,7 @@ section {
       width: 100%;
       height: 100%;
       min-height: 400px;
+      -o-object-fit: cover;
       object-fit: cover;
       border-radius: var(--radius);
       transition: all 250ms;
@@ -868,6 +880,7 @@ section {
   .dv {
     max-width: 350px;
     width: 100%;
+    -webkit-filter: grayscale(1);
     filter: grayscale(1);
     transition: all 100ms;
     font-size: 0;
@@ -878,6 +891,7 @@ section {
   }
 
   .dv:hover {
+    -webkit-filter: grayscale(0);
     filter: grayscale(0);
   }
 
