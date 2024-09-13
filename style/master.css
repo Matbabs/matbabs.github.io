@@ -681,31 +681,31 @@ section {
 }
 
 .layout .bg1 {
-  background-image: url(../assets/bg1.jpeg);
+  background-image: url(../assets/bg1.jpeg.webp);
 }
 
 .layout .bg2 {
-  background-image: url(../assets/bg2.jpeg);
+  background-image: url(../assets/bg2.jpeg.webp);
 }
 
 .layout .bg3 {
-  background-image: url(../assets/t2s.jpeg);
+  background-image: url(../assets/t2s.jpeg.webp);
 }
 
 .layout .bg4 {
-  background-image: url(../assets/t2s3.jpeg);
+  background-image: url(../assets/t2s3.jpeg.webp);
 }
 
 .layout .bg5 {
-  background-image: url(../assets/t2s4.jpeg);
+  background-image: url(../assets/t2s4.jpeg.webp);
 }
 
 .layout .bg6 {
-  background-image: url(../assets/t2s2.jpeg);
+  background-image: url(../assets/t2s2.jpeg.webp);
 }
 
 .layout .bg7 {
-  background-image: url(../assets/t2s5.jpeg);
+  background-image: url(../assets/t2s5.jpeg.webp);
 }
 
 @media screen and (max-width: 1000px) {
