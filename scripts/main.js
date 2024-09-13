@@ -2,6 +2,11 @@ let navBar = document.getElementById("navBar");
 let menu = document.getElementById("hamburger");
 let menuIsOpen = false;
 let isShop = String(window.location.href).includes("shop");
+let cursor = document.getElementById("cursor");
+
+function activateNavBarTransition(isShop) {
+  navBar.style.transition = isShop ? "none" : "all 250ms";
+}
 
 function displayNavBar(condition) {
   navBar.style.opacity = condition ? "100" : "0";
@@ -20,6 +25,12 @@ function waitForInstagramIframe() {
       clearInterval(interval);
     }
   }, 1);
+}
+
+function displayCursor(event) {
+  cursor.style.left = `${event.clientX + window.scrollX}px`;
+  cursor.style.top = `${event.clientY + window.scrollY}px`;
+  cursor.style.transform = "translate(-50%, -50%)";
 }
 
 window.addEventListener("scroll", () => {
@@ -49,5 +60,9 @@ menu.addEventListener("click", () => {
   }
 });
 
+document.onmousemove = displayCursor;
+document.onscroll = displayCursor;
+
+activateNavBarTransition(isShop);
 displayNavBar(isShop);
 waitForInstagramIframe();
