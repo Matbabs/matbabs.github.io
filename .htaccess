@@ -1,1 +1,7 @@
-DirectoryIndex index.html
+<filesmatch "\.(html|css|js)$">
+    FileETag None
+    Header unset ETag
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+</filesmatch>
