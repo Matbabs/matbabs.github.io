@@ -1,0 +1,764 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plaintel Aventure | Trail de Plaintel du 11 Novembre</title>
+    <link rel="stylesheet" href="style/master.css?v=v3.2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <h1 hidden>trail de plaintel - édition 2024</h1>
+    <section id="home">
+        <nav>
+            <a href="#"><img src="./assets/logo-n.png" alt="" /></a>
+            <div id="toggle" onclick="toggleMenu()">
+                <i id="toggle-icon" class="fa-sharp fa-solid fa-bars"></i>
+            </div>
+            <div class="skew"></div>
+            <div class="links" onclick="toggleMenu()">
+                <a href="#trail">
+                    <span>le trail</span>
+                    <i class="fa-solid fa-person-running"></i>
+                </a>
+                <a href="#club">
+                    <span>le club</span>
+                    <i class="fa-solid fa-people-group"></i>
+                </a>
+                <a href="#partners">
+                    <span>nos partenaires</span>
+                    <i class="fa-solid fa-handshake"></i>
+                </a>
+                <a href="#contacts">
+                    <span>contacts</span>
+                    <i class="fa-solid fa-address-book"></i>
+                </a>
+            </div>
+        </nav>
+        <video autoplay muted loop id="teaser">
+            <source src="./assets/teaser.mp4" type="video/mp4" />
+        </video>
+        <div class="title">
+            <a href="#"><img src="./assets/logo-n.png" height="250" alt="" /></a>
+            <!-- <h1 class="primary">plaintel</h1>
+            <h1 class="secondary">aventure</h1> -->
+            <a href="#trail">
+                <div class="event">
+                    <div class="subtitle">trail du 11 novembre</div>
+                </div>
+            </a>
+            <!-- <div class="warning">
+                <i class="fa-solid fa-warning"></i>
+                <span>Nouveau lieu de départ à l'espace Océane</span>
+            </div> -->
+        </div>
+        <div id="camo"></div>
+    </section>
+    <section id="trail">
+        <div class="title">
+            <div class="skew"></div>
+            <h1>
+                le trail du 11 novembre <i class="fa-solid fa-person-running"></i>
+            </h1>
+        </div>
+        <div class="content">
+            <div>
+                <div class="card">
+                    <div class="first">
+                        <h2>12 km</h2>
+                        <span class="d">270m D+</span>
+                        <span class="ravitos">1 ravito liquides/solides
+                            </br> au km 6
+                        </span>
+                        <span class="start-time">Départ à 10h00</span>
+                        <span class="runners">
+                            580 coureurs
+                            <i class="fa-solid fa-person-running"></i>
+                        </span>
+                        <span class="price">12 €</span>
+
+                    </div>
+                    <div class="secondary">
+                        <div class="bg-img trail1"></div>
+                        <p>
+                            Départ en direction du Bois Départemental des Mauriers. Vous y courrez au rythme des
+                            feuilles qui craquent sous les pieds et des légendes qui enchantent le Rocher Margot devant
+                            lequel vous passerez. Passage de sapinières, de sous-bois... Une chose est assurée, vous n’y
+                            verrez pas le temps passer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <div class="first">
+                        <h2>25 km</h2>
+                        <span class="d">730m D+</span>
+                        <span class="ravitos">2 ravitos liquides/solides
+                            </br>aux kms 11 et 19</span>
+                        <span class="start-time">Départ à 9h30</span>
+                        <span class="runners">
+                            370 coureurs
+                            <i class="fa-solid fa-person-running"></i>
+                        </span>
+                        <span class="price">17 €</span>
+
+                    </div>
+                    <div class="secondary">
+                        <div class="bg-img trail2"></div>
+                        <p>
+                            Le départ sera donné en direction du fascinant site des Chaos du Gouët. Vous parcourrez
+                            alors quelques kilomètres au rythme de l’eau qui file entre les chaos granitiques. Vous
+                            pourrez également y découvrir quelques moulins réhabilités. La seconde partie du parcours
+                            dans le Bois Départemental des Mauriers vous emmènera dans un tout autre paysage. Sous-bois,
+                            sapinières, site légendaire du Rocher Margot… : une chose est sûre, vous n’allez pas vous
+                            ennuyer avec tous ces paysages diversifiés.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <div class="first">
+                        <h2>42 km</h2>
+                        <span class="d">1350m D+</span>
+                        <span class="ravitos">
+                            4 ravitos liquides/solides
+                            </br> aux kms 13, 22, 31 et 37
+                        </span>
+                        <span class="start-time">Départ à 7h15</span>
+                        <span class="runners">
+                            250 coureurs
+                            <i class="fa-solid fa-person-running"></i>
+                        </span>
+                        <span class="price">28 €</span>
+
+                    </div>
+                    <div class="secondary">
+                        <div class="bg-img trail3"></div>
+                        <p>
+                            Départ de nuit en direction du sud de la commune. Le jour se lèvera tranquillement pendant
+                            que vous arpentez différents sous-bois et sapinières. Après un passage devant la Roche
+                            Gourmelle, vous rejoindrez le fascinant site des Chaos du Gouët. Cette vallée en bord de
+                            rivière sera aussi technique que mystérieuse en raison de son caractère granitique. Enfin,
+                            vous terminerez cette belle balade par le Bois Départemental des Mauriers qui vous laissera
+                            également une impression mystique lors du passage devant le Rocher Margot. Encore quelques
+                            efforts dans les sous-bois, le tapis rouge n’est plus très loin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <div class="first-only">
+                        <h2>2 circuits marche</h2>
+                        <span class="d">7 et 11 KM</span>
+                        <span class="ravitos">Départ à partir de 9H00</span>
+                        <span class="runners"> Espace Océane </span>
+                        <span class="price">Inscription sur place</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="associations">
+            "1€ par dossard sera reversé à des associations"
+        </div>
+        <div class="inscription">
+            <div class="skew"><a target="_blank"
+                    href="https://www.klikego.com/inscription/trail-de-plaintel-2024/course-a-pied-running/1504312553265-8"><button>s'inscrire</button></a>
+            </div>
+        </div>
+        <!-- <div class="charts">
+            <div class="chart">
+                <canvas id="chart_12"></canvas>
+            </div>
+            <div class="chart">
+                <canvas id="chart_25"></canvas>
+            </div>
+            <div class="chart">
+                <canvas id="chart_42"></canvas>
+            </div>
+        </div> -->
+        <div class="mandatory">
+            <div class="mand-item">
+                <i class="fa-solid fa-shoe-prints"></i>
+                <span class="mand-span">chaussures de trail</span>
+                <span>CONSEILLÉES</span>
+                <br>
+            </div>
+            <div class="mand-item">
+                <i class="fa-solid fa-glass-water-droplet"></i>
+                <span class="mand-span">Gobelet | Flasque | CamelBack</span>
+                <span>OBLIGATOIRE sur toutes les distances</span>
+                <p>Pas de gobelet sur les ravitos !</p>
+            </div>
+            <div class="mand-item">
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <span class="mand-span">Lampe Frontale</span>
+                <span>OBLIGATOIRE uniquement sur le 42km</span>
+                <br>
+            </div>
+        </div>
+        <div class="faq">
+            <h2>FAQ - Avant la course</h2>
+            <div class="question-container">
+                <div class="question-title">
+                    <span class="question-icon closed">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                    <span class="question-icon opened">
+                        <i class="fa-solid fa-minus"></i>
+                    </span>
+                    <span>Y a-t-il une bourse aux dossards?</span>
+                </div>
+                <div class="question-content">
+                    Oui, une bourse aux dossards est en place sur klikego.
+                </div>
+            </div>
+            <div class="question-container">
+                <div class="question-title">
+                    <span class="question-icon closed">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                    <span class="question-icon opened">
+                        <i class="fa-solid fa-minus"></i>
+                    </span>
+                    <span>Où et quand a lieu le retrait des dossards?</span>
+                </div>
+                <div class="question-content">
+                    Le retrait des dossards s'effectue le matin même, sur le lieu de départ des courses (espace Océane).
+                </div>
+            </div>
+            <div class="question-container">
+                <div class="question-title">
+                    <span class="question-icon closed">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                    <span class="question-icon opened">
+                        <i class="fa-solid fa-minus"></i>
+                    </span>
+                    <span>Où est-il possible de se loger?</span>
+                </div>
+                <div class="question-content">
+                    3 chambres d'hôte sur le parcours vous sont réservées chez "les chambres de Laurence".
+                    Dans le cadre du trail, la chambre double vous est proposée à 43 euros avec petit-déjeuner offert.
+                    En plus, Loic le propriétaire est utra-traileur, finisher de la diagonale des fous et de la Volvic
+                    Race.
+                    Vous recevrez tous ses bons conseils en terme de course. N'hésitez pas à lui demander. Vous pouvez
+                    contacter Laurence au 06-30-55-02-63
+                    ou par mail loiclaurence52@free.fr
+                </div>
+            </div>
+        </div>
+        <div class="faq">
+            <h2>FAQ - La course</h2>
+            <div class="question-container">
+                <div class="question-title">
+                    <span class="question-icon closed">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                    <span class="question-icon opened">
+                        <i class="fa-solid fa-minus"></i>
+                    </span>
+                    <span>Où se situe le départ de la course ?</span>
+                </div>
+                <div class="question-content">
+                    Le départ des courses se fait sur l'espace Océane.
+                </div>
+            </div>
+            <div class="question-container">
+                <div class="question-title">
+                    <span class="question-icon closed">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                    <span class="question-icon opened">
+                        <i class="fa-solid fa-minus"></i>
+                    </span>
+                    <span>
+                        Quels sont les points de passage où les accompagnateurs peuvent
+                        voir les coureurs ?
+                    </span>
+                </div>
+                <div class="question-content">
+                    <ul>
+                        <li>- 42km : Départ, Sébastopol, Raussan (Vers la Roche Gourmelle), La Gare (commune
+                            de Plaintel) , La Saudraie (commune de Plaintel/ ravito 4), arrivée </li>
+                        <li>- 25km : Départ, La Gare (commune de Plaintel), La Saudraie (commune de Plaintel/ Ravito 2),
+                            Arrivée </li>
+                        <li>- 12km : Départ ou La Noé Morvue, Boulé d'en bas (Attention à seulement 2km de l'arrivée),
+                            Arrivée</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="question-container">
+                <div class="question-title">
+                    <span class="question-icon closed">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                    <span class="question-icon opened">
+                        <i class="fa-solid fa-minus"></i>
+                    </span>
+                    <span>De quoi sont constitués les ravitos sur la course ?</span>
+                </div>
+                <div class="question-content ravito">
+                    <span>- Ravito n°1 ( km 13 du 42) :
+                        Liquide : eau, boisson cola </span>
+                    <span>- Ravito n°2 ( km 22 du 42) :
+                        Liquide : eau plate et gazeuse, boisson cola / Solide : bananes, biscuits salés, saucissons,
+                        fromage, abricots secs, chocolat, orange et pomme </span>
+                    <span>- Ravito n°3 ( km 11 du 25 et km 31 du 42) :
+                        Idem que pour le n°2 + pain d'épices </span>
+                    <sapn>- Ravito n°4 ( km 6 du 12, km 19 du 25 et km 37 du 42) :
+                        Idem que pour le n°3</sapn>
+                </div>
+            </div>
+            <div class="question-container">
+                <div class="question-title">
+                    <span class="question-icon closed">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                    <span class="question-icon opened">
+                        <i class="fa-solid fa-minus"></i>
+                    </span>
+                    <span>Y a-t-il des barrières horaires ?</span>
+                </div>
+                <div class="question-content">
+                    Il y a uniquement une barrière horaire pour le parcours de 42 km.
+                    Cette dernière est fixée à 5h15 au 36ème kilomètre.
+                </div>
+            </div>
+            <div class="question-container">
+                <div class="question-title">
+                    <span class="question-icon closed">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                    <span class="question-icon opened">
+                        <i class="fa-solid fa-minus"></i>
+                    </span>
+                    <span>Est-il possible d'avoir une assistance sur la course ?</span>
+                </div>
+                <div class="question-content">
+                    L'assistance n'est pas interdite sur la course.
+                </div>
+            </div>
+            <div class="question-container">
+                <div class="question-title">
+                    <span class="question-icon closed">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                    <span class="question-icon opened">
+                        <i class="fa-solid fa-minus"></i>
+                    </span>
+                    <span>Quel matériel est obligatoire ?</span>
+                </div>
+                <div class="question-content">
+                    Le gobelet est obligatoire, il n'y en aura pas sur les ravitos. Les chaussures de trail sont
+                    également vivement recommandées. La lampe frontale est également obligatoire pour le 42km.
+                </div>
+            </div>
+        </div>
+        <div class="faq">
+            <h2>FAQ - L'après course</h2>
+            <div class="question-container">
+                <div class="question-title">
+                    <span class="question-icon closed">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                    <span class="question-icon opened">
+                        <i class="fa-solid fa-minus"></i>
+                    </span>
+                    <span>Y a-t-il de la restauration sur place ?</span>
+                </div>
+                <div class="question-content">
+                    Un food truck vous proposera des crêpes et des galettes sur le site de départ/arrivée
+                </div>
+            </div>
+            <div class="question-container">
+                <div class="question-title">
+                    <span class="question-icon closed">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                    <span class="question-icon opened">
+                        <i class="fa-solid fa-minus"></i>
+                    </span>
+                    <span>Les premiers de chaque catégorie sont-ils récompensés ?</span>
+                </div>
+                <div class="question-content">
+                    Seuls les trois premiers hommes et les trois premières femmes
+                    de chaque course sont récompensés.
+                </div>
+            </div>
+            <div class="question-container">
+                <div class="question-title">
+                    <span class="question-icon closed">
+                        <i class="fa-solid fa-plus"></i>
+                    </span>
+                    <span class="question-icon opened">
+                        <i class="fa-solid fa-minus"></i>
+                    </span>
+                    <span> Des douches sont-elles mises à disposition ?</span>
+                </div>
+                <div class="question-content">
+                    Oui des douches seront à disposition sur le site du départ. (espace Océane)
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="separator"></div>
+    <section id="club">
+        <div class="title">
+            <div class="skew"></div>
+            <h1>le club <i class="fa-solid fa-people-group"></i></h1>
+        </div>
+        <div class="content">
+            <div class="about">
+                <h2>A propos</h2>
+                <p>
+                    En tant que club de trail des Côtes d'Armor, nous accueillons des
+                    sportifs amateurs partageant la même passion. Notre principal
+                    objectif est de prendre du plaisir ensemble, tout en gardant notre
+                    esprit compétitif. Lors de nos sorties en groupe, notre devise est
+                    simple : nous partons ensemble, nous rentrons ensemble. Nous
+                    valorisons l'esprit d'équipe et l'entraide sur les sentiers.
+                </p>
+                <p>
+                    Rejoignez-nous pour vivre des expériences trail enrichissantes, où
+                    l'importance est accordé à l'esprit de camaraderie. Au sein de notre
+                    club, vous trouverez un environnement chaleureux où échanger des
+                    conseils précieux et créer des souvenirs mémorables.
+                </p>
+                <p>A bientôt sur les sentiers Plaintelais !</p>
+                <div class="more">
+                    <span>Adhésion annuelle: 25€</span>
+                    <span>
+                        Des événements annuels sont programmés à l'extérieur, tels que la
+                        Maxi-Race, Brocéliande, les Templiers, et bien d'autres encore...
+                    </span>
+                </div>
+                <img id="jersey" src="./assets/jersey.png" alt="">
+            </div>
+            <div class="map">
+                <img src="./assets/breizh.png" alt="" />
+                <span id="stb">Saint-Brieuc</span>
+                <div class="dot" id="stb-dot"></div>
+                <span id="plt">Plaintel</span>
+                <div class="dot" id="plt-dot"></div>
+            </div>
+            <div class="program">
+                <h2>Programme de la semaine</h2>
+                <p>
+                    <span class="day">Lundi</span>
+                    <span>18h30 sortie 1h</span>
+                </p>
+                <p>
+                    <span class="day">Jeudi</span>
+                    <span>18h30 sortie 1h </span>
+                </p>
+                <p>
+                    <span class="day">Dimanche</span>
+                    <span>Sortie longue selon communication interne </span>
+                    <span>9h30 sortie d’environ 12 km </span>
+                </p>
+                <p>Des séances de fractionné sont également proposées</p>
+                <hr />
+                <span>Départ des sorties : Champ de Foire</span>
+                <span>
+                    N’hésitez pas à venir découvrir l’association lors d’une ou
+                    plusieurs sorties. Nous sommes également présents au forum des association de Plaintel.
+                </span>
+            </div>
+        </div>
+    </section>
+    <section id="partners">
+        <div class="title">
+            <div class="skew"></div>
+            <h1>nos partenaires <i class="fa-solid fa-handshake"></i></h1>
+        </div>
+        <div class="content">
+            <img src="./assets/run-avenutre.jpg" alt="" />
+            <img src="./assets/cpi.jpg" alt="" />
+            <img src="./assets/rouault.png" alt="" />
+            <img src="./assets/maxi-race.jpg" alt="" />
+            <img src="./assets/plaintel.jpg" alt="" />
+        </div>
+    </section>
+    <section id="actu">
+        <blockquote
+            class="instagram-media"
+            data-instgrm-permalink="https://www.instagram.com/plaintel_aventure/"
+            data-instgrm-version="12"
+            style="
+              background: #fff;
+              border: 0;
+              border-radius: 3px;
+              box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5),
+                0 1px 10px 0 rgba(0, 0, 0, 0.15);
+              margin: 1px;
+              max-width: 540px;
+              min-width: 326px;
+              padding: 0;
+              width: 99.375%;
+              max-height: 100%;
+            ">
+            <div style="padding: 16px">
+              <a
+                id="main_link"
+                href="plaintel_aventure/"
+                style="
+                  background: #ffffff;
+                  line-height: 0;
+                  padding: 0 0;
+                  text-align: center;
+                  text-decoration: none;
+                  width: 100%;
+                "
+                target="_blank">
+                <div
+                  style="display: flex; flex-direction: row; align-items: center">
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 50%;
+                      flex-grow: 0;
+                      height: 40px;
+                      margin-right: 14px;
+                      width: 40px;
+                    "></div>
+                  <div
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      flex-grow: 1;
+                      justify-content: center;
+                    ">
+                    <div
+                      style="
+                        background-color: #f4f4f4;
+                        border-radius: 4px;
+                        flex-grow: 0;
+                        height: 14px;
+                        margin-bottom: 6px;
+                        width: 100px;
+                      "></div>
+                    <div
+                      style="
+                        background-color: #f4f4f4;
+                        border-radius: 4px;
+                        flex-grow: 0;
+                        height: 14px;
+                        width: 60px;
+                      "></div>
+                  </div>
+                </div>
+                <div style="padding: 19% 0"></div>
+                <div
+                  style="
+                    display: block;
+                    height: 50px;
+                    margin: 0 auto 12px;
+                    width: 50px;
+                  ">
+                  <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1">
+                    <g
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd">
+                      <g
+                        transform="translate(-511.000000, -20.000000)"
+                        fill="#000000">
+                        <g>
+                          <path
+                            d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div style="padding-top: 8px">
+                  <div
+                    style="
+                      color: #DD262B;
+                      font-family: Arial, sans-serif;
+                      font-size: 14px;
+                      font-style: normal;
+                      font-weight: 550;
+                      line-height: 18px;
+                    ">
+                    View this post on Instagram
+                  </div>
+                </div>
+                <div style="padding: 12.5% 0"></div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 14px;
+                    align-items: center;
+                  ">
+                  <div>
+                    <div
+                      style="
+                        background-color: #f4f4f4;
+                        border-radius: 50%;
+                        height: 12.5px;
+                        width: 12.5px;
+                        transform: translateX(0px) translateY(7px);
+                      "></div>
+                    <div
+                      style="
+                        background-color: #f4f4f4;
+                        height: 12.5px;
+                        transform: rotate(-45deg) translateX(3px) translateY(1px);
+                        width: 12.5px;
+                        flex-grow: 0;
+                        margin-right: 14px;
+                        margin-left: 2px;
+                      "></div>
+                    <div
+                      style="
+                        background-color: #f4f4f4;
+                        border-radius: 50%;
+                        height: 12.5px;
+                        width: 12.5px;
+                        transform: translateX(9px) translateY(-18px);
+                      "></div>
+                  </div>
+                  <div style="margin-left: 8px">
+                    <div
+                      style="
+                        background-color: #f4f4f4;
+                        border-radius: 50%;
+                        flex-grow: 0;
+                        height: 20px;
+                        width: 20px;
+                      "></div>
+                    <div
+                      style="
+                        width: 0;
+                        height: 0;
+                        border-top: 2px solid transparent;
+                        border-left: 6px solid #f4f4f4;
+                        border-bottom: 2px solid transparent;
+                        transform: translateX(16px) translateY(-4px) rotate(30deg);
+                      "></div>
+                  </div>
+                  <div style="margin-left: auto">
+                    <div
+                      style="
+                        width: 0px;
+                        border-top: 8px solid #f4f4f4;
+                        border-right: 8px solid transparent;
+                        transform: translateY(16px);
+                      "></div>
+                    <div
+                      style="
+                        background-color: #f4f4f4;
+                        flex-grow: 0;
+                        height: 12px;
+                        width: 16px;
+                        transform: translateY(-4px);
+                      "></div>
+                    <div
+                      style="
+                        width: 0;
+                        height: 0;
+                        border-top: 8px solid #f4f4f4;
+                        border-left: 8px solid transparent;
+                        transform: translateY(-4px) translateX(8px);
+                      "></div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    justify-content: center;
+                    margin-bottom: 24px;
+                  ">
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 4px;
+                      flex-grow: 0;
+                      height: 14px;
+                      margin-bottom: 6px;
+                      width: 224px;
+                    "></div>
+                  <div
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 4px;
+                      flex-grow: 0;
+                      height: 14px;
+                      width: 144px;
+                    "></div>
+                </div>
+              </a>
+              <p
+                style="
+                  color: #c9c8cd;
+                  font-family: Arial, sans-serif;
+                  font-size: 14px;
+                  line-height: 17px;
+                  margin-bottom: 0;
+                  margin-top: 8px;
+                  overflow: hidden;
+                  padding: 8px 0 7px;
+                  text-align: center;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                ">
+                <a
+                  href="plaintel_aventure/"
+                  style="
+                    color: #c9c8cd;
+                    font-family: Arial, sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: normal;
+                    line-height: 17px;
+                    text-decoration: none;
+                  "
+                  target="_blank">Shared post</a>
+              </p>
+            </div>
+          </blockquote>
+    </section>
+    <section id="contacts">
+        <div class="background"></div>
+        <div class="content">
+            <div class="banner">
+                <h2>TENEZ-VOUS INFORMÉ DES PROCHAINES SESSIONS & Actualités</h2>
+                <hr />
+                <span>Plaintel Aventure vous informe sur les réseaux sociaux</span>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100057047937204">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/plaintel_aventure/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.strava.com/clubs/1073853">
+                    <i class="fa-brands fa-strava"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="eco">
+        Notre site web a été conçu avec soin pour offrir une expérience optimale
+        ⚡, respectueuse de l'environnement 🌱 et accessible à tous !
+    </section>
+    <script src="./scripts/script.js?v=v3.2"></script>
+    <script src="./scripts/camo.js?v=v3.2"></script>
+    <script src="https://www.instagram.com/embed.js"></script>
+</body>
+
+</html>
