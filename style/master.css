@@ -245,7 +245,6 @@ h2 {
 
 #home h1 {
   text-transform: uppercase;
-  text-shadow: 0px 0px 5px var(--black);
   text-align: center;
   font-family: shrapnel;
   font-size: 5rem;
@@ -305,7 +304,6 @@ h2 {
   padding-left: calc(var(--spacing) * 2);
   padding-right: calc(var(--spacing) * 2);
   transform: skew(-30deg);
-  box-shadow: 0px 5px 10px var(--black);
 }
 
 #home .event .subtitle {
