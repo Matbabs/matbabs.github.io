@@ -1,7 +1,8 @@
 const COLORED_CUBE_SIZE = 8;
 const RED_YELLOW_TRESHOLD = 0.7;
-const MASK_COVER_FACTOR = 10;
-const MASK_COVER_ROTATION = 35;
+const MASK_COVER_FACTOR_WIDTH = 1;
+const MASK_COVER_FACTOR_HEIGHT = 7;
+const MASK_COVER_ROTATION = 30;
 const BLACK_CUBE_SIZE = 16;
 const BLACK_TRESHOLD = 0.6;
 
@@ -31,8 +32,8 @@ for (let x = 0; x < camo.clientWidth / COLORED_CUBE_SIZE; x++) {
 }
 camo.appendChild(fragment);
 let mask = document.createElement("div");
-mask.style.width = `${camo.clientWidth * MASK_COVER_FACTOR}px`;
-mask.style.height = `${camo.clientHeight * MASK_COVER_FACTOR}px`;
+mask.style.width = `${camo.clientWidth * MASK_COVER_FACTOR_WIDTH}px`;
+mask.style.height = `${camo.clientHeight * MASK_COVER_FACTOR_HEIGHT}px`;
 mask.style.position = "absolute";
 mask.style.transform = `rotate(${MASK_COVER_ROTATION}deg)`;
 camo.append(mask);

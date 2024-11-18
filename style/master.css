@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: "shrapnel";
+  src: url(../assets/Shrapnel.otf);
+}
+
 :root {
   --red: #DD262B;
   --yellow: #FFD004;
@@ -25,7 +32,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto";
   width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -233,13 +240,24 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing);
+  gap: calc(var(--spacing) * 2);
 }
 
 #home h1 {
   text-transform: uppercase;
-  text-shadow: 0px 0px 10px var(--black);
+  text-shadow: 0px 0px 5px var(--black);
   text-align: center;
+  font-family: shrapnel;
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+#home h1 .prim {
+  color: var(--yellow);
+}
+
+#home h1 .sub {
+  color: var(--red)
 }
 
 #home h1.primary {
@@ -283,9 +301,9 @@ h2 {
 
 #home .event {
   background: var(--red);
-  padding: var(--spacing);
-  padding-left: calc(var(--spacing) * 4);
-  padding-right: calc(var(--spacing) * 4);
+  padding: calc(var(--spacing) / 2);
+  padding-left: calc(var(--spacing) * 2);
+  padding-right: calc(var(--spacing) * 2);
   transform: skew(-30deg);
   box-shadow: 0px 5px 10px var(--black);
 }
@@ -295,13 +313,23 @@ h2 {
   text-shadow: none;
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 900;
   transition: all var(--transition);
 }
 
 #home .event:hover .subtitle {
-  font-size: 1.6rem;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  #home .event .subtitle {
+    font-size: 1.8rem;
+  }
+
+  #home .event:hover .subtitle {
+    font-size: 1.9rem;
+  }
 }
 
 #trail .content {
@@ -514,6 +542,7 @@ h2 {
 }
 
 #trail .mandatory {
+  padding: var(--spacing);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -536,6 +565,13 @@ h2 {
   background: var(--grey-darker);
 }
 
+@media screen and (max-width: 1000px) {
+  #trail .mandatory .mand-item {
+    min-width: 0px;
+    width: 100%;
+  }
+}
+
 #trail .mandatory i {
   font-size: 3rem;
 }
@@ -545,16 +581,12 @@ h2 {
   font-weight: bold;
 }
 
-#trail .faq * {
-  color: var(--white);
-}
-
 #trail .faq {
   background: var(--grey-darker);
   margin: var(--spacing);
   padding: var(--spacing);
   border-radius: var(--radius);
-  color: var(--grey-darker);
+  color: var(--white);
 }
 
 #trail .faq .question-container {
@@ -614,6 +646,57 @@ h2 {
   overflow-y: auto;
 }
 
+#trail .phototheque {
+  margin: calc(var(--spacing));
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+#trail .phototheque .grid {
+  background: var(--yellow);
+  width: 100%;
+  height: 30rem;
+  display: grid;
+  border-radius: var(--radius);
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+
+@media screen and (max-width: 1000px) {
+  #trail .phototheque .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+#trail .phototheque .grid div {
+  background: url(../assets/start.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#trail .phototheque .grid .s2 {
+  background-image: url(../assets/start2.jpg);
+}
+
+#trail .phototheque .grid .r1 {
+  background-image: url(../assets/run.jpg);
+}
+
+#trail .phototheque .grid .r2 {
+  background-image: url(../assets/run2.jpg);
+}
+
+#trail .phototheque .grid .f1 {
+  background-image: url(../assets/finish.jpg);
+}
+
+#trail .phototheque .grid .f2 {
+  background-image: url(../assets/finish2.jpg);
+}
+
 #club {
   background: var(--black);
   color: var(--white);
@@ -664,6 +747,12 @@ h2 {
 #club #jersey {
   width: 60%;
   margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+  #club #jersey {
+    width: 100%;
+  }
 }
 
 #club .map {
@@ -838,6 +927,21 @@ h2 {
   gap: calc(var(--spacing) * 4);
   justify-content: center;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+
+  #contacts .content {
+    padding: var(--spacing);
+  }
+
+  #contacts .content .banner {
+    width: 100%;
+  }
+
+  #contacts .content .social {
+    gap: var(--spacing);
+  }
 }
 
 #contacts .content .social a {
