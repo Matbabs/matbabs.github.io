@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --SPACING: 1.5rem;
+    --RADIUS: 15px;
+    --GAP: 1rem;
+    --BORDER_WIDTH: 3px;
+    --PRIMARY: #FFC000;
+    --PRIMARY_FLAT: #ffc0001a;
+    --PRIMARY_SHADOW: #ffc0004d;
+    --SECONDARY: #7f5d00;
+    --DARK: #1A0F2B;
+    --DARK_FLAT: #1a0f2b0a;
+    --SHADOW_COLOR: #80808026;
+    --YELLOW: #FFCC32;
+    --DARK_YELLOW: #7f5d00;
+    --ORANGE: #f57235;
+    --GREEN: #7CB342;
+    --DARK_GREEN: #336300;
+    --BLUE: #1976D2;
+    --DARK_BLUE: #00386d;
+    --RED: #F44336;
+    --DARK_RED: #630600;
+    --BLACK: #424242;
+    --DARK_BLACK: #c6c6c6;
+    --PINK: #ffb5f5;
+    --PURPLE: #C27BA0;
+}
+
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    background-color: var(--DARK);
+    color: white;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+body {
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+
+h3 {
+    font-size: 1.25rem;
+}
+
+#navbar {
+    padding-top: var(--SPACING);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar img {
+    height: 50px;
+}
+
+#navbar span {
+    border: solid 1px white;
+    padding: var(--GAP);
+    border-radius: var(--RADIUS);
+}
+
+#content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#content #head {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--SPACING);
+}
+
+#content #head h1 span {
+    color: var(--PRIMARY);
+}
+
+#content #phone img {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
+    border-radius: var(--RADIUS);
+    border: solid 1px white;
+}
+
+#content #downloads {
+    display: flex;
+    gap: var(--SPACING);
+}
+
+#content #downloads button {
+    background: none;
+    padding: var(--SPACING);
+    border-radius: var(--RADIUS);
+    border: solid 1px white;
+    color: white;
+    display: flex;
+    gap: var(--GAP);
+    justify-content: center;
+    align-items: center;
+
+    transition: all 250ms;
+}
+
+#content #downloads button img {
+    height: 30px;
+}
+
+#content #downloads button:hover {
+    cursor: pointer;
+    color: var(--YELLOW);
+    border: solid 1px var(--PRIMARY);
+}
+
+#footer {
+    padding-bottom: var(--SPACING);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #content #phone img {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    #navbar h2 {
+        display: none;
+    }
+
+    #content {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--SPACING);
+        padding: var(--SPACING);
+    }
+
+    #content #head {
+        width: 100%;
+        align-items: center;
+    }
+
+    #footer h3 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #navbar {
+        flex-direction: column;
+        gap: var(--SPACING);
+    }
+
+    #content #downloads {
+        flex-direction: column;
+        width: 100%;
+    }
+}
