@@ -1,39 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
     --SPACING: 1.5rem;
     --RADIUS: 15px;
     --GAP: 1rem;
     --BORDER_WIDTH: 3px;
-    --PRIMARY: #FFC000;
+    --PRIMARY: #ffc000;
     --PRIMARY_FLAT: #ffc0001a;
     --PRIMARY_SHADOW: #ffc0004d;
     --SECONDARY: #7f5d00;
-    --DARK: #1A0F2B;
+    --DARK: #1a0f2b;
     --DARK_FLAT: #1a0f2b0a;
     --SHADOW_COLOR: #80808026;
-    --YELLOW: #FFCC32;
+    --YELLOW: #ffcc32;
     --DARK_YELLOW: #7f5d00;
     --ORANGE: #f57235;
-    --GREEN: #7CB342;
+    --GREEN: #7cb342;
     --DARK_GREEN: #336300;
-    --BLUE: #1976D2;
+    --BLUE: #1976d2;
     --DARK_BLUE: #00386d;
-    --RED: #F44336;
+    --RED: #f44336;
     --DARK_RED: #630600;
     --BLACK: #424242;
     --DARK_BLACK: #c6c6c6;
     --PINK: #ffb5f5;
-    --PURPLE: #C27BA0;
+    --PURPLE: #c27ba0;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     background-color: var(--DARK);
     color: white;
@@ -57,7 +60,6 @@ h1 {
 h2 {
     font-size: 2.5rem;
 }
-
 
 h3 {
     font-size: 1.25rem;
@@ -102,10 +104,7 @@ h3 {
 #content #phone img {
     max-width: 100%;
     height: auto;
-    max-height: 600px;
-    object-fit: contain;
-    border-radius: var(--RADIUS);
-    border: solid 1px white;
+    max-height: 700px;
 }
 
 #content #downloads {
@@ -123,7 +122,6 @@ h3 {
     gap: var(--GAP);
     justify-content: center;
     align-items: center;
-
     transition: all 250ms;
 }
 
@@ -152,10 +150,6 @@ h3 {
 
     h1 {
         font-size: 2.5rem;
-    }
-
-    #content #phone img {
-        height: 400px;
     }
 }
 
