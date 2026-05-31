@@ -1,193 +1,194 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-    --SPACING: 1.5rem;
-    --RADIUS: 15px;
-    --GAP: 1rem;
-    --BORDER_WIDTH: 3px;
-    --PRIMARY: #ffc000;
-    --PRIMARY_FLAT: #ffc0001a;
-    --PRIMARY_SHADOW: #ffc0004d;
-    --SECONDARY: #7f5d00;
-    --DARK: #1a0f2b;
-    --DARK_FLAT: #1a0f2b0a;
-    --SHADOW_COLOR: #80808026;
-    --YELLOW: #ffcc32;
-    --DARK_YELLOW: #7f5d00;
-    --ORANGE: #f57235;
-    --GREEN: #7cb342;
-    --DARK_GREEN: #336300;
-    --BLUE: #1976d2;
-    --DARK_BLUE: #00386d;
-    --RED: #f44336;
-    --DARK_RED: #630600;
-    --BLACK: #424242;
-    --DARK_BLACK: #c6c6c6;
-    --PINK: #ffb5f5;
-    --PURPLE: #c27ba0;
+  --SPACING: 1.5rem;
+  --RADIUS: 15px;
+  --GAP: 1rem;
+  --BORDER_WIDTH: 3px;
+  --PRIMARY: #ffc000;
+  --PRIMARY_FLAT: #ffc0001a;
+  --PRIMARY_SHADOW: #ffc0004d;
+  --SECONDARY: #7f5d00;
+  --DARK: #1a0f2b;
+  --DARK_FLAT: #1a0f2b0a;
+  --SHADOW_COLOR: #80808026;
+  --YELLOW: #ffcc32;
+  --DARK_YELLOW: #7f5d00;
+  --ORANGE: #f57235;
+  --GREEN: #7cb342;
+  --DARK_GREEN: #336300;
+  --BLUE: #1976d2;
+  --DARK_BLUE: #00386d;
+  --RED: #f44336;
+  --DARK_RED: #630600;
+  --BLACK: #424242;
+  --DARK_BLACK: #c6c6c6;
+  --PINK: #ffb5f5;
+  --PURPLE: #c27ba0;
 }
 
 *,
 ::before,
 ::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    width: 100%;
-    background-color: var(--DARK);
-    color: white;
-    font-family: "Roboto";
-    font-weight: 400;
+  width: 100%;
+  background-color: var(--DARK);
+  color: white;
+  font-family: "Roboto";
+  font-weight: 400;
 }
 
 body {
-    padding-left: 15%;
-    padding-right: 15%;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
 }
 
 h1 {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 h2 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 h3 {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 #navbar {
-    padding-top: var(--SPACING);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding-top: var(--SPACING);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #navbar img {
-    height: 50px;
+  height: 50px;
 }
 
 #navbar span {
-    border: solid 1px white;
-    padding: var(--GAP);
-    border-radius: var(--RADIUS);
+  border: solid 1px white;
+  padding: var(--GAP);
+  border-radius: var(--RADIUS);
 }
 
 #content {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #content #head {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: var(--SPACING);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--SPACING);
 }
 
 #content #head h1 span {
-    color: var(--PRIMARY);
+  color: var(--PRIMARY);
 }
 
 #content #phone img {
-    max-width: 100%;
-    height: auto;
-    max-height: 700px;
+  max-width: 100%;
+  height: auto;
+  max-height: 700px;
 }
 
 #content #downloads {
-    display: flex;
-    gap: var(--SPACING);
+  display: flex;
+  gap: var(--SPACING);
 }
 
-#content #downloads button {
-    background: none;
-    padding: var(--SPACING);
-    border-radius: var(--RADIUS);
-    border: solid 1px white;
-    color: white;
-    display: flex;
-    gap: var(--GAP);
-    justify-content: center;
-    align-items: center;
-    transition: all 250ms;
+#content #downloads a {
+  background: none;
+  padding: var(--SPACING);
+  border-radius: var(--RADIUS);
+  border: solid 1px white;
+  color: white;
+  display: flex;
+  gap: var(--GAP);
+  justify-content: center;
+  align-items: center;
+  transition: all 250ms;
+  text-decoration: none;
 }
 
-#content #downloads button img {
-    height: 30px;
+#content #downloads a img {
+  height: 30px;
 }
 
-#content #downloads button:hover {
-    cursor: pointer;
-    color: var(--YELLOW);
-    border: solid 1px var(--PRIMARY);
+#content #downloads a:hover {
+  cursor: pointer;
+  color: var(--YELLOW);
+  border: solid 1px var(--PRIMARY);
 }
 
 #footer {
-    padding-bottom: var(--SPACING);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding-bottom: var(--SPACING);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 1200px) {
-    body {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
+  body {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 
-    h1 {
-        font-size: 2.5rem;
-    }
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 
 @media screen and (max-width: 990px) {
-    #navbar h2 {
-        display: none;
-    }
+  #navbar h2 {
+    display: none;
+  }
 
-    #content {
-        flex-direction: column;
-        text-align: center;
-        gap: var(--SPACING);
-        padding: var(--SPACING);
-    }
+  #content {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--SPACING);
+    padding: var(--SPACING);
+  }
 
-    #content #head {
-        width: 100%;
-        align-items: center;
-    }
+  #content #head {
+    width: 100%;
+    align-items: center;
+  }
 
-    #footer h3 {
-        text-align: center;
-    }
+  #footer h3 {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    body {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 
-    #navbar {
-        flex-direction: column;
-        gap: var(--SPACING);
-    }
+  #navbar {
+    flex-direction: column;
+    gap: var(--SPACING);
+  }
 
-    #content #downloads {
-        flex-direction: column;
-        width: 100%;
-    }
+  #content #downloads {
+    flex-direction: column;
+    width: 100%;
+  }
 }
