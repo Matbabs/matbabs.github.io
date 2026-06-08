@@ -104,7 +104,9 @@ h3 {
 #content #phone img {
   max-width: 100%;
   height: auto;
-  max-height: 700px;
+  max-height: 600px;
+  overflow: hidden;
+  border-radius: var(--RADIUS);
 }
 
 #content #downloads {
