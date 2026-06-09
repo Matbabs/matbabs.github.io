@@ -147,6 +147,36 @@ h3 {
   align-items: center;
 }
 
+.deletion {
+  margin-top: var(--SPACING);
+  margin-bottom: var(--SPACING);
+  display: flex;
+  flex-direction: column;
+  gap: var(--SPACING);
+}
+
+.tuto-img {
+  overflow: hidden;
+  border-radius: var(--RADIUS);
+  border: solid 6px black;
+  box-shadow: 0px 5px 15px -5px white;
+  max-height: 500px;
+}
+
+.tuto {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: var(--SPACING);
+}
+
+.tuto>* {
+  display: flex;
+  flex-direction: column;
+  gap: var(--GAP);
+  align-items: center;
+}
+
 @media screen and (max-width: 1200px) {
   body {
     padding-left: 10%;
