@@ -141,10 +141,12 @@ h3 {
 }
 
 #footer {
-  padding-bottom: var(--SPACING);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: var(--SPACING);
+  margin-bottom: var(--SPACING);
 }
 
 .deletion {
@@ -175,6 +177,25 @@ h3 {
   flex-direction: column;
   gap: var(--GAP);
   align-items: center;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: var(--SPACING);
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.footer-nav a:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 1200px) {
