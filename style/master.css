@@ -172,7 +172,7 @@ h3 {
   gap: var(--SPACING);
 }
 
-.tuto>* {
+.tuto > * {
   display: flex;
   flex-direction: column;
   gap: var(--GAP);
