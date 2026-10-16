@@ -5,26 +5,26 @@
   --RADIUS: 15px;
   --GAP: 1rem;
   --BORDER_WIDTH: 3px;
-  --PRIMARY: #ffc000;
-  --PRIMARY_FLAT: #ffc0001a;
-  --PRIMARY_SHADOW: #ffc0004d;
+  --PRIMARY: #e8c547;
+  --PRIMARY_FLAT: #e8c5471a;
+  --PRIMARY_SHADOW: #e8c5474d;
   --SECONDARY: #7f5d00;
   --DARK: #1a0f2b;
-  --DARK_FLAT: #1a0f2b0a;
+  --DARK_FLAT: #f2f2f2;
   --SHADOW_COLOR: #80808026;
-  --YELLOW: #ffcc32;
-  --DARK_YELLOW: #7f5d00;
-  --ORANGE: #f57235;
-  --GREEN: #7cb342;
-  --DARK_GREEN: #336300;
-  --BLUE: #1976d2;
-  --DARK_BLUE: #00386d;
-  --RED: #f44336;
-  --DARK_RED: #630600;
-  --BLACK: #424242;
-  --DARK_BLACK: #c6c6c6;
-  --PINK: #ffb5f5;
-  --PURPLE: #c27ba0;
+  --YELLOW: #fbbf24;
+  --DARK_YELLOW: #b45309;
+  --ORANGE: #f97316;
+  --GREEN: #22c55e;
+  --DARK_GREEN: #15803d;
+  --BLUE: #3b82f6;
+  --DARK_BLUE: #1d4ed8;
+  --RED: #ef4444;
+  --DARK_RED: #b91c1c;
+  --BLACK: #1f2937;
+  --DARK_BLACK: #9ca3af;
+  --PINK: #f472b6;
+  --PURPLE: #a855f7;
 }
 
 *,
