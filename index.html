@@ -3,62 +3,135 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A BLOC</title>
+    <title>A BLOC - L'app des sports outdoor</title>
+    <meta
+      name="description"
+      content="Rejoignez la communauté ExploRiders. Signalement en temps réel, carte sociale et entraînements sur mesure pour les sports outdoor."
+    />
     <link rel="stylesheet" href="./style/master.css" />
   </head>
   <body>
-    <div id="navbar">
-      <img src="./assets/AblocBlanc.png" />
-      <h2>A BLOC</h2>
-      <span>L'app des sports outdoor 🇫🇷</span>
-    </div>
-    <div id="content">
-      <div id="head">
-        <h1>Deviens <span>ExploRider</span> 🤙🏼 sans limites !</h1>
-        <p>
-          Les sports outdoor reposent sur une valeur universelle : l'esprit de
-          cordée. Avec A BLOC, la sécurité n'est pas individuelle, elle dépend
-          de la vigilance collective. Chaque pratiquant devient une sentinelle.
-          <br /><br />
-          <strong>Signalement en temps réel :</strong> Alertez la communauté
-          instantanément. Que vous soyez sur votre vélo, en falaise ou sur un
-          sentier de trail, votre alerte peut sauver ceux qui suivent.
-          <br /><br />
-          <strong>Carte sociale vivante :</strong> Visualisez en direct où se
-          trouve la communauté ExploRiders et les zones à risques. <br /><br />
-          <strong>Entraînements sur mesure :</strong> Suivez des cycles conçus
-          pour vos objectifs et votre niveau. Préparation physique spécifique :
-          suspensions et gainage pour l'escalade, renforcement, endurance pour
-          le trail et le vélo. <br /><br />
-          <strong>Assistant IA dédié :</strong> Besoin d'un conseil ou d'un
-          ajustement d'entraînement ? Notre intelligence artificielle répond à
-          toutes vos questions.
-        </p>
-        <div id="downloads">
-          <a href="https://apps.apple.com/us/app/a-bloc/id6746932893">
-            <img src="./assets/apple.png" />
-            <h3>App Store</h3>
-          </a>
-          <a
-            href="https://play.google.com/store/apps/details?id=com.matbabs.coach&hl=fr"
-          >
-            <img src="./assets/play.png" />
-            <h3>Google Play</h3>
-          </a>
+    <div class="container">
+      <nav id="navbar">
+        <div class="logo">
+          <img src="./assets/AblocBlanc.png" alt="A BLOC" />
+          <span class="logo-text">A BLOC</span>
         </div>
-      </div>
-      <div id="phone"><img src="./assets/hp.jpeg" /></div>
-    </div>
-    <div id="footer">
-      <h3>
-        Rejoignez la communauté des ExploRiders et vivez chaque instant A BLOC !
-        🌍
-      </h3>
-      <div class="footer-nav">
-        <a href="assistance.html">Assistance & FAQ</a>
-        <a href="privacy.html">Confidentialité</a>
-        <a href="deletion.html">Suppression de compte</a>
-      </div>
+        <span class="tagline">L'app des sports outdoor 🇫🇷</span>
+      </nav>
+
+      <main id="content">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span>🔔</span>
+            <span>Alerte en temps réel</span>
+          </div>
+
+          <h1 class="hero-title">
+            Deviens <span>ExploRider</span> sans limites !
+          </h1>
+
+          <p class="hero-description">
+            Les sports outdoor reposent sur une valeur universelle : l'esprit de
+            cordée. Avec A BLOC, la sécurité n'est pas individuelle, elle dépend
+            de la vigilance collective. Chaque pratiquant devient une
+            sentinelle.
+          </p>
+
+          <div class="hero-features">
+            <div class="feature-item">
+              <div class="feature-icon">⚡</div>
+              <span class="feature-text"
+                ><strong>Signalement en temps réel</strong> - Alertez la
+                communauté instantanément</span
+              >
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🗺️</div>
+              <span class="feature-text"
+                ><strong>Carte sociale vivante</strong> - Visualisez la
+                communauté et les zones à risques</span
+              >
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">💪</div>
+              <span class="feature-text"
+                ><strong>Entraînements sur mesure</strong> - Cycles adaptés à
+                vos objectifs et niveau</span
+              >
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🤖</div>
+              <span class="feature-text"
+                ><strong>Assistant IA dédié</strong> - Conseils et ajustements
+                instantanés</span
+              >
+            </div>
+          </div>
+
+          <div id="downloads">
+            <a
+              href="https://apps.apple.com/us/app/a-bloc/id6746932893"
+              class="store-btn"
+              aria-label="Télécharger sur l'App Store"
+            >
+              <img src="./assets/apple.png" alt="" />
+              <div class="store-btn-content">
+                <span class="store-btn-label">Télécharger sur</span>
+                <span class="store-btn-name">App Store</span>
+              </div>
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.matbabs.coach&hl=fr"
+              class="store-btn"
+              aria-label="Télécharger sur Google Play"
+            >
+              <img src="./assets/play.png" alt="" />
+              <div class="store-btn-content">
+                <span class="store-btn-label">Disponible sur</span>
+                <span class="store-btn-name">Google Play</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="phone-mockup">
+            <div class="phone-frame">
+              <div class="phone-screen">
+                <div class="phone-notch"></div>
+                <img src="./assets/hp.jpeg" alt="A BLOC - Application mobile" />
+              </div>
+            </div>
+            <div class="floating-card floating-card-1">
+              <div class="floating-card-icon">🛡️</div>
+              <div class="floating-card-text">
+                <span class="floating-card-label">Zone sécurisée</span>
+                <span class="floating-card-value">12 ExploRiders</span>
+              </div>
+            </div>
+            <div class="floating-card floating-card-2">
+              <div class="floating-card-icon">⚠️</div>
+              <div class="floating-card-text">
+                <span class="floating-card-label">Alerte active</span>
+                <span class="floating-card-value">Chemin glissant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer id="footer">
+        <p class="footer-cta">
+          Rejoignez la communauté des ExploRiders et vivez chaque instant A BLOC
+          ! 🌍
+        </p>
+        <nav class="footer-nav">
+          <a href="assistance.html">Assistance & FAQ</a>
+          <a href="privacy.html">Confidentialité</a>
+          <a href="deletion.html">Suppression de compte</a>
+        </nav>
+      </footer>
     </div>
   </body>
 </html>
