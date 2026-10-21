@@ -5,26 +5,27 @@
   --RADIUS: 15px;
   --GAP: 1rem;
   --BORDER_WIDTH: 3px;
-  --PRIMARY: #ffd60a;
-  --PRIMARY_FLAT: #ffd60a1a;
-  --PRIMARY_SHADOW: #ffd60a4d;
-  --SECONDARY: #7c3aed;
-  --DARK: #1c1917;
+  --PRIMARY: #FBBF24;
+  --PRIMARY_FLAT: #FBBF241a;
+  --PRIMARY_SHADOW: #FBBF244d;
+  --SECONDARY: #6D28D9;
+  --DARK: #1A0F2B;
   --DARK_FLAT: #f2f2f2;
   --SHADOW_COLOR: #80808026;
-  --YELLOW: #fbbf24;
-  --DARK_YELLOW: #b45309;
-  --ORANGE: #f97316;
-  --GREEN: #10b981;
-  --DARK_GREEN: #15803d;
-  --BLUE: #3b82f6;
-  --DARK_BLUE: #1d4ed8;
-  --RED: #ef4444;
-  --DARK_RED: #b91c1c;
-  --BLACK: #1f2937;
-  --DARK_BLACK: #9ca3af;
-  --PINK: #f472b6;
-  --PURPLE: #a855f7;
+  --YELLOW: #FBBF24;
+  --DARK_YELLOW: #B45309;
+  --ORANGE: #F97316;
+  --GREEN: #10B981;
+  --DARK_GREEN: #15803D;
+  --BLUE: #3B82F6;
+  --DARK_BLUE: #1D4ED8;
+  --RED: #EF4444;
+  --DARK_RED: #B91C1C;
+  --BROWN: #92400E;
+  --BLACK: #1F2937;
+  --DARK_BLACK: #9CA3AF;
+  --PINK: #F472B6;
+  --PURPLE: #A855F7;
 }
 
 *,
@@ -172,7 +173,7 @@ h3 {
   gap: var(--SPACING);
 }
 
-.tuto > * {
+.tuto>* {
   display: flex;
   flex-direction: column;
   gap: var(--GAP);
