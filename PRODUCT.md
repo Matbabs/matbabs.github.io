@@ -21,6 +21,7 @@ Real-time community safety alerts - the key differentiator is a live hazard repo
 ## Operating Context
 
 Users discover the app via web search, download on App Store or Google Play, then use the app for:
+
 - Real-time hazard reporting to the community
 - Live social map showing fellow ExploRiders and risk zones
 - Customized training cycles for their goals and level
