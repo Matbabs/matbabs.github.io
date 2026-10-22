@@ -62,22 +62,16 @@ body::before {
   right: 0;
   bottom: 0;
   background:
-    radial-gradient(
-      ellipse 80% 50% at 20% 0%,
+    radial-gradient(ellipse 80% 50% at 20% 0%,
       rgba(109, 40, 217, 0.3) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      ellipse 60% 40% at 80% 100%,
+      transparent 50%),
+    radial-gradient(ellipse 60% 40% at 80% 100%,
       rgba(251, 191, 36, 0.15) 0%,
-      transparent 50%
-    ),
-    linear-gradient(
-      180deg,
+      transparent 50%),
+    linear-gradient(180deg,
       var(--DARK) 0%,
       var(--DARK_SURFACE) 50%,
-      var(--DARK) 100%
-    );
+      var(--DARK) 100%);
   pointer-events: none;
   z-index: -1;
 }
@@ -219,7 +213,7 @@ a {
 .feature-icon {
   width: 24px;
   height: 24px;
-  background: linear-gradient(135deg, var(--PRIMARY) 0%, var(--ORANGE) 100%);
+  background: var(--SECONDARY);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -306,7 +300,7 @@ a {
   inset: 0;
   background: linear-gradient(145deg, #2a2a2a 0%, #1a1a1a 100%);
   border-radius: 40px;
-  padding: 12px;
+  padding: 8px;
   box-shadow:
     0 0 0 2px rgba(255, 255, 255, 0.1),
     0 25px 80px rgba(0, 0, 0, 0.5),
@@ -328,17 +322,6 @@ a {
   object-fit: cover;
 }
 
-.phone-notch {
-  position: absolute;
-  top: 12px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 28px;
-  background: #1a1a1a;
-  border-radius: 20px;
-  z-index: 5;
-}
 
 .floating-card {
   position: absolute;
@@ -369,7 +352,7 @@ a {
 .floating-card-icon {
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, var(--PRIMARY) 0%, var(--ORANGE) 100%);
+  background: var(--SECONDARY);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -393,6 +376,7 @@ a {
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0);
@@ -477,7 +461,7 @@ a {
   margin-top: 2rem;
 }
 
-.tuto > * {
+.tuto>* {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -591,7 +575,7 @@ a {
     align-items: center;
   }
 
-  .tuto > * {
+  .tuto>* {
     max-width: 100%;
   }
 }
