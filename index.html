@@ -96,26 +96,287 @@
         </div>
 
         <div class="hero-visual">
-          <div class="phone-mockup">
-            <div class="phone-frame">
-              <div class="phone-screen">
-                <div class="phone-notch"></div>
-                <img src="./assets/hp.jpeg" alt="A BLOC - Application mobile" />
+          <div class="phone-carousel-container">
+            <div class="phone-carousel" id="phoneCarousel">
+              <!-- Slide 0: Accueil -->
+              <div class="carousel-slide active" data-slide="0">
+                <div class="phone-mockup">
+                  <div class="phone-frame">
+                    <div class="phone-screen">
+                      <div class="phone-notch"></div>
+                      <img
+                        src="./assets/hp.jpeg"
+                        alt="A BLOC - Accueil & Carte sociale"
+                      />
+                    </div>
+                  </div>
+                  <div class="floating-card floating-card-1">
+                    <div class="floating-card-icon">🛡️</div>
+                    <div class="floating-card-text">
+                      <span class="floating-card-label">Zone sécurisée</span>
+                      <span class="floating-card-value">12 ExploRiders</span>
+                    </div>
+                  </div>
+                  <div class="floating-card floating-card-2">
+                    <div class="floating-card-icon">⚠️</div>
+                    <div class="floating-card-text">
+                      <span class="floating-card-label">Alerte active</span>
+                      <span class="floating-card-value">Chemin glissant</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 1: Itinéraire GPX -->
+              <div class="carousel-slide" data-slide="1">
+                <div class="phone-mockup">
+                  <div class="phone-frame">
+                    <div class="phone-screen">
+                      <div class="phone-notch"></div>
+                      <img
+                        src="./assets/gpx.jpeg"
+                        alt="A BLOC - Tracé GPX & Communauté"
+                      />
+                    </div>
+                  </div>
+                  <div class="floating-card floating-card-1">
+                    <div class="floating-card-icon">🗺️</div>
+                    <div class="floating-card-text">
+                      <span class="floating-card-label">Trace GPX</span>
+                      <span class="floating-card-value">Boucle ExploRider</span>
+                    </div>
+                  </div>
+                  <div class="floating-card floating-card-2">
+                    <div class="floating-card-icon">⚡</div>
+                    <div class="floating-card-text">
+                      <span class="floating-card-label">Vérification</span>
+                      <span class="floating-card-value">En direct</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 2: Synchronisation Strava -->
+              <div class="carousel-slide" data-slide="2">
+                <div class="phone-mockup">
+                  <div class="phone-frame">
+                    <div class="phone-screen">
+                      <div class="phone-notch"></div>
+                      <img
+                        src="./assets/strava.jpeg"
+                        alt="A BLOC - Connexion Strava"
+                      />
+                    </div>
+                  </div>
+                  <div class="floating-card floating-card-1">
+                    <div class="floating-card-icon">🔄</div>
+                    <div class="floating-card-text">
+                      <span class="floating-card-label">Import Strava</span>
+                      <span class="floating-card-value">Synchronisé</span>
+                    </div>
+                  </div>
+                  <div class="floating-card floating-card-2">
+                    <div class="floating-card-icon">📍</div>
+                    <div class="floating-card-text">
+                      <span class="floating-card-label">Vos activités</span>
+                      <span class="floating-card-value">Vos itinéraires</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3: Live Spot Webcam Queixans -->
+              <div class="carousel-slide" data-slide="3">
+                <div class="phone-mockup">
+                  <div class="phone-frame">
+                    <div class="phone-screen">
+                      <div class="phone-notch"></div>
+                      <img
+                        src="./assets/webcam.jpeg"
+                        alt="A BLOC - Live spot Queixans"
+                      />
+                    </div>
+                  </div>
+                  <div class="floating-card floating-card-1">
+                    <div class="floating-card-icon">📷</div>
+                    <div class="floating-card-text">
+                      <span class="floating-card-label">Live Webcam</span>
+                      <span class="floating-card-value">Queixans</span>
+                    </div>
+                  </div>
+                  <div class="floating-card floating-card-2">
+                    <div class="floating-card-icon">⏱️</div>
+                    <div class="floating-card-text">
+                      <span class="floating-card-label">Actualisé</span>
+                      <span class="floating-card-value">Il y a 1h42</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 4: Météo & Conditions Queixans -->
+              <div class="carousel-slide" data-slide="4">
+                <div class="phone-mockup">
+                  <div class="phone-frame">
+                    <div class="phone-screen">
+                      <div class="phone-notch"></div>
+                      <img
+                        src="./assets/condition.jpeg"
+                        alt="A BLOC - Météo Queixans"
+                      />
+                    </div>
+                  </div>
+                  <div class="floating-card floating-card-1">
+                    <div class="floating-card-icon">☀️</div>
+                    <div class="floating-card-text">
+                      <span class="floating-card-label">Météo Spot</span>
+                      <span class="floating-card-value">14°C Ensoleillé</span>
+                    </div>
+                  </div>
+                  <div class="floating-card floating-card-2">
+                    <div class="floating-card-icon">🏔️</div>
+                    <div class="floating-card-text">
+                      <span class="floating-card-label">Altitude</span>
+                      <span class="floating-card-value">1 111 m</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 5: Live Spot Biarritz -->
+              <div class="carousel-slide" data-slide="5">
+                <div class="phone-mockup">
+                  <div class="phone-frame">
+                    <div class="phone-screen">
+                      <div class="phone-notch"></div>
+                      <img
+                        src="./assets/condition2.jpeg"
+                        alt="A BLOC - Live spot Biarritz"
+                      />
+                    </div>
+                  </div>
+                  <div class="floating-card floating-card-1">
+                    <div class="floating-card-icon">🌊</div>
+                    <div class="floating-card-text">
+                      <span class="floating-card-label">Spot Surf</span>
+                      <span class="floating-card-value">Biarritz</span>
+                    </div>
+                  </div>
+                  <div class="floating-card floating-card-2">
+                    <div class="floating-card-icon">📍</div>
+                    <div class="floating-card-text">
+                      <span class="floating-card-label">Webcam Spot</span>
+                      <span class="floating-card-value">En direct</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 6: Conditions & Houle Biarritz -->
+              <div class="carousel-slide" data-slide="6">
+                <div class="phone-mockup">
+                  <div class="phone-frame">
+                    <div class="phone-screen">
+                      <div class="phone-notch"></div>
+                      <img
+                        src="./assets/webcam2.jpeg"
+                        alt="A BLOC - Conditions vagues Biarritz"
+                      />
+                    </div>
+                  </div>
+                  <div class="floating-card floating-card-1">
+                    <div class="floating-card-icon">🏄</div>
+                    <div class="floating-card-text">
+                      <span class="floating-card-label">Vagues</span>
+                      <span class="floating-card-value">1.5 m · 12 s NO</span>
+                    </div>
+                  </div>
+                  <div class="floating-card floating-card-2">
+                    <div class="floating-card-icon">🌡️</div>
+                    <div class="floating-card-text">
+                      <span class="floating-card-label">Eau</span>
+                      <span class="floating-card-value">18°C</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="floating-card floating-card-1">
-              <div class="floating-card-icon">🛡️</div>
-              <div class="floating-card-text">
-                <span class="floating-card-label">Zone sécurisée</span>
-                <span class="floating-card-value">12 ExploRiders</span>
+
+            <!-- Contrôles du carousel -->
+            <div class="carousel-nav">
+              <button
+                class="carousel-btn prev-btn"
+                id="carouselPrev"
+                aria-label="Écran précédent"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <div class="carousel-dots" id="carouselDots">
+                <button
+                  class="carousel-dot active"
+                  data-index="0"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  data-index="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  data-index="2"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  data-index="3"
+                  aria-label="Slide 4"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  data-index="4"
+                  aria-label="Slide 5"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  data-index="5"
+                  aria-label="Slide 6"
+                ></button>
+                <button
+                  class="carousel-dot"
+                  data-index="6"
+                  aria-label="Slide 7"
+                ></button>
               </div>
-            </div>
-            <div class="floating-card floating-card-2">
-              <div class="floating-card-icon">⚠️</div>
-              <div class="floating-card-text">
-                <span class="floating-card-label">Alerte active</span>
-                <span class="floating-card-value">Chemin glissant</span>
-              </div>
+              <button
+                class="carousel-btn next-btn"
+                id="carouselNext"
+                aria-label="Écran suivant"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -133,5 +394,119 @@
         </nav>
       </footer>
     </div>
+
+    <script>
+      (function () {
+        const carousel = document.getElementById("phoneCarousel");
+        if (!carousel) return;
+
+        const slides = carousel.querySelectorAll(".carousel-slide");
+        const dots = document.querySelectorAll(".carousel-dot");
+        const prevBtn = document.getElementById("carouselPrev");
+        const nextBtn = document.getElementById("carouselNext");
+        let currentIndex = 0;
+        let autoPlayTimer = null;
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        function goToSlide(index) {
+          slides[currentIndex].classList.remove("active");
+          dots[currentIndex].classList.remove("active");
+
+          currentIndex = (index + slides.length) % slides.length;
+
+          slides[currentIndex].classList.add("active");
+          dots[currentIndex].classList.add("active");
+        }
+
+        function nextSlide() {
+          goToSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+          goToSlide(currentIndex - 1);
+        }
+
+        function startAutoPlay() {
+          stopAutoPlay();
+          autoPlayTimer = setInterval(nextSlide, 4500);
+        }
+
+        function stopAutoPlay() {
+          if (autoPlayTimer) {
+            clearInterval(autoPlayTimer);
+            autoPlayTimer = null;
+          }
+        }
+
+        if (nextBtn) {
+          nextBtn.addEventListener("click", () => {
+            nextSlide();
+            startAutoPlay();
+          });
+        }
+
+        if (prevBtn) {
+          prevBtn.addEventListener("click", () => {
+            prevSlide();
+            startAutoPlay();
+          });
+        }
+
+        dots.forEach((dot, idx) => {
+          dot.addEventListener("click", () => {
+            goToSlide(idx);
+            startAutoPlay();
+          });
+        });
+
+        // Pause sur survol
+        const container = document.querySelector(".phone-carousel-container");
+        if (container) {
+          container.addEventListener("mouseenter", stopAutoPlay);
+          container.addEventListener("mouseleave", startAutoPlay);
+
+          // Support tactile / swipe
+          container.addEventListener(
+            "touchstart",
+            (e) => {
+              touchStartX = e.changedTouches[0].screenX;
+              stopAutoPlay();
+            },
+            { passive: true },
+          );
+
+          container.addEventListener(
+            "touchend",
+            (e) => {
+              touchEndX = e.changedTouches[0].screenX;
+              const diff = touchStartX - touchEndX;
+              if (Math.abs(diff) > 40) {
+                if (diff > 0) {
+                  nextSlide();
+                } else {
+                  prevSlide();
+                }
+              }
+              startAutoPlay();
+            },
+            { passive: true },
+          );
+        }
+
+        // Navigation clavier (flèches gauche/droite)
+        window.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowRight") {
+            nextSlide();
+            startAutoPlay();
+          } else if (e.key === "ArrowLeft") {
+            prevSlide();
+            startAutoPlay();
+          }
+        });
+
+        startAutoPlay();
+      })();
+    </script>
   </body>
 </html>
