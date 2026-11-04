@@ -3,509 +3,377 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A BLOC - L'app des sports outdoor</title>
+    <title>A BLOC · L'app des sports outdoor</title>
     <meta
       name="description"
-      content="Rejoignez la communauté ExploRiders. Signalement en temps réel, carte sociale et entraînements sur mesure pour les sports outdoor."
+      content="A BLOC, l'app des sports outdoor où chaque pratiquant veille sur les autres : alertes en temps réel, carte des ExploRiders, conditions des spots et entraînements sur mesure. Grimpe, gravel, trail, surf, skate, ski."
     />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="A BLOC · Personne ne sort seul" />
+    <meta
+      property="og:description"
+      content="Alertes en temps réel, carte des ExploRiders, conditions des spots et entraînements sur mesure."
+    />
+    <meta property="og:image" content="./assets/hp.jpeg" />
+    <meta property="og:locale" content="fr_FR" />
+    <link rel="icon" href="./assets/AblocNoir.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" />
     <link rel="stylesheet" href="./style/master.css" />
   </head>
   <body>
-    <div class="container">
-      <nav id="navbar">
-        <div class="logo">
-          <img src="./assets/AblocBlanc.png" alt="A BLOC" />
-          <span class="logo-text">A BLOC</span>
-        </div>
-        <span class="tagline">L'app des sports outdoor 🇫🇷</span>
-      </nav>
+    <a class="skip" href="#contenu">Aller au contenu</a>
 
-      <main id="content">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <span>🔔</span>
-            <span>Alerte en temps réel</span>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html">
+          <img src="./assets/AblocNoir.png" alt="" width="34" height="34" />
+          A BLOC
+        </a>
+        <nav class="site-nav" aria-label="Navigation principale">
+          <a href="#fonctions">Fonctionnalités</a>
+          <a href="#cordee">L'esprit de cordée</a>
+          <a href="assistance.html">Assistance</a>
+        </nav>
+        <a class="btn btn-primary" href="#telecharger" data-store-link>Télécharger</a>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <section class="hero">
+        <div class="wrap">
+          <div>
+            <h1>Personne ne sort <span class="mark">seul.</span></h1>
+            <p class="hero-lede">
+              A BLOC, l'app des sports outdoor où chaque pratiquant veille sur
+              les autres&nbsp;: alertes en temps réel, carte des ExploRiders,
+              conditions des spots et entraînements sur mesure.
+            </p>
+            <div class="stores">
+              <a
+                class="store"
+                href="https://apps.apple.com/us/app/a-bloc/id6746932893"
+                aria-label="Télécharger A BLOC sur l'App Store"
+              >
+                <img src="./assets/apple.png" alt="" width="26" height="26" />
+                <span><small>Télécharger sur l'</small><b>App Store</b></span>
+              </a>
+              <a
+                class="store"
+                href="https://play.google.com/store/apps/details?id=com.matbabs.coach&amp;hl=fr"
+                aria-label="Télécharger A BLOC sur Google Play"
+              >
+                <img src="./assets/play.png" alt="" width="26" height="26" />
+                <span><small>Disponible sur</small><b>Google Play</b></span>
+              </a>
+            </div>
+            <ul class="sports" aria-label="Sports disponibles">
+              <li>Grimpe</li>
+              <li>Gravel</li>
+              <li>Trail</li>
+              <li>Surf</li>
+              <li>Skate</li>
+              <li>Ski</li>
+            </ul>
           </div>
+          <div class="hero-visual">
+            <div class="phone">
+              <div class="screen-stack">
+                <img
+                  src="./assets/hp.jpeg"
+                  alt="Carte A BLOC avec les ExploRiders autour de soi et une alerte « Vent fort » à signaler"
+                  width="945"
+                  height="2048"
+                  fetchpriority="high"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <h1 class="hero-title">
-            Deviens <span>ExploRider</span> sans limites !
-          </h1>
+      <section class="alerts" aria-label="Types d'alertes">
+        <div class="wrap">
+          <p>Ce que les ExploRiders signalent</p>
+          <div class="alerts-list">
+            <ul>
+              <li><i style="--c: #38bdf8"></i>Vent fort</li>
+              <li><i style="--c: #ef4444"></i>Avalanche</li>
+              <li><i style="--c: #1f2937"></i>Route fermée</li>
+              <li><i style="--c: #a855f7"></i>Crue</li>
+              <li><i style="--c: #92400e"></i>Chasse en cours</li>
+              <li><i style="--c: #7c3aed"></i>Orages</li>
+              <li><i style="--c: #3b82f6"></i>Neige verglas</li>
+              <li><i style="--c: #f97316"></i>Travaux</li>
+              <li><i style="--c: #3b82f6"></i>Vague submersion</li>
+              <li><i style="--c: #92400e"></i>Animal</li>
+              <li><i style="--c: #4b5563"></i>Arrêté préfectoral</li>
+              <li><i style="--c: #65a30d"></i>Pollution</li>
+              <li><i style="--c: #3b82f6"></i>Pluie inondation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-          <p class="hero-description">
-            Les sports outdoor reposent sur une valeur universelle : l'esprit de
-            cordée. Avec A BLOC, la sécurité n'est pas individuelle, elle dépend
-            de la vigilance collective. Chaque pratiquant devient une
-            sentinelle.
+      <section class="story" id="fonctions">
+        <div class="wrap">
+          <h2 class="section-head">Tout ce qu'il faut savoir avant de sortir. Et pendant.</h2>
+          <div class="story-grid">
+            <ol class="steps">
+              <li class="step is-active" data-screen="0">
+                <h3>Signale un danger en deux gestes.</h3>
+                <p>
+                  Vent fort, route fermée, crue, chasse en cours&nbsp;: un appui
+                  sur le bouton alerte et l'info apparaît sur la carte de tous
+                  les ExploRiders du secteur, en temps réel.
+                </p>
+                <figure class="step-shot">
+                  <div class="phone"><div class="screen-stack">
+                    <img src="./assets/hp.jpeg" alt="Alerte « Vent fort » sur la carte, avec le bouton Signaler" width="945" height="2048" loading="lazy" />
+                  </div></div>
+                </figure>
+              </li>
+              <li class="step" data-screen="1">
+                <h3>Charge ta trace, ou importe-la de Strava.</h3>
+                <p>
+                  Importe un fichier GPX ou connecte ton compte Strava pour
+                  retrouver tes itinéraires et tes activités, avec les alertes
+                  de la communauté le long du parcours.
+                </p>
+                <figure class="step-shot">
+                  <div class="phone"><div class="screen-stack">
+                    <img src="./assets/gpx.jpeg" alt="Trace GPX en boucle affichée sur la carte avec les alertes du parcours" width="945" height="2048" loading="lazy" />
+                  </div></div>
+                </figure>
+              </li>
+              <li class="step" data-screen="2">
+                <h3>Le Waze de l'outdoor, en vidéo.</h3>
+                <p>Une alerte reste visible 24&nbsp;h sur la carte, la communauté modère les fausses alertes, et ta trace est vérifiée avant le départ.</p>
+                <figure class="step-shot">
+                  <div class="phone"><div class="screen-stack">
+                    <video poster="./assets/video/waze.jpg" muted loop playsinline controls preload="none" aria-label="Vidéo : A BLOC, le Waze de l'outdoor"><source src="./assets/video/waze.webm" type="video/webm" /><source src="./assets/video/waze.mp4" type="video/mp4" /></video>
+                  </div></div>
+                </figure>
+              </li>
+              <li class="step" data-screen="3">
+                <h3>Regarde le spot avant d'y aller.</h3>
+                <p>
+                  Les live spot stories affichent la dernière image du spot,
+                  datée, directement sur la carte. Tu sais à quoi t'attendre
+                  avant même de charger la voiture.
+                </p>
+                <figure class="step-shot">
+                  <div class="phone"><div class="screen-stack">
+                    <img src="./assets/webcam.jpeg" alt="Live spot story de Queixans, image datée d'il y a 1h42" width="945" height="2048" loading="lazy" />
+                  </div></div>
+                </figure>
+              </li>
+              <li class="step" data-screen="4">
+                <h3>Météo, vent, neige&nbsp;: les conditions du spot.</h3>
+                <p>
+                  Pour chaque spot, la température ressentie, le vent et les
+                  rafales, la pluie, l'enneigement et l'isotherme. De quoi
+                  choisir le bon créneau.
+                </p>
+                <ul class="facts">
+                  <li>Ressenti</li><li>Rafales</li><li>Neige au sol</li><li>Iso 0&nbsp;°C</li><li>Altitude</li>
+                </ul>
+                <figure class="step-shot">
+                  <div class="phone"><div class="screen-stack">
+                    <img src="./assets/condition.jpeg" alt="Conditions à Queixans : 14 °C, vent 18 km/h, rafales 35 km/h, neige, isotherme 3430 m" width="945" height="2048" loading="lazy" />
+                  </div></div>
+                </figure>
+              </li>
+              <li class="step" data-screen="5">
+                <h3>Côté océan, la houle et l'eau.</h3>
+                <p>
+                  Hauteur et période des vagues, houle, température de l'eau
+                  et image du spot&nbsp;: les surfeurs ont leur bulletin, comme
+                  les montagnards.
+                </p>
+                <ul class="facts">
+                  <li>Vagues</li><li>Période</li><li>Houle</li><li>Eau</li>
+                </ul>
+                <figure class="step-shot">
+                  <div class="phone"><div class="screen-stack">
+                    <img src="./assets/webcam2.jpeg" alt="Conditions à Biarritz : vagues 1,5 m, période 12 s, eau 18 °C" width="945" height="2048" loading="lazy" />
+                  </div></div>
+                </figure>
+              </li>
+              <li class="step" data-screen="6">
+                <h3>Le spot en live, en vidéo.</h3>
+                <p>Webcams en direct, vagues et neige, et le livre d'or où les ExploRiders laissent leurs infos du jour.</p>
+                <figure class="step-shot">
+                  <div class="phone"><div class="screen-stack">
+                    <video poster="./assets/video/livespot.jpg" muted loop playsinline controls preload="none" aria-label="Vidéo : le spot en live sur A BLOC"><source src="./assets/video/livespot.webm" type="video/webm" /><source src="./assets/video/livespot.mp4" type="video/mp4" /></video>
+                  </div></div>
+                </figure>
+              </li>
+            </ol>
+
+            <div class="story-phone">
+              <div class="phone">
+                <div class="screen-stack">
+                  <img class="is-active" src="./assets/hp.jpeg" alt="" aria-hidden="true" />
+                  <img src="./assets/gpx.jpeg" alt="" loading="lazy" />
+                  <video poster="./assets/video/waze.jpg" muted loop playsinline preload="none" aria-hidden="true"><source src="./assets/video/waze.webm" type="video/webm" /><source src="./assets/video/waze.mp4" type="video/mp4" /></video>
+                  <img src="./assets/webcam.jpeg" alt="" loading="lazy" />
+                  <img src="./assets/condition.jpeg" alt="" loading="lazy" />
+                  <img src="./assets/webcam2.jpeg" alt="" loading="lazy" />
+                  <video poster="./assets/video/livespot.jpg" muted loop playsinline preload="none" aria-hidden="true"><source src="./assets/video/livespot.webm" type="video/webm" /><source src="./assets/video/livespot.mp4" type="video/mp4" /></video>
+                </div>
+              </div>
+              <button class="btn sound" type="button" hidden>Activer le son</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="train">
+        <div class="wrap">
+          <div class="train-intro">
+            <h2 class="section-head">Un plan qui suit tes objectifs.</h2>
+            <p>
+              Au-delà de la sécurité, A BLOC te fait progresser&nbsp;: des
+              cycles d'entraînement construits pour ton sport, ton niveau et
+              ce que tu vises.
+            </p>
+            <figure class="train-film">
+              <div class="phone"><div class="screen-stack">
+                <video poster="./assets/video/media.jpg" muted loop playsinline controls preload="none" aria-label="Vidéo : tests de niveau, blocs d'entraînement et Studios A BLOC"><source src="./assets/video/media.webm" type="video/webm" /><source src="./assets/video/media.mp4" type="video/mp4" /></video>
+              </div></div>
+            </figure>
+          </div>
+          <ol class="path">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>
+              <div>
+                <h3>Évalue ton niveau</h3>
+                <p>Une évaluation initiale et des tests de performance pour partir de là où tu es vraiment.</p>
+              </div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M8 2v4M16 2v4M3 10h18M8 15h3"/></svg>
+              <div>
+                <h3>Suis un cycle sur mesure</h3>
+                <p>Des séances planifiées, adaptées à tes objectifs, que tu grimpes, roules, cours, rides ou skies.</p>
+              </div>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9 11h.01M12 11h.01M15 11h.01"/></svg>
+              <div>
+                <h3>Ajuste avec l'assistant IA</h3>
+                <p>Une question sur une séance, un itinéraire ou ta forme&nbsp;? L'assistant te répond et adapte tes conseils instantanément.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="manifesto" id="cordee">
+        <div class="wrap">
+          <blockquote>Chaque pratiquant devient une <em>sentinelle.</em></blockquote>
+          <p>
+            Les sports outdoor reposent sur une valeur universelle&nbsp;:
+            l'esprit de cordée. Avec A BLOC, la sécurité n'est pas
+            individuelle, elle dépend de la vigilance collective. Ce que tu
+            vois sur le terrain protège celles et ceux qui passent après toi.
           </p>
+        </div>
+      </section>
 
-          <div class="hero-features">
-            <div class="feature-item">
-              <div class="feature-icon">⚡</div>
-              <span class="feature-text"
-                ><strong>Signalement en temps réel</strong> - Alertez la
-                communauté instantanément</span
-              >
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon">🗺️</div>
-              <span class="feature-text"
-                ><strong>Carte sociale vivante</strong> - Visualisez la
-                communauté et les zones à risques</span
-              >
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon">💪</div>
-              <span class="feature-text"
-                ><strong>Entraînements sur mesure</strong> - Cycles adaptés à
-                vos objectifs et niveau</span
-              >
-            </div>
-            <div class="feature-item">
-              <div class="feature-icon">🤖</div>
-              <span class="feature-text"
-                ><strong>Assistant IA dédié</strong> - Conseils et ajustements
-                instantanés</span
-              >
-            </div>
+      <section class="cta" id="telecharger">
+        <div class="wrap">
+          <div>
+            <h2>Rejoins les ExploRiders.</h2>
+            <p>Télécharge A BLOC et vis chaque sortie à bloc, en sécurité.</p>
           </div>
-
-          <div id="downloads">
-            <a
-              href="https://apps.apple.com/us/app/a-bloc/id6746932893"
-              class="store-btn"
-              aria-label="Télécharger sur l'App Store"
-            >
-              <img src="./assets/apple.png" alt="" />
-              <div class="store-btn-content">
-                <span class="store-btn-label">Télécharger sur</span>
-                <span class="store-btn-name">App Store</span>
-              </div>
+          <div class="stores">
+            <a class="store" href="https://apps.apple.com/us/app/a-bloc/id6746932893" aria-label="Télécharger A BLOC sur l'App Store">
+              <img src="./assets/apple.png" alt="" width="26" height="26" />
+              <span><small>Télécharger sur l'</small><b>App Store</b></span>
             </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=com.matbabs.coach&hl=fr"
-              class="store-btn"
-              aria-label="Télécharger sur Google Play"
-            >
-              <img src="./assets/play.png" alt="" />
-              <div class="store-btn-content">
-                <span class="store-btn-label">Télécharger sur</span>
-                <span class="store-btn-name">Google Play</span>
-              </div>
+            <a class="store" href="https://play.google.com/store/apps/details?id=com.matbabs.coach&amp;hl=fr" aria-label="Télécharger A BLOC sur Google Play">
+              <img src="./assets/play.png" alt="" width="26" height="26" />
+              <span><small>Disponible sur</small><b>Google Play</b></span>
             </a>
           </div>
         </div>
+      </section>
+    </main>
 
-        <div class="hero-visual">
-          <div class="phone-carousel-container">
-            <div class="phone-carousel" id="phoneCarousel">
-              <!-- Slide 0: Accueil -->
-              <div class="carousel-slide active" data-slide="0">
-                <div class="phone-mockup">
-                  <div class="phone-frame">
-                    <div class="phone-screen">
-                      <div class="phone-notch"></div>
-                      <img
-                        src="./assets/hp.jpeg"
-                        alt="A BLOC - Accueil & Carte sociale"
-                      />
-                    </div>
-                  </div>
-                  <div class="floating-card floating-card-1">
-                    <div class="floating-card-icon">🛡️</div>
-                    <div class="floating-card-text">
-                      <span class="floating-card-label">Zone sécurisée</span>
-                      <span class="floating-card-value">12 ExploRiders</span>
-                    </div>
-                  </div>
-                  <div class="floating-card floating-card-2">
-                    <div class="floating-card-icon">⚠️</div>
-                    <div class="floating-card-text">
-                      <span class="floating-card-label">Alerte active</span>
-                      <span class="floating-card-value">Chemin glissant</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 1: Itinéraire GPX -->
-              <div class="carousel-slide" data-slide="1">
-                <div class="phone-mockup">
-                  <div class="phone-frame">
-                    <div class="phone-screen">
-                      <div class="phone-notch"></div>
-                      <img
-                        src="./assets/gpx.jpeg"
-                        alt="A BLOC - Tracé GPX & Communauté"
-                      />
-                    </div>
-                  </div>
-                  <div class="floating-card floating-card-1">
-                    <div class="floating-card-icon">🗺️</div>
-                    <div class="floating-card-text">
-                      <span class="floating-card-label">Trace GPX</span>
-                      <span class="floating-card-value">Boucle ExploRider</span>
-                    </div>
-                  </div>
-                  <div class="floating-card floating-card-2">
-                    <div class="floating-card-icon">⚡</div>
-                    <div class="floating-card-text">
-                      <span class="floating-card-label">Vérification</span>
-                      <span class="floating-card-value">En direct</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 2: Synchronisation Strava -->
-              <div class="carousel-slide" data-slide="2">
-                <div class="phone-mockup">
-                  <div class="phone-frame">
-                    <div class="phone-screen">
-                      <div class="phone-notch"></div>
-                      <img
-                        src="./assets/strava.jpeg"
-                        alt="A BLOC - Connexion Strava"
-                      />
-                    </div>
-                  </div>
-                  <div class="floating-card floating-card-1">
-                    <div class="floating-card-icon">🔄</div>
-                    <div class="floating-card-text">
-                      <span class="floating-card-label">Import Strava</span>
-                      <span class="floating-card-value">Synchronisé</span>
-                    </div>
-                  </div>
-                  <div class="floating-card floating-card-2">
-                    <div class="floating-card-icon">📍</div>
-                    <div class="floating-card-text">
-                      <span class="floating-card-label">Vos activités</span>
-                      <span class="floating-card-value">Vos itinéraires</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 3: Live Spot Webcam Queixans -->
-              <div class="carousel-slide" data-slide="3">
-                <div class="phone-mockup">
-                  <div class="phone-frame">
-                    <div class="phone-screen">
-                      <div class="phone-notch"></div>
-                      <img
-                        src="./assets/webcam.jpeg"
-                        alt="A BLOC - Live spot Queixans"
-                      />
-                    </div>
-                  </div>
-                  <div class="floating-card floating-card-1">
-                    <div class="floating-card-icon">📷</div>
-                    <div class="floating-card-text">
-                      <span class="floating-card-label">Live Webcam</span>
-                      <span class="floating-card-value">Queixans</span>
-                    </div>
-                  </div>
-                  <div class="floating-card floating-card-2">
-                    <div class="floating-card-icon">⏱️</div>
-                    <div class="floating-card-text">
-                      <span class="floating-card-label">Actualisé</span>
-                      <span class="floating-card-value">Il y a 1h42</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 4: Météo & Conditions Queixans -->
-              <div class="carousel-slide" data-slide="4">
-                <div class="phone-mockup">
-                  <div class="phone-frame">
-                    <div class="phone-screen">
-                      <div class="phone-notch"></div>
-                      <img
-                        src="./assets/condition.jpeg"
-                        alt="A BLOC - Météo Queixans"
-                      />
-                    </div>
-                  </div>
-                  <div class="floating-card floating-card-1">
-                    <div class="floating-card-icon">☀️</div>
-                    <div class="floating-card-text">
-                      <span class="floating-card-label">Météo Spot</span>
-                      <span class="floating-card-value">14°C Ensoleillé</span>
-                    </div>
-                  </div>
-                  <div class="floating-card floating-card-2">
-                    <div class="floating-card-icon">🏔️</div>
-                    <div class="floating-card-text">
-                      <span class="floating-card-label">Altitude</span>
-                      <span class="floating-card-value">1 111 m</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 5: Live Spot Biarritz -->
-              <div class="carousel-slide" data-slide="5">
-                <div class="phone-mockup">
-                  <div class="phone-frame">
-                    <div class="phone-screen">
-                      <div class="phone-notch"></div>
-                      <img
-                        src="./assets/condition2.jpeg"
-                        alt="A BLOC - Live spot Biarritz"
-                      />
-                    </div>
-                  </div>
-                  <div class="floating-card floating-card-1">
-                    <div class="floating-card-icon">🌊</div>
-                    <div class="floating-card-text">
-                      <span class="floating-card-label">Spot Surf</span>
-                      <span class="floating-card-value">Biarritz</span>
-                    </div>
-                  </div>
-                  <div class="floating-card floating-card-2">
-                    <div class="floating-card-icon">📍</div>
-                    <div class="floating-card-text">
-                      <span class="floating-card-label">Webcam Spot</span>
-                      <span class="floating-card-value">En direct</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slide 6: Conditions & Houle Biarritz -->
-              <div class="carousel-slide" data-slide="6">
-                <div class="phone-mockup">
-                  <div class="phone-frame">
-                    <div class="phone-screen">
-                      <div class="phone-notch"></div>
-                      <img
-                        src="./assets/webcam2.jpeg"
-                        alt="A BLOC - Conditions vagues Biarritz"
-                      />
-                    </div>
-                  </div>
-                  <div class="floating-card floating-card-1">
-                    <div class="floating-card-icon">🏄</div>
-                    <div class="floating-card-text">
-                      <span class="floating-card-label">Vagues</span>
-                      <span class="floating-card-value">1.5 m · 12 s NO</span>
-                    </div>
-                  </div>
-                  <div class="floating-card floating-card-2">
-                    <div class="floating-card-icon">🌡️</div>
-                    <div class="floating-card-text">
-                      <span class="floating-card-label">Eau</span>
-                      <span class="floating-card-value">18°C</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Contrôles du carousel -->
-            <div class="carousel-nav">
-              <button
-                class="carousel-btn prev-btn"
-                id="carouselPrev"
-                aria-label="Écran précédent"
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="15 18 9 12 15 6"></polyline>
-                </svg>
-              </button>
-              <div class="carousel-dots" id="carouselDots">
-                <button
-                  class="carousel-dot active"
-                  data-index="0"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  data-index="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  data-index="2"
-                  aria-label="Slide 3"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  data-index="3"
-                  aria-label="Slide 4"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  data-index="4"
-                  aria-label="Slide 5"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  data-index="5"
-                  aria-label="Slide 6"
-                ></button>
-                <button
-                  class="carousel-dot"
-                  data-index="6"
-                  aria-label="Slide 7"
-                ></button>
-              </div>
-              <button
-                class="carousel-btn next-btn"
-                id="carouselNext"
-                aria-label="Écran suivant"
-              >
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <polyline points="9 18 15 12 9 6"></polyline>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </main>
-
-      <footer id="footer">
-        <p class="footer-cta">
-          Rejoignez la communauté des ExploRiders et vivez chaque instant A BLOC
-          ! 🌍
-        </p>
-        <nav class="footer-nav">
-          <a href="assistance.html">Assistance & FAQ</a>
+    <footer class="site-footer">
+      <div class="wrap">
+        <a class="brand" href="index.html">
+          <img src="./assets/AblocNoir.png" alt="" width="34" height="34" />
+          A BLOC
+        </a>
+        <nav aria-label="Liens utiles">
+          <a href="assistance.html">Assistance &amp; FAQ</a>
           <a href="privacy.html">Confidentialité</a>
           <a href="deletion.html">Suppression de compte</a>
+          <a href="mailto:matissebabonneau@gmail.com">Contact</a>
         </nav>
-      </footer>
-    </div>
+        <p class="fine">© 2026 A BLOC · L'app des sports outdoor, conçue en France.</p>
+      </div>
+    </footer>
 
     <script>
       (function () {
-        const carousel = document.getElementById("phoneCarousel");
-        if (!carousel) return;
+        // Header CTA goes straight to the right store on mobile.
+        var ua = navigator.userAgent;
+        var store = /iPhone|iPad|iPod/.test(ua)
+          ? "https://apps.apple.com/us/app/a-bloc/id6746932893"
+          : /Android/.test(ua)
+            ? "https://play.google.com/store/apps/details?id=com.matbabs.coach&hl=fr"
+            : null;
+        if (store) document.querySelectorAll("[data-store-link]").forEach(function (a) { a.href = store; });
 
-        const slides = carousel.querySelectorAll(".carousel-slide");
-        const dots = document.querySelectorAll(".carousel-dot");
-        const prevBtn = document.getElementById("carouselPrev");
-        const nextBtn = document.getElementById("carouselNext");
-        let currentIndex = 0;
-        let autoPlayTimer = null;
-        let touchStartX = 0;
-        let touchEndX = 0;
-
-        function goToSlide(index) {
-          slides[currentIndex].classList.remove("active");
-          dots[currentIndex].classList.remove("active");
-
-          currentIndex = (index + slides.length) % slides.length;
-
-          slides[currentIndex].classList.add("active");
-          dots[currentIndex].classList.add("active");
+        var still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+        function play(v, on) {
+          if (!v || v.tagName !== "VIDEO") return;
+          if (on && !still && v.offsetParent !== null) v.play().catch(function () {});
+          else v.pause();
         }
 
-        function nextSlide() {
-          goToSlide(currentIndex + 1);
+        // Training video plays only while on screen.
+        var trainVideo = document.querySelector(".train-film video");
+        if ("IntersectionObserver" in window && trainVideo) {
+          new IntersectionObserver(function (es) { play(trainVideo, es[0].isIntersecting); }, { threshold: 0.5 }).observe(trainVideo);
         }
 
-        function prevSlide() {
-          goToSlide(currentIndex - 1);
-        }
-
-        function startAutoPlay() {
-          stopAutoPlay();
-          autoPlayTimer = setInterval(nextSlide, 4500);
-        }
-
-        function stopAutoPlay() {
-          if (autoPlayTimer) {
-            clearInterval(autoPlayTimer);
-            autoPlayTimer = null;
-          }
-        }
-
-        if (nextBtn) {
-          nextBtn.addEventListener("click", () => {
-            nextSlide();
-            startAutoPlay();
-          });
-        }
-
-        if (prevBtn) {
-          prevBtn.addEventListener("click", () => {
-            prevSlide();
-            startAutoPlay();
-          });
-        }
-
-        dots.forEach((dot, idx) => {
-          dot.addEventListener("click", () => {
-            goToSlide(idx);
-            startAutoPlay();
-          });
+        // Sticky phone: swap the screen (image or video) for the step in the middle of the viewport.
+        var steps = document.querySelectorAll(".step");
+        var screens = document.querySelectorAll(".story-phone .screen-stack > *");
+        var sound = document.querySelector(".story-phone .sound");
+        var current = screens[0];
+        if (sound) sound.addEventListener("click", function () {
+          var muted = !current.muted;
+          screens.forEach(function (v) { if (v.tagName === "VIDEO") v.muted = muted; });
+          sound.textContent = muted ? "Activer le son" : "Couper le son";
         });
-
-        // Pause sur survol
-        const container = document.querySelector(".phone-carousel-container");
-        if (container) {
-          container.addEventListener("mouseenter", stopAutoPlay);
-          container.addEventListener("mouseleave", startAutoPlay);
-
-          // Support tactile / swipe
-          container.addEventListener(
-            "touchstart",
-            (e) => {
-              touchStartX = e.changedTouches[0].screenX;
-              stopAutoPlay();
-            },
-            { passive: true },
-          );
-
-          container.addEventListener(
-            "touchend",
-            (e) => {
-              touchEndX = e.changedTouches[0].screenX;
-              const diff = touchStartX - touchEndX;
-              if (Math.abs(diff) > 40) {
-                if (diff > 0) {
-                  nextSlide();
-                } else {
-                  prevSlide();
-                }
-              }
-              startAutoPlay();
-            },
-            { passive: true },
-          );
-        }
-
-        // Navigation clavier (flèches gauche/droite)
-        window.addEventListener("keydown", (e) => {
-          if (e.key === "ArrowRight") {
-            nextSlide();
-            startAutoPlay();
-          } else if (e.key === "ArrowLeft") {
-            prevSlide();
-            startAutoPlay();
-          }
-        });
-
-        startAutoPlay();
+        if (!("IntersectionObserver" in window) || !screens.length) return;
+        var io = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (e) {
+              if (!e.isIntersecting) return;
+              var i = +e.target.dataset.screen;
+              current = screens[i];
+              steps.forEach(function (s) {
+                s.classList.toggle("is-active", s === e.target);
+                play(s.querySelector(".step-shot video"), s === e.target);
+              });
+              screens.forEach(function (el, j) {
+                el.classList.toggle("is-active", j === i);
+                play(el, j === i);
+              });
+              if (sound) sound.hidden = current.tagName !== "VIDEO";
+            });
+          },
+          { rootMargin: "-45% 0px -45% 0px" },
+        );
+        steps.forEach(function (s) { io.observe(s); });
       })();
     </script>
   </body>

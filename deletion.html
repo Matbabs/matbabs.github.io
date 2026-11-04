@@ -3,86 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A BLOC - Suppression de compte</title>
-    <meta
-      name="description"
-      content="Comment supprimer votre compte A BLOC et vos données."
-    />
+    <title>Suppression de compte · A BLOC</title>
+    <meta name="description" content="Supprimer votre compte A BLOC et toutes les données associées, depuis l'application ou par e-mail." />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="./assets/AblocNoir.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" />
     <link rel="stylesheet" href="./style/master.css" />
   </head>
   <body>
-    <div class="container">
-      <nav id="navbar">
-        <div class="logo">
-          <img src="./assets/AblocBlanc.png" alt="A BLOC" />
-          <span class="logo-text">A BLOC</span>
-        </div>
-        <span class="tagline">L'app des sports outdoor 🇫🇷</span>
-      </nav>
+    <a class="skip" href="#contenu">Aller au contenu</a>
 
-      <main class="deletion">
-        <h3>Suppression de votre compte</h3>
-
-        <h4>1. Suppression par e-mail</h4>
-        <p>
-          Si vous souhaitez supprimer votre compte A BLOC et toutes les données
-          associées, vous pouvez le faire directement dans les paramètres de
-          l'application. Si vous n'avez plus accès à l'application, vous pouvez
-          nous envoyer votre demande par e-mail à :
-          <span style="color: var(--PRIMARY); font-weight: 600"
-            >matissebabonneau@gmail.com</span
-          >. Nous supprimerons votre compte et vos données sous 48h.
-        </p>
-
-        <h4>2. Suppression via l'application (Recommandé)</h4>
-        <div class="tuto">
-          <div>
-            <div class="tuto-img">
-              <img src="./assets/hp.jpeg" alt="Étape 1 - Profil" />
-            </div>
-            <p>
-              1. Rendez-vous sur le
-              <span style="color: var(--PRIMARY); font-weight: 600"
-                >profil</span
-              >
-            </p>
-          </div>
-          <div>
-            <div class="tuto-img">
-              <img src="./assets/p.jpeg" alt="Étape 2 - Supprimer le compte" />
-            </div>
-            <p>
-              2. Sélectionnez
-              <span style="color: var(--PRIMARY); font-weight: 600"
-                >supprimer le compte</span
-              >
-            </p>
-          </div>
-          <div>
-            <div class="tuto-img">
-              <img src="./assets/s.jpeg" alt="Étape 3 - Confirmer" />
-            </div>
-            <p>
-              3. Confirmez
-              <span style="color: var(--RED); font-weight: 600"
-                >SUPPRIMER DÉFINITIVEMENT</span
-              >
-            </p>
-          </div>
-        </div>
-      </main>
-
-      <footer id="footer">
-        <p class="footer-cta">
-          Êtes-vous sûr de vouloir supprimer votre compte ?
-          <span style="color: var(--RED)">Cette action est irréversible</span>
-        </p>
-        <nav class="footer-nav">
-          <a href="index.html">Accueil</a>
-          <a href="assistance.html">Assistance & FAQ</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html">
+          <img src="./assets/AblocNoir.png" alt="" width="34" height="34" />
+          A BLOC
+        </a>
+        <nav class="site-nav" aria-label="Navigation principale">
+          <a href="index.html#fonctions">Fonctionnalités</a>
+          <a href="assistance.html">Assistance</a>
           <a href="privacy.html">Confidentialité</a>
         </nav>
-      </footer>
-    </div>
+        <a class="btn btn-primary" href="index.html#telecharger">Télécharger</a>
+      </div>
+    </header>
+
+    <main id="contenu" class="doc">
+      <div class="wrap">
+        <h1>Supprimer votre compte</h1>
+        <p class="intro">Vous pouvez supprimer votre compte A BLOC et toutes les données associées à tout moment. <span class="danger">Cette action est irréversible.</span></p>
+
+        <h2>Depuis l'application (recommandé)</h2>
+        <ol class="tuto">
+          <li>
+            <div class="phone"><div class="screen-stack"><img src="./assets/hp.jpeg" alt="Étape 1 : ouvrir le profil" width="945" height="2048" loading="lazy" /></div></div>
+            <p>1. Rendez-vous sur votre <strong>profil</strong>.</p>
+          </li>
+          <li>
+            <div class="phone"><div class="screen-stack"><img src="./assets/p.jpeg" alt="Étape 2 : bouton supprimer le compte" width="945" height="2048" loading="lazy" /></div></div>
+            <p>2. Sélectionnez <strong>Supprimer le compte</strong>.</p>
+          </li>
+          <li>
+            <div class="phone"><div class="screen-stack"><img src="./assets/s.jpeg" alt="Étape 3 : confirmer la suppression" width="945" height="2048" loading="lazy" /></div></div>
+            <p>3. Confirmez <span class='danger'>SUPPRIMER DÉFINITIVEMENT</span>.</p>
+          </li>
+        </ol>
+
+        <h2>Par e-mail</h2>
+        <p>Si vous n'avez plus accès à l'application, envoyez votre demande à <a href="mailto:matissebabonneau@gmail.com">matissebabonneau@gmail.com</a>. Nous supprimerons votre compte et vos données sous 48&nbsp;h.</p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <a class="brand" href="index.html">
+          <img src="./assets/AblocNoir.png" alt="" width="34" height="34" />
+          A BLOC
+        </a>
+        <nav aria-label="Liens utiles">
+          <a href="index.html">Accueil</a>
+          <a href="assistance.html">Assistance &amp; FAQ</a>
+          <a href="privacy.html">Confidentialité</a>
+          <a href="deletion.html" aria-current="page">Suppression de compte</a>
+          <a href="mailto:matissebabonneau@gmail.com">Contact</a>
+        </nav>
+        <p class="fine">© 2026 A BLOC · L'app des sports outdoor, conçue en France.</p>
+      </div>
+    </footer>
   </body>
 </html>

@@ -3,80 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A BLOC - Assistance & FAQ</title>
-    <meta
-      name="description"
-      content="Centre d'assistance et FAQ A BLOC. Questions fréquentes sur l'app des sports outdoor."
-    />
+    <title>Assistance &amp; FAQ · A BLOC</title>
+    <meta name="description" content="Centre d'assistance et FAQ A BLOC. Questions fréquentes sur l'app des sports outdoor." />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="./assets/AblocNoir.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" />
     <link rel="stylesheet" href="./style/master.css" />
   </head>
   <body>
-    <div class="container">
-      <nav id="navbar">
-        <div class="logo">
-          <img src="./assets/AblocBlanc.png" alt="A BLOC" />
-          <span class="logo-text">A BLOC</span>
+    <a class="skip" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html">
+          <img src="./assets/AblocNoir.png" alt="" width="34" height="34" />
+          A BLOC
+        </a>
+        <nav class="site-nav" aria-label="Navigation principale">
+          <a href="index.html#fonctions">Fonctionnalités</a>
+          <a href="assistance.html" aria-current="page">Assistance</a>
+          <a href="privacy.html">Confidentialité</a>
+        </nav>
+        <a class="btn btn-primary" href="index.html#telecharger">Télécharger</a>
+      </div>
+    </header>
+
+    <main id="contenu" class="doc">
+      <div class="wrap">
+        <h1>Assistance &amp; FAQ</h1>
+        <p class="intro">Les réponses aux questions les plus fréquentes. Tu ne trouves pas&nbsp;? Écris-nous, on répond par e-mail.</p>
+
+        <div class="faq">
+          <details open>
+            <summary>Qu'est-ce que A BLOC&nbsp;?</summary>
+            <div>
+              <p>A BLOC est l'application de référence pour les passionnés d'exploration outdoor. Elle propose des programmes personnalisés, des outils d'évaluation et une communauté pour partager spots et bivouacs. Chaque pratiquant devient une sentinelle pour les autres.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Comment créer un compte&nbsp;?</summary>
+            <div>
+              <p>Télécharge l'app sur l'<a href="https://apps.apple.com/us/app/a-bloc/id6746932893">App Store</a> ou <a href="https://play.google.com/store/apps/details?id=com.matbabs.coach&amp;hl=fr">Google Play</a>, appuie sur <strong>«&nbsp;Créer un compte&nbsp;»</strong> et suis les instructions de validation par e-mail.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Quelles sont les principales fonctionnalités&nbsp;?</summary>
+            <div>
+              <ul>
+                <li><strong>Carte interactive&nbsp;:</strong> découvre des spots filtrés par activité et niveau.</li>
+                <li><strong>Entraînement&nbsp;:</strong> remplis ton évaluation initiale pour recevoir un cycle adapté à tes objectifs.</li>
+                <li><strong>IA Aventure&nbsp;:</strong> notre assistant répond en temps réel à tes questions sur les itinéraires et la performance.</li>
+              </ul>
+            </div>
+          </details>
+          <details>
+            <summary>L'application ne se lance pas ou plante</summary>
+            <div>
+              <p>Vérifie ta connexion et redémarre ton appareil. Si le bug persiste, envoie-nous une capture d'écran à <a href="mailto:matissebabonneau@gmail.com">matissebabonneau@gmail.com</a>.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Comment supprimer mon compte&nbsp;?</summary>
+            <div>
+              <p>Depuis le profil de l'application, ou par e-mail. Toutes les étapes sont sur la page <a href="deletion.html">Suppression de compte</a>.</p>
+            </div>
+          </details>
         </div>
-        <span class="tagline">L'app des sports outdoor 🇫🇷</span>
-      </nav>
 
-      <main class="deletion">
-        <h3>Centre d'Assistance & FAQ</h3>
+        <p class="note">Besoin d'aide supplémentaire&nbsp;? Notre équipe t'accompagne par e-mail dans ta progression d'ExploRider&nbsp;: <a href="mailto:matissebabonneau@gmail.com">matissebabonneau@gmail.com</a></p>
+      </div>
+    </main>
 
-        <h4>1. Généralités</h4>
-        <p>
-          <strong>Qu'est-ce que A BLOC ?</strong><br /><br />
-          A BLOC est l'application de référence pour les passionnés
-          d'exploration outdoor. Elle propose des programmes personnalisés, des
-          outils d'évaluation et une communauté pour partager spots et bivouacs.
-          Chaque pratiquant devient une sentinelle pour les autres.
-        </p>
-
-        <h4>2. Compte et Inscription</h4>
-        <p>
-          Pour créer un compte, téléchargez l'app sur l'App Store ou Google
-          Play, cliquez sur
-          <span style="color: var(--PRIMARY); font-weight: 600"
-            >"Créer un compte"</span
-          >
-          et suivez les instructions de validation par e-mail.
-        </p>
-
-        <h4>3. Fonctionnalités</h4>
-        <p>
-          <strong>Carte interactive :</strong> Découvrez des spots filtrés par
-          activité et niveau.<br />
-          <strong>Entraînement :</strong> Remplissez votre évaluation initiale
-          pour recevoir un cycle adapté à vos objectifs.<br />
-          <strong>IA Aventure :</strong> Notre assistant répond en temps réel à
-          vos questions sur les itinéraires et la performance.
-        </p>
-
-        <h4>4. Problèmes Techniques</h4>
-        <p>
-          Si l'application ne se lance pas, vérifiez votre connexion et
-          redémarrez votre appareil. En cas de bug persistant, contactez-nous
-          avec une capture d'écran à :
-          <span style="color: var(--PRIMARY); font-weight: 600"
-            >matissebabonneau@gmail.com</span
-          >.
-        </p>
-
-        <h4>5. Contact</h4>
-        <p>
-          Besoin d'aide supplémentaire ? Notre équipe est disponible par e-mail
-          pour vous accompagner dans votre progression en tant qu'ExploRider.
-        </p>
-      </main>
-
-      <footer id="footer">
-        <p class="footer-cta">Un problème ? Contactez-nous 🤙🏼</p>
-        <nav class="footer-nav">
+    <footer class="site-footer">
+      <div class="wrap">
+        <a class="brand" href="index.html">
+          <img src="./assets/AblocNoir.png" alt="" width="34" height="34" />
+          A BLOC
+        </a>
+        <nav aria-label="Liens utiles">
           <a href="index.html">Accueil</a>
+          <a href="assistance.html" aria-current="page">Assistance &amp; FAQ</a>
           <a href="privacy.html">Confidentialité</a>
           <a href="deletion.html">Suppression de compte</a>
+          <a href="mailto:matissebabonneau@gmail.com">Contact</a>
         </nav>
-      </footer>
-    </div>
+        <p class="fine">© 2026 A BLOC · L'app des sports outdoor, conçue en France.</p>
+      </div>
+    </footer>
   </body>
 </html>
