@@ -1,0 +1,21 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "inter",
+        "createdAt": "2026-11-04T14:14:55.001Z",
+        "reason": "user brief: use app design system styles.tsx, which sets Inter_400Regular/Inter_700Bold"
+      },
+      {
+        "rule": "buried-raster",
+        "value": "*",
+        "files": ["index.html"],
+        "createdAt": "2026-11-04T14:14:55.021Z",
+        "reason": "agent: sticky-phone screen stack; inactive screens are opacity 0 by design and swap to 1 on scroll"
+      }
+    ]
+  }
+}

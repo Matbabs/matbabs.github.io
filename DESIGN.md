@@ -110,6 +110,7 @@ The site is the A BLOC mobile app laid flat on a white page. Every token is pinn
 Density is calm and editorial: large tight-tracked bold headlines, generous section breathing, muted violet-grey body copy capped at readable measures. Colour stays mostly in reserve on white, then arrives at full strength in two drenched bands, one purple and one yellow, so the page has two loud moments rather than constant noise. The site is light-only, like the app. The confirmed anti-reference is the generic app-launch template: a dark-gradient split hero with floating emoji badges.
 
 **Key Characteristics:**
+
 - Light-only white ground, ink #1a0f2b, never pure black text.
 - Tokens mirror the app 1:1 (custom property names keep the app's `PRIMARY`, `SECONDARY_FLAT` casing).
 - Inter 400 and 700 only, loaded from Google Fonts.
@@ -122,6 +123,7 @@ Density is calm and editorial: large tight-tracked bold headlines, generous sect
 A two-accent app palette, yellow for action and highlight, purple for guidance and structure, both sitting on white with violet-tinted ink.
 
 ### Primary
+
 - **Sun Yellow** (primary): the action colour. Header "Télécharger" button fill, the highlighter stripe under the key word of the hero headline, text selection, and the full-bleed closing CTA band. Text on it is always ink.
 - **Pale Sun** (primary-light): hover fill of the yellow button only.
 - **Ochre Edge** (primary-dark): the coloured glow under a hovered yellow button.
@@ -129,10 +131,12 @@ A two-accent app palette, yellow for action and highlight, purple for guidance a
 - **Burnt Amber** (dark-yellow): the readable text colour on Yellow Wash. Yellow itself is never used as text on white.
 
 ### Secondary
+
 - **Royal Purple** (secondary): guidance and structure. Focus rings, active map-pin markers, list markers, document links, FAQ chevrons, training icons, fact-chip text, and the drenched manifesto band (where white and #ede6fb text sit on it and the emphasised word turns Sun Yellow).
 - **Lilac Veil** (secondary-flat): tinted panels. Note boxes, fact chips, the soft backdrop slab behind the hero phone, and the story rail line.
 
 ### Neutral
+
 - **Night Violet** (dark): all primary text, the phone bezel, the store badges, the skip link. The darkest thing on the page and the base of every shadow tint.
 - **Dusk Grey** (ink-muted): secondary text. Ledes, step paragraphs, nav links at rest, footer, document meta and intro.
 - **White** (light): page ground and the inner fill of icon tiles and rest-state markers.
@@ -140,11 +144,13 @@ A two-accent app palette, yellow for action and highlight, purple for guidance a
 - **Hairline** (line): 1px dividers. Header bottom, alert strip, list rows, FAQ rows, footer fine print.
 
 ### Semantic
+
 - **Alarm Red** (dark-red): bold inline warnings on document pages (irreversible deletion, retention deadlines). Nowhere else.
 
 Hazard chips in the alert strip carry per-category dot colours taken from the app's alert types. They are data, set inline per item, not palette tokens.
 
 ### Named Rules
+
 **The Mirror Rule.** A colour enters this site only if it exists in the app's `styles.tsx`. The site does not invent brand colours; Dusk Grey and Hairline are the only web-side additions, both derived from Night Violet.
 
 **The Two Bands Rule.** Full-strength colour fills a whole section exactly twice on the landing page: Royal Purple for the manifesto, Sun Yellow for the close. Everything else rests on White or Mist.
@@ -159,6 +165,7 @@ Hazard chips in the alert strip carry per-category dot colours taken from the ap
 **Character:** One family, two weights, exactly as the app ships it. Hierarchy comes from size and negative tracking, not from weight variety: headings get tighter as they get bigger.
 
 ### Hierarchy
+
 - **Display** (700, clamp(2.75rem, 6.4vw, 5.5rem), 0.98, -0.04em): hero headline; the closing CTA headline runs the same voice at clamp(2.4rem, 5.6vw, 4.75rem). Balanced wrapping.
 - **Headline** (700, clamp(2rem, 4vw, 3.25rem), 1.05, -0.035em): section heads, max 22ch. The manifesto quote is a larger headline (clamp(1.9rem, 4.6vw, 4rem), 1.06, max 20ch). Document page titles run clamp(2.25rem, 5vw, 3.5rem).
 - **Title** (700, clamp(1.6rem, 2.6vw, 2.25rem), 1.1, -0.03em): story step titles. Smaller titles (19-22px, -0.02em, 1.3) for training rows, document h2 and FAQ questions (18px).
@@ -167,6 +174,7 @@ Hazard chips in the alert strip carry per-category dot colours taken from the ap
 - **Button** (700, 15px, 1): button and badge labels.
 
 ### Named Rules
+
 **The Two Weights Rule.** Inter 400 and 700 only. No 500, no 600, no italic (emphasis inside a headline is a colour change, not a style change).
 
 **The Tighter-As-Bigger Rule.** Letter-spacing scales with size: -0.01em at 18px, -0.02em around 20px, -0.03em for titles, -0.035em for headlines, -0.04em for display.
@@ -184,6 +192,7 @@ Responsive: at 960px every two-column grid collapses to one, the sticky phone is
 Mostly flat, with soft violet-tinted shadows reserved for the objects that stand in for the physical app: buttons, store badges, icon tiles, the phone. Shadows use negative spread so they pool below the object rather than haloing it. Tonal layering (Mist band, Lilac Veil panels) does the rest.
 
 ### Shadow Vocabulary
+
 - **Bottom** (`0 1px 5px #80808026`): rest state of the yellow button and the white icon tiles. The app's resting card shadow.
 - **Raised** (`0 18px 40px -18px #1a0f2b40, 0 2px 6px #1a0f2b14`): store badges at rest.
 - **Raised Hover** (`0 22px 40px -16px #1a0f2b66, 0 2px 6px #1a0f2b1f`): store badges on hover, with a 2px lift.
@@ -193,6 +202,7 @@ Mostly flat, with soft violet-tinted shadows reserved for the objects that stand
 The sticky header uses a translucent white (`#ffffffe6`) with `saturate(1.4) blur(12px)` backdrop filter over a Hairline border.
 
 ### Named Rules
+
 **The Soft-Pool Rule.** Every shadow is blurred, negatively spread and tinted from Night Violet (or neutral grey at rest). Zero-blur offset shadows do not exist in this world.
 
 ## Shapes
@@ -204,45 +214,57 @@ Two recurring geometries come from the outdoor map: the map-pin teardrop (a squa
 ## Components
 
 ### Buttons
+
 Confident and app-native.
+
 - **Shape:** gently rounded (15px), minimum 44px tall.
 - **Primary:** Sun Yellow fill, Night Violet 700 15px label, 10px 20px padding, Bottom shadow. Used for the header "Télécharger" only; on mobile it deep-links to the right store.
 - **Hover / Focus:** fill shifts to Pale Sun, 1px lift, Yellow Glow, 0.2s on the shared ease-out. Focus is the global 3px Royal Purple outline at 3px offset.
 
 ### Store Badges (primary action)
+
 The real download action, so they carry more weight than the button.
+
 - Night Violet fill, white text, 15px radius, min 190px wide, 26px store glyph image, two-line label (11px at 75% opacity over an 18px 700 store name).
 - Raised shadow at rest; 2px lift with Raised Hover on hover (0.25s ease-out).
 - Always shown as a pair (App Store, Google Play). Row in the hero, stacked column in the yellow CTA band on desktop, full-width each under 640px.
 
 ### Chips
+
 - **Sport chips:** pill, 1px Sun Yellow border, Yellow Wash fill, Burnt Amber 14px text. Static labels, not filters.
 - **Hazard chips:** pill, white with Hairline border, 14px ink text, led by a 10px round dot in the hazard's own colour.
 - **Fact chips:** 5px corners, Lilac Veil fill, Royal Purple 13px text; list the data a feature shows.
 
 ### Cards / Containers
+
 - **Note panel:** 15px radius, Lilac Veil fill, Royal Purple text, 18px 20px padding, bold links in the same colour. Used for help and contact asides.
 - **Rows, not cards:** training steps and FAQ items are Hairline-divided rows, not boxed cards. A training row is a 48px white icon tile (15px radius, Bottom shadow, Royal Purple 2px-stroke line icon) beside a title and Dusk Grey line.
 
 ### Navigation
+
 - Sticky translucent header, 68px, logo + "A BLOC" wordmark (700, 18px, -0.02em) left, links right in Dusk Grey 15px 400 turning ink on hover or `aria-current`, yellow button last. Links hide under 640px.
 - Footer repeats the brand, a wrapped link row in Dusk Grey (ink + underline on hover) and a 13px fine-print line above a Hairline.
 
 ### FAQ Disclosure
+
 Native `details`/`summary` rows divided by Hairlines; 18px 700 question, Royal Purple drawn chevron that rotates from down to up over 0.3s.
 
 ### Phone Frame (signature)
+
 A true device: Night Violet bezel (10px padding, 44px radius, Phone shadow) around a 945:2048 screen holding a real app screenshot cropped to cover. On the landing story it is sticky and swaps screens per step with a bottom-up clip-path wipe (0.8s, with a 1.04 scale settling to 1); the outgoing screen stays fully opaque underneath until the wipe ends, so no blank flash ever shows. Reduced motion removes the wipe.
 
 ### Map-Pin Step Marker (signature)
+
 16px teardrop on the story rail. At rest: white fill, 2px Royal Purple border at 40% alpha. Active step: solid Royal Purple, scaled 1.25, over 0.4s ease-out.
 
 ### Highlighter Mark
+
 The key word of the hero headline gets a Sun Yellow band from 62% to 92% of its line height, like a marker stroke. One word per headline.
 
 ## Do's and Don'ts
 
 ### Do:
+
 - **Do** take every colour, radius and weight from the app's `styles.tsx`; check there before adding a token.
 - **Do** put Night Violet text on Sun Yellow, and use Burnt Amber when yellow-family text must sit on white.
 - **Do** show the product only through real app screenshots inside the phone frame.
@@ -253,6 +275,7 @@ The key word of the hero headline gets a Sun Yellow band from 62% to 92% of its 
 - **Do** honour `prefers-reduced-motion`: all transitions and the screen wipe switch off.
 
 ### Don't:
+
 - **Don't** load or use Inter weights other than 400 and 700.
 - **Don't** add a dark theme or put a whole page on a dark ground; Night Violet is for ink, the phone bezel and the store badges.
 - **Don't** drench more than the two bands (purple manifesto, yellow close) on one page.

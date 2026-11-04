@@ -167,7 +167,9 @@ strong {
   min-height: 44px;
   padding: 10px 20px;
   border-radius: var(--RADIUS);
-  font: 700 15px/1 "Inter", sans-serif;
+  font:
+    700 15px/1 "Inter",
+    sans-serif;
   text-decoration: none;
   border: 0;
   cursor: pointer;
@@ -210,7 +212,9 @@ strong {
 }
 .store:hover {
   transform: translateY(-2px);
-  box-shadow: 0 22px 40px -16px #1a0f2b66, 0 2px 6px #1a0f2b1f;
+  box-shadow:
+    0 22px 40px -16px #1a0f2b66,
+    0 2px 6px #1a0f2b1f;
 }
 .store img {
   width: 26px;
@@ -251,7 +255,12 @@ strong {
 }
 
 .mark {
-  background: linear-gradient(transparent 62%, var(--PRIMARY) 62%, var(--PRIMARY) 92%, transparent 92%);
+  background: linear-gradient(
+    transparent 62%,
+    var(--PRIMARY) 62%,
+    var(--PRIMARY) 92%,
+    transparent 92%
+  );
   padding-inline: 0.04em;
 }
 

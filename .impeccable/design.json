@@ -1,0 +1,454 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-04T14:23:25+00:00",
+  "title": "Design System: A BLOC",
+  "extensions": {
+    "provenance": "Tokens pinned by the user to app/(tabs)/styles/styles.tsx (React Native app); CSS custom properties in style/master.css keep the app's names. Inter 400/700 via Google Fonts <link>.",
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Sun Yellow",
+        "canonical": "oklch(83.7% 0.164 84.4)",
+        "tonalRamp": [
+          "#140900",
+          "#341f00",
+          "#5a3800",
+          "#825300",
+          "#a97600",
+          "#c59f4c",
+          "#e1c793",
+          "#fcedce"
+        ],
+        "source": "styles.tsx PRIMARY"
+      },
+      "primary-light": {
+        "role": "primary",
+        "displayName": "Pale Sun",
+        "canonical": "oklch(88.4% 0.129 93.7)",
+        "tonalRamp": [
+          "#140900",
+          "#341f00",
+          "#5a3800",
+          "#825300",
+          "#a97600",
+          "#c59f4c",
+          "#e1c793",
+          "#fcedce"
+        ],
+        "source": "styles.tsx PRIMARY_LIGHT"
+      },
+      "primary-dark": {
+        "role": "primary",
+        "displayName": "Ochre Edge",
+        "canonical": "oklch(74.1% 0.137 92.8)",
+        "tonalRamp": [
+          "#140900",
+          "#341f00",
+          "#5a3800",
+          "#825300",
+          "#a97600",
+          "#c59f4c",
+          "#e1c793",
+          "#fcedce"
+        ],
+        "source": "styles.tsx PRIMARY_DARK"
+      },
+      "primary-flat": {
+        "role": "primary",
+        "displayName": "Yellow Wash",
+        "canonical": "#fbbf241a",
+        "tonalRamp": [
+          "#140900",
+          "#341f00",
+          "#5a3800",
+          "#825300",
+          "#a97600",
+          "#c59f4c",
+          "#e1c793",
+          "#fcedce"
+        ],
+        "source": "styles.tsx PRIMARY_FLAT"
+      },
+      "secondary": {
+        "role": "secondary",
+        "displayName": "Royal Purple",
+        "canonical": "oklch(49.1% 0.241 292.6)",
+        "tonalRamp": [
+          "#0d0423",
+          "#281253",
+          "#462489",
+          "#6735c5",
+          "#895bf3",
+          "#a98fff",
+          "#ccbdff",
+          "#efe7ff"
+        ],
+        "source": "styles.tsx SECONDARY"
+      },
+      "secondary-flat": {
+        "role": "secondary",
+        "displayName": "Lilac Veil",
+        "canonical": "#6d28d914",
+        "tonalRamp": [
+          "#0d0423",
+          "#281253",
+          "#462489",
+          "#6735c5",
+          "#895bf3",
+          "#a98fff",
+          "#ccbdff",
+          "#efe7ff"
+        ],
+        "source": "styles.tsx SECONDARY_FLAT"
+      },
+      "dark": {
+        "role": "neutral",
+        "displayName": "Night Violet",
+        "canonical": "oklch(20.0% 0.055 299.5)",
+        "tonalRamp": [
+          "#0c0a11",
+          "#26212f",
+          "#423c50",
+          "#615875",
+          "#847a9a",
+          "#a8a0b9",
+          "#cdc7d9",
+          "#f0ecf7"
+        ],
+        "source": "styles.tsx DARK"
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Dusk Grey",
+        "canonical": "oklch(39.1% 0.050 301.5)",
+        "tonalRamp": [
+          "#0c0a10",
+          "#26222d",
+          "#433c4e",
+          "#625872",
+          "#857a97",
+          "#a8a0b7",
+          "#cdc7d7",
+          "#f0edf6"
+        ],
+        "source": "web-side (derived from DARK)"
+      },
+      "light": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#808080",
+          "#a4a4a4",
+          "#cacaca",
+          "#eeeeee"
+        ],
+        "source": "styles.tsx LIGHT (\"white\")"
+      },
+      "dark-flat": {
+        "role": "neutral",
+        "displayName": "Mist",
+        "canonical": "#f2f2f2",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#808080",
+          "#a4a4a4",
+          "#cacaca",
+          "#eeeeee"
+        ],
+        "source": "styles.tsx DARK_FLAT"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#1a0f2b14",
+        "tonalRamp": [
+          "#0c0a11",
+          "#26212f",
+          "#423c50",
+          "#615875",
+          "#847a9a",
+          "#a8a0b9",
+          "#cdc7d9",
+          "#f0ecf7"
+        ],
+        "source": "web-side (DARK at 8% alpha)"
+      },
+      "dark-yellow": {
+        "role": "tertiary",
+        "displayName": "Burnt Amber",
+        "canonical": "oklch(55.5% 0.146 49.0)",
+        "tonalRamp": [
+          "#180600",
+          "#3c1802",
+          "#662d05",
+          "#944307",
+          "#bd6530",
+          "#d7926d",
+          "#efbfa5",
+          "#ffe8d8"
+        ],
+        "source": "styles.tsx DARK_YELLOW"
+      },
+      "dark-red": {
+        "role": "semantic",
+        "displayName": "Alarm Red",
+        "canonical": "oklch(50.5% 0.190 27.5)",
+        "tonalRamp": [
+          "#1c0202",
+          "#450c0a",
+          "#731a16",
+          "#a62823",
+          "#d34c43",
+          "#ea8378",
+          "#feb5ac",
+          "#ffe2dc"
+        ],
+        "source": "styles.tsx DARK_RED"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero and closing CTA headlines."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section heads, manifesto quote, document titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Story step titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Paragraphs in Dusk Grey, 42-68ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Chips, meta, fine print; sentence case."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Button and store-badge labels."
+      }
+    },
+    "shadows": [
+      {
+        "name": "bottom",
+        "value": "0 1px 5px #80808026",
+        "purpose": "Rest state of yellow button and icon tiles (--SHADOW_BOTTOM)."
+      },
+      {
+        "name": "raised",
+        "value": "0 18px 40px -18px #1a0f2b40, 0 2px 6px #1a0f2b14",
+        "purpose": "Store badges at rest (--SHADOW_RAISED)."
+      },
+      {
+        "name": "raised-hover",
+        "value": "0 22px 40px -16px #1a0f2b66, 0 2px 6px #1a0f2b1f",
+        "purpose": "Store badges on hover, with 2px lift."
+      },
+      {
+        "name": "yellow-glow",
+        "value": "0 6px 16px -6px #c9a830",
+        "purpose": "Yellow button on hover, with 1px lift."
+      },
+      {
+        "name": "phone",
+        "value": "0 40px 80px -30px #1a0f2b73, 0 0 0 1px #1a0f2b, inset 0 0 0 2px #3a2d4f",
+        "purpose": "Phone bezel: long drop, hairline edge, inner bevel."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Shared easing for every transition and the screen wipe (--ease-out)."
+      },
+      {
+        "name": "duration-ui",
+        "value": "0.2s",
+        "purpose": "Buttons, nav link colour."
+      },
+      {
+        "name": "duration-badge",
+        "value": "0.25s",
+        "purpose": "Store badge lift."
+      },
+      {
+        "name": "duration-marker",
+        "value": "0.4s",
+        "purpose": "Map-pin step marker activation."
+      },
+      {
+        "name": "screen-wipe",
+        "value": "clip-path inset(100% 0 0 0) to inset(0), scale 1.04 to 1, 0.8s ease-out; outgoing screen holds opacity 1 for 0.8s then hides",
+        "purpose": "Sticky phone screen swap per story step."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce disables all animation, transitions and smooth scroll",
+        "purpose": "Accessibility floor."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "stack",
+        "value": "960px"
+      },
+      {
+        "name": "mobile",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Yellow app button; header download action.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Télécharger</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 20px; border-radius: 15px; font-family: Inter, system-ui, sans-serif; font-weight: 700; font-size: 15px; line-height: 1; text-decoration: none; background: var(--PRIMARY, #fbbf24); color: var(--DARK, #1a0f2b); box-shadow: 0 1px 5px #80808026; transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s; } .ds-btn-primary:hover { background: var(--PRIMARY_LIGHT, #f5d76e); transform: translateY(-1px); box-shadow: 0 6px 16px -6px var(--PRIMARY_DARK, #c9a830); } .ds-btn-primary:focus-visible { outline: 3px solid var(--SECONDARY, #6d28d9); outline-offset: 3px; }"
+    },
+    {
+      "name": "Store Badge",
+      "kind": "button",
+      "refersTo": "store-badge",
+      "description": "Dark App Store / Google Play badge; the primary action, always in pairs.",
+      "html": "<a class=\"ds-store\" href=\"#\"><svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 5c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z\"/></svg><span><small>Télécharger sur l'</small><b>App Store</b></span></a>",
+      "css": ".ds-store { display: inline-flex; align-items: center; gap: 12px; min-width: 190px; padding: 11px 20px 11px 16px; border-radius: 15px; background: var(--DARK, #1a0f2b); color: var(--LIGHT, #ffffff); text-decoration: none; font-family: Inter, system-ui, sans-serif; box-shadow: 0 18px 40px -18px #1a0f2b40, 0 2px 6px #1a0f2b14; transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1); } .ds-store:hover { transform: translateY(-2px); box-shadow: 0 22px 40px -16px #1a0f2b66, 0 2px 6px #1a0f2b1f; } .ds-store:focus-visible { outline: 3px solid var(--SECONDARY, #6d28d9); outline-offset: 3px; } .ds-store span { display: flex; flex-direction: column; line-height: 1.15; } .ds-store small { font-size: 11px; opacity: 0.75; } .ds-store b { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; }"
+    },
+    {
+      "name": "Sport Chip",
+      "kind": "chip",
+      "refersTo": "chip-sport",
+      "description": "Static identity label for a supported sport.",
+      "html": "<ul class=\"ds-sports\"><li>Grimpe</li><li>Trail</li><li>Surf</li></ul>",
+      "css": ".ds-sports { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; } .ds-sports li { font-family: Inter, system-ui, sans-serif; font-size: 14px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--PRIMARY, #fbbf24); color: var(--DARK_YELLOW, #b45309); background: var(--PRIMARY_FLAT, #fbbf241a); }"
+    },
+    {
+      "name": "Hazard Chip",
+      "kind": "chip",
+      "description": "Alert-type pill led by the hazard's own dot colour (data, set inline).",
+      "html": "<ul class=\"ds-hazards\"><li><i style=\"--c:#38bdf8\"></i>Vent fort</li><li><i style=\"--c:#ef4444\"></i>Avalanche</li><li><i style=\"--c:#a855f7\"></i>Crue</li></ul>",
+      "css": ".ds-hazards { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; } .ds-hazards li { display: inline-flex; align-items: center; gap: 8px; padding: 6px 13px 6px 10px; border-radius: 999px; background: var(--LIGHT, #ffffff); border: 1px solid var(--LINE, #1a0f2b14); font-family: Inter, system-ui, sans-serif; font-size: 14px; color: var(--DARK, #1a0f2b); white-space: nowrap; } .ds-hazards i { width: 10px; height: 10px; border-radius: 50%; background: var(--c); }"
+    },
+    {
+      "name": "Fact Chip",
+      "kind": "chip",
+      "refersTo": "chip-fact",
+      "description": "Small data label listing what a feature shows.",
+      "html": "<ul class=\"ds-facts\"><li>Ressenti</li><li>Rafales</li><li>Iso 0 °C</li></ul>",
+      "css": ".ds-facts { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; padding: 0; margin: 0; } .ds-facts li { font-family: Inter, system-ui, sans-serif; font-size: 13px; color: var(--SECONDARY, #6d28d9); background: var(--SECONDARY_FLAT, #6d28d914); padding: 5px 10px; border-radius: 5px; }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "description": "Sticky translucent header with wordmark, muted links and the yellow button.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-brand\" href=\"#\">A BLOC</a><nav class=\"ds-nav\"><a href=\"#\">Fonctionnalités</a><a href=\"#\" aria-current=\"page\">Assistance</a><a href=\"#\">Confidentialité</a></nav></header>",
+      "css": ".ds-header { display: flex; align-items: center; gap: 24px; height: 68px; padding: 0 24px; background: #ffffffe6; backdrop-filter: saturate(1.4) blur(12px); border-bottom: 1px solid var(--LINE, #1a0f2b14); font-family: Inter, system-ui, sans-serif; } .ds-brand { font-weight: 700; font-size: 18px; letter-spacing: -0.02em; color: var(--DARK, #1a0f2b); text-decoration: none; } .ds-nav { display: flex; gap: 28px; margin-left: auto; font-size: 15px; } .ds-nav a { color: var(--INK_MUTED, #4a3f5c); text-decoration: none; transition: color 0.2s; } .ds-nav a:hover, .ds-nav a[aria-current=\"page\"] { color: var(--DARK, #1a0f2b); } .ds-nav a:focus-visible { outline: 3px solid var(--SECONDARY, #6d28d9); outline-offset: 3px; border-radius: 6px; }"
+    },
+    {
+      "name": "Note Panel",
+      "kind": "card",
+      "refersTo": "note-panel",
+      "description": "Lilac help/contact aside on document pages.",
+      "html": "<p class=\"ds-note\">Besoin d'aide supplémentaire ? Écris-nous : <a href=\"#\">matissebabonneau@gmail.com</a></p>",
+      "css": ".ds-note { padding: 18px 20px; border-radius: 15px; background: var(--SECONDARY_FLAT, #6d28d914); color: var(--SECONDARY, #6d28d9); font-family: Inter, system-ui, sans-serif; font-size: 17px; line-height: 1.6; } .ds-note a { color: inherit; font-weight: 700; text-underline-offset: 3px; } .ds-note a:focus-visible { outline: 3px solid var(--SECONDARY, #6d28d9); outline-offset: 3px; }"
+    },
+    {
+      "name": "Training Row",
+      "kind": "card",
+      "description": "Hairline-divided row with a white line-icon tile; rows, not boxed cards.",
+      "html": "<ol class=\"ds-path\"><li><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"9\"/><circle cx=\"12\" cy=\"12\" r=\"5\"/><circle cx=\"12\" cy=\"12\" r=\"1\"/></svg><div><h3>Évalue ton niveau</h3><p>Une évaluation initiale pour partir de là où tu es vraiment.</p></div></li></ol>",
+      "css": ".ds-path { list-style: none; padding: 0; margin: 0; background: var(--DARK_FLAT, #f2f2f2); font-family: Inter, system-ui, sans-serif; } .ds-path li { display: grid; grid-template-columns: 48px 1fr; gap: 18px; padding: 22px 16px; border-block: 1px solid var(--LINE, #1a0f2b14); } .ds-path svg { width: 48px; height: 48px; padding: 12px; border-radius: 15px; background: var(--LIGHT, #ffffff); color: var(--SECONDARY, #6d28d9); box-shadow: 0 1px 5px #80808026; } .ds-path h3 { margin: 0; font-size: 19px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.3; color: var(--DARK, #1a0f2b); } .ds-path p { margin: 4px 0 0; font-size: 16px; color: var(--INK_MUTED, #4a3f5c); }"
+    },
+    {
+      "name": "FAQ Disclosure",
+      "kind": "custom",
+      "description": "Native details row with a drawn purple chevron.",
+      "html": "<div class=\"ds-faq\"><details open><summary>Qu'est-ce que A BLOC ?</summary><p>L'app des sports outdoor où chaque pratiquant veille sur les autres.</p></details><details><summary>Comment créer un compte ?</summary><p>Télécharge l'app et suis la validation par e-mail.</p></details></div>",
+      "css": ".ds-faq { border-top: 1px solid var(--LINE, #1a0f2b14); font-family: Inter, system-ui, sans-serif; color: var(--DARK, #1a0f2b); } .ds-faq details { border-bottom: 1px solid var(--LINE, #1a0f2b14); } .ds-faq summary { list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 22px 0; font-weight: 700; font-size: 18px; letter-spacing: -0.01em; cursor: pointer; } .ds-faq summary::-webkit-details-marker { display: none; } .ds-faq summary::after { content: \"\"; flex: none; width: 12px; height: 12px; border-right: 2px solid var(--SECONDARY, #6d28d9); border-bottom: 2px solid var(--SECONDARY, #6d28d9); transform: rotate(45deg) translateY(-3px); transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); } .ds-faq details[open] summary::after { transform: rotate(-135deg) translateY(-3px); } .ds-faq summary:focus-visible { outline: 3px solid var(--SECONDARY, #6d28d9); outline-offset: 3px; } .ds-faq p { margin: 0 0 22px; }"
+    },
+    {
+      "name": "Phone Frame with Map-Pin Steps",
+      "kind": "custom",
+      "refersTo": "phone-frame",
+      "description": "Signature: dark device bezel holding a real screenshot, beside the map-pin step rail (active pin solid purple).",
+      "html": "<div class=\"ds-story\"><ol class=\"ds-steps\"><li class=\"is-active\">Signale un danger</li><li>Charge ta trace</li><li>Regarde le spot</li></ol><div class=\"ds-phone\"><div class=\"ds-screen\"></div></div></div>",
+      "css": ".ds-story { display: flex; align-items: center; gap: 40px; font-family: Inter, system-ui, sans-serif; color: var(--DARK, #1a0f2b); } .ds-steps { list-style: none; margin: 0; padding: 0; position: relative; } .ds-steps::before { content: \"\"; position: absolute; left: 11px; top: 8px; bottom: 8px; width: 2px; background: var(--SECONDARY_FLAT, #6d28d914); } .ds-steps li { position: relative; padding: 14px 0 14px 44px; font-weight: 700; font-size: 20px; letter-spacing: -0.02em; } .ds-steps li::before { content: \"\"; position: absolute; left: 4px; top: 50%; width: 16px; height: 16px; margin-top: -8px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: var(--LIGHT, #ffffff); border: 2px solid #6d28d966; transition: background 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1); } .ds-steps li.is-active::before, .ds-steps li:hover::before { background: var(--SECONDARY, #6d28d9); border-color: var(--SECONDARY, #6d28d9); transform: rotate(-45deg) scale(1.25); } .ds-phone { width: 160px; aspect-ratio: 945 / 2048; padding: 6px; border-radius: 28px; background: var(--DARK, #1a0f2b); box-shadow: 0 40px 80px -30px #1a0f2b73, 0 0 0 1px #1a0f2b, inset 0 0 0 2px #3a2d4f; } .ds-screen { width: 100%; height: 100%; border-radius: 22px; background: linear-gradient(var(--DARK_FLAT, #f2f2f2), var(--SECONDARY_FLAT, #6d28d914)); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The App, Walked Through",
+    "overview": "The site is the A BLOC mobile app laid flat on a white page. Every token is pinned to the React Native app's design system (`app/(tabs)/styles/styles.tsx`): the same white ground, the same deep violet-black ink, the same sun-yellow and royal-purple pair, the same 15px and 5px radii, the same Inter at two weights. Proof is never illustrated. It is real app screenshots inside a true phone frame, and on the landing page that phone stays put while the story scrolls past it.\n\nDensity is calm and editorial: large tight-tracked bold headlines, generous section breathing, muted violet-grey body copy capped at readable measures. Colour stays mostly in reserve on white, then arrives at full strength in two drenched bands, one purple and one yellow, so the page has two loud moments rather than constant noise. The site is light-only, like the app. The confirmed anti-reference is the generic app-launch template: a dark-gradient split hero with floating emoji badges.",
+    "keyCharacteristics": [
+      "Light-only white ground, ink #1a0f2b, never pure black text.",
+      "Tokens mirror the app 1:1 (custom property names keep the app's `PRIMARY`, `SECONDARY_FLAT` casing).",
+      "Inter 400 and 700 only, loaded from Google Fonts.",
+      "Real screenshots in a dark phone bezel are the only imagery.",
+      "Soft, low, violet-tinted shadows. Nothing hard-edged.",
+      "Map-pin markers carry the outdoor-map language into the UI."
+    ],
+    "rules": [
+      {
+        "name": "The Mirror Rule",
+        "body": "A colour enters this site only if it exists in the app's `styles.tsx`. The site does not invent brand colours; Dusk Grey and Hairline are the only web-side additions, both derived from Night Violet.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Bands Rule",
+        "body": "Full-strength colour fills a whole section exactly twice on the landing page: Royal Purple for the manifesto, Sun Yellow for the close. Everything else rests on White or Mist.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink-On-Yellow Rule",
+        "body": "Anything set on Sun Yellow is Night Violet. Anything that must read as yellow on white uses Burnt Amber.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Weights Rule",
+        "body": "Inter 400 and 700 only. No 500, no 600, no italic (emphasis inside a headline is a colour change, not a style change).",
+        "section": "typography"
+      },
+      {
+        "name": "The Tighter-As-Bigger Rule",
+        "body": "Letter-spacing scales with size: -0.01em at 18px, -0.02em around 20px, -0.03em for titles, -0.035em for headlines, -0.04em for display.",
+        "section": "typography"
+      },
+      {
+        "name": "The Soft-Pool Rule",
+        "body": "Every shadow is blurred, negatively spread and tinted from Night Violet (or neutral grey at rest). Zero-blur offset shadows do not exist in this world.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** take every colour, radius and weight from the app's `styles.tsx`; check there before adding a token.",
+      "**Do** put Night Violet text on Sun Yellow, and use Burnt Amber when yellow-family text must sit on white.",
+      "**Do** show the product only through real app screenshots inside the phone frame.",
+      "**Do** make the store badge pair the primary action wherever download is the goal.",
+      "**Do** use Lilac Veil panels and fact chips for guidance and data, Yellow Wash chips for identity labels.",
+      "**Do** keep shadows soft, negatively spread and violet-tinted (see Shadow Vocabulary).",
+      "**Do** let headings stand alone: no kicker or eyebrow line above them.",
+      "**Do** honour `prefers-reduced-motion`: all transitions and the screen wipe switch off."
+    ],
+    "donts": [
+      "**Don't** load or use Inter weights other than 400 and 700.",
+      "**Don't** add a dark theme or put a whole page on a dark ground; Night Violet is for ink, the phone bezel and the store badges.",
+      "**Don't** drench more than the two bands (purple manifesto, yellow close) on one page.",
+      "**Don't** set Sun Yellow text on white.",
+      "**Don't** use mock UI, illustrated phones or stock imagery in place of real screenshots.",
+      "**Don't** use emoji or icon-font glyphs as icons; icons are inline 24px line SVGs at 2px stroke.",
+      "**Don't** use zero-blur offset shadows."
+    ]
+  }
+}
