@@ -585,6 +585,10 @@ strong {
   color: var(--INK_MUTED);
 }
 
+.train.coach {
+  background: var(--LIGHT);
+}
+
 /* ---------- Manifesto ---------- */
 .manifesto {
   background: var(--SECONDARY);
