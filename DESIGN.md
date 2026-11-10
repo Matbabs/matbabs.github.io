@@ -114,7 +114,7 @@ Density is calm and editorial: large tight-tracked bold headlines, generous sect
 - Light-only white ground, ink #1a0f2b, never pure black text.
 - Tokens mirror the app 1:1 (custom property names keep the app's `PRIMARY`, `SECONDARY_FLAT` casing).
 - Inter 400 and 700 only, loaded from Google Fonts.
-- Real screenshots in a dark phone bezel are the only product imagery. The app's own characters (the ExploRider piments and Coach Moustache) are the only illustration.
+- Real screenshots in a dark phone bezel are the only imagery.
 - Soft, low, violet-tinted shadows. Nothing hard-edged.
 - Map-pin markers carry the outdoor-map language into the UI.
 
@@ -231,7 +231,7 @@ The real download action, so they carry more weight than the button.
 
 ### Chips
 
-- **Sport chips:** pill, 1px Sun Yellow border, Yellow Wash fill, Burnt Amber 14px text. Static labels, not filters. (The landing hero now uses the Mascot Crew instead.)
+- **Sport chips:** pill, 1px Sun Yellow border, Yellow Wash fill, Burnt Amber 14px text. Static labels, not filters.
 - **Hazard chips:** pill, white with Hairline border, 14px ink text, led by a 10px round dot in the hazard's own colour.
 - **Fact chips:** 5px corners, Lilac Veil fill, Royal Purple 13px text; list the data a feature shows.
 
@@ -257,19 +257,6 @@ A true device: Night Violet bezel (10px padding, 44px radius, Phone shadow) arou
 
 16px teardrop on the story rail. At rest: white fill, 2px Royal Purple border at 40% alpha. Active step: solid Royal Purple, scaled 1.25, over 0.4s ease-out.
 
-### Mascot Crew (signature)
-
-Two characters, both from the app, never redrawn and never geometric-masked:
-
-- **Les piments** are the ExploRiders' own map avatars (`app/(tabs)/assets/online/map/Piment-N.png`). They carry the community. Never use a flame-crowned piment (reserved for level 10).
-- **Coach Moustache** (a moustached brain in a green trail cap) is the AI coach, and appears only beside the coach phone.
-
-Assets are trimmed WebP cut-outs in `assets/piments/` and `assets/mascots/coach.webp`.
-
-- **Hero crew:** the sport list. Six-column grid (max 620px), one full-body piment per sport in its gear (47 Grimpe, 25 Gravel, 9 Trail, 43 Surf, 41 Skate, 35 Ski), up to 104px over a 12-14px Dusk Grey label, soft violet drop-shadow; hover tilts it (-5px, -6deg, 0.35s ease-out). Stays on one row down to 320px.
-- **Coach lean-in:** Coach Moustache (alt "Coach Moustache, la mascotte d'A BLOC") overlaps the right edge of the coach-section phone, 120-200px.
-- **Band peek:** six plain piment heads (2, 45, 3, 31, 1, 17) rise from behind the yellow CTA band's top edge (bodies hidden by an overflow clip), staggered 60ms, 0.9s ease-out, once on first view. Visible by default without JS; reduced motion skips the rise.
-
 ### Highlighter Mark
 
 The key word of the hero headline gets a Sun Yellow band from 62% to 92% of its line height, like a marker stroke. One word per headline.
@@ -281,7 +268,6 @@ The key word of the hero headline gets a Sun Yellow band from 62% to 92% of its 
 - **Do** take every colour, radius and weight from the app's `styles.tsx`; check there before adding a token.
 - **Do** put Night Violet text on Sun Yellow, and use Burnt Amber when yellow-family text must sit on white.
 - **Do** show the product only through real app screenshots inside the phone frame.
-- **Do** let the piments and Coach Moustache carry personality, in at most three places per page: the hero crew, beside the coach phone, peeking over the yellow band.
 - **Do** make the store badge pair the primary action wherever download is the goal.
 - **Do** use Lilac Veil panels and fact chips for guidance and data, Yellow Wash chips for identity labels.
 - **Do** keep shadows soft, negatively spread and violet-tinted (see Shadow Vocabulary).

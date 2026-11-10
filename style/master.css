@@ -249,6 +249,7 @@ strong {
 .hero {
   padding-block: clamp(40px, 7vw, 96px) clamp(48px, 7vw, 88px);
   /* the lilac slab behind the phone bleeds 6% sideways; keep it off the page width */
+  overflow-x: hidden; /* fallback: Safari < 16 ignores clip */
   overflow-x: clip;
 }
 .hero .wrap {
@@ -288,43 +289,30 @@ strong {
   margin-top: 36px;
 }
 
-/* ExploRiders crew: one piment per sport, in that sport's gear (map avatars). */
-.crew {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: clamp(4px, 1.2vw, 14px);
-  max-width: 620px;
-  margin-top: 36px;
+.sports {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 32px;
   list-style: none;
 }
-.crew li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2px;
-  font-size: clamp(12px, 3.6vw, 14px);
-  color: var(--INK_MUTED);
-}
-.crew img {
-  width: 100%;
-  max-width: 104px;
-  height: auto;
-  filter: drop-shadow(0 8px 8px #1a0f2b1f);
-  transition: transform 0.35s var(--ease-out);
-}
-@media (hover: hover) and (pointer: fine) {
-  .crew li:hover img {
-    transform: translateY(-5px) rotate(-6deg);
-  }
+.sports li {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--PRIMARY);
+  color: var(--DARK_YELLOW);
+  background: var(--PRIMARY_FLAT);
 }
 
-/* First-visit entrance: the hero builds top to bottom, then the crew lines up
-   one piment at a time, then the phone settles in. CSS so it stays smooth while
+/* First-visit entrance: the hero builds top to bottom, then the sport chips,
+   then the phone settles in. CSS so it stays smooth while
    the page is still loading. */
 .hero h1,
 .hero-lede,
 .hero .stores,
-.crew li {
+.sports {
   animation: rise 0.7s var(--ease-out) both;
 }
 .hero-lede {
@@ -333,23 +321,8 @@ strong {
 .hero .stores {
   animation-delay: 0.14s;
 }
-.crew li:nth-child(1) {
+.sports {
   animation-delay: 0.24s;
-}
-.crew li:nth-child(2) {
-  animation-delay: 0.29s;
-}
-.crew li:nth-child(3) {
-  animation-delay: 0.34s;
-}
-.crew li:nth-child(4) {
-  animation-delay: 0.39s;
-}
-.crew li:nth-child(5) {
-  animation-delay: 0.44s;
-}
-.crew li:nth-child(6) {
-  animation-delay: 0.49s;
 }
 .hero-visual {
   animation: settle 0.9s var(--ease-out) 0.1s both;
@@ -594,19 +567,7 @@ strong {
   }
 }
 .train-film {
-  position: relative;
   margin-top: 40px;
-  width: fit-content;
-}
-/* Coach Moustache leans in from the phone's right edge, looking at the screen. */
-.coach-mascot {
-  position: absolute;
-  z-index: 1;
-  right: clamp(-170px, -12vw, -96px);
-  bottom: 30%;
-  width: clamp(120px, 14vw, 200px);
-  height: auto;
-  filter: drop-shadow(0 18px 16px #1a0f2b33);
 }
 .train-film .phone {
   --phone-w: min(62vw, 260px);
@@ -704,47 +665,8 @@ strong {
 
 /* ---------- Final CTA ---------- */
 .cta {
-  position: relative;
   background: var(--PRIMARY);
   padding-block: clamp(64px, 9vw, 120px);
-}
-/* Piment heads peek over the band's top edge; bodies stay hidden behind it. */
-.peek {
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  translate: -50% 0;
-  width: max-content;
-  display: flex;
-  gap: clamp(0px, 1vw, 12px);
-  height: clamp(42px, 7.6vw, 100px);
-  overflow: hidden;
-  pointer-events: none;
-}
-.peek img {
-  width: clamp(44px, 8vw, 104px);
-  height: auto;
-  translate: 0 12%;
-  transition: translate 0.9s var(--ease-out);
-}
-.peek img:nth-child(2) {
-  transition-delay: 0.06s;
-}
-.peek img:nth-child(3) {
-  transition-delay: 0.12s;
-}
-.peek img:nth-child(4) {
-  transition-delay: 0.18s;
-}
-.peek img:nth-child(5) {
-  transition-delay: 0.24s;
-}
-.peek img:nth-child(6) {
-  transition-delay: 0.3s;
-}
-.peek-wait .peek img {
-  translate: 0 100%;
-  transition: none;
 }
 .cta .wrap {
   display: grid;
@@ -996,12 +918,6 @@ strong {
   .site-footer nav {
     margin-left: 0;
   }
-  .peek img {
-    width: max(44px, 14vw);
-  }
-  .peek {
-    height: max(42px, 13.4vw);
-  }
   .tuto {
     grid-template-columns: 1fr;
     max-width: 260px;
@@ -1022,7 +938,7 @@ strong {
   .hero h1,
   .hero-lede,
   .hero .stores,
-  .crew li,
+  .sports,
   .hero-visual {
     animation: fade 0.4s ease both !important;
   }
