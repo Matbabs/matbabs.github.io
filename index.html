@@ -73,13 +73,61 @@
                 <span><small>Disponible sur</small><b>Google Play</b></span>
               </a>
             </div>
-            <ul class="sports" aria-label="Sports disponibles">
-              <li>Grimpe</li>
-              <li>Gravel</li>
-              <li>Trail</li>
-              <li>Surf</li>
-              <li>Skate</li>
-              <li>Ski</li>
+            <ul class="crew" aria-label="Sports disponibles">
+              <li>
+                <img
+                  src="./assets/piments/grimpe.webp"
+                  alt=""
+                  width="160"
+                  height="160"
+                />
+                Grimpe
+              </li>
+              <li>
+                <img
+                  src="./assets/piments/gravel.webp"
+                  alt=""
+                  width="160"
+                  height="160"
+                />
+                Gravel
+              </li>
+              <li>
+                <img
+                  src="./assets/piments/trail.webp"
+                  alt=""
+                  width="160"
+                  height="160"
+                />
+                Trail
+              </li>
+              <li>
+                <img
+                  src="./assets/piments/surf.webp"
+                  alt=""
+                  width="160"
+                  height="160"
+                />
+                Surf
+              </li>
+              <li>
+                <img
+                  src="./assets/piments/skate.webp"
+                  alt=""
+                  width="160"
+                  height="160"
+                />
+                Skate
+              </li>
+              <li>
+                <img
+                  src="./assets/piments/ski.webp"
+                  alt=""
+                  width="160"
+                  height="160"
+                />
+                Ski
+              </li>
             </ul>
           </div>
           <div class="hero-visual">
@@ -449,6 +497,14 @@
               PRO.
             </p>
             <figure class="train-film">
+              <img
+                class="coach-mascot"
+                src="./assets/mascots/coach.webp"
+                alt="Coach Moustache, la mascotte d'A BLOC"
+                width="160"
+                height="160"
+                loading="lazy"
+              />
               <div class="phone">
                 <div class="screen-stack">
                   <img
@@ -548,6 +604,14 @@
       </section>
 
       <section class="cta" id="telecharger">
+        <div class="peek" aria-hidden="true">
+          <img src="./assets/piments/tete-2.webp" alt="" loading="lazy" />
+          <img src="./assets/piments/tete-45.webp" alt="" loading="lazy" />
+          <img src="./assets/piments/tete-3.webp" alt="" loading="lazy" />
+          <img src="./assets/piments/tete-31.webp" alt="" loading="lazy" />
+          <img src="./assets/piments/tete-1.webp" alt="" loading="lazy" />
+          <img src="./assets/piments/tete-17.webp" alt="" loading="lazy" />
+        </div>
         <div class="wrap">
           <div>
             <h2>Rejoins les ExploRiders.</h2>
@@ -630,6 +694,21 @@
             },
             { threshold: 0.5 },
           ).observe(trainVideo);
+        }
+
+        // Final band: the crew pops up from behind its top edge, once.
+        var cta = document.querySelector(".cta");
+        if ("IntersectionObserver" in window && cta && !still) {
+          cta.classList.add("peek-wait");
+          var peekIo = new IntersectionObserver(
+            function (es) {
+              if (!es[0].isIntersecting) return;
+              cta.classList.remove("peek-wait");
+              peekIo.disconnect();
+            },
+            { threshold: 0.35 },
+          );
+          peekIo.observe(cta);
         }
 
         // Sticky phone: swap the screen (image or video) for the step in the middle of the viewport.
