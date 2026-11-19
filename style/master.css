@@ -720,6 +720,11 @@ strong {
   padding-top: 20px;
   border-top: 1px solid var(--LINE);
 }
+/* Inline link in running text: underlined so it reads as a link. */
+.site-footer .fine a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 
 /* ---------- Document pages ---------- */
 .doc {
