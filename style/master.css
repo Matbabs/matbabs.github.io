@@ -274,6 +274,8 @@ strong {
     var(--PRIMARY) 92%,
     transparent 92%
   );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   padding-inline: 0.04em;
 }
 
@@ -306,26 +308,22 @@ strong {
   background: var(--PRIMARY_FLAT);
 }
 
-/* First-visit entrance: the hero builds top to bottom, then the sport chips,
-   then the phone settles in. CSS so it stays smooth while
-   the page is still loading. */
-.hero h1,
-.hero-lede,
-.hero .stores,
-.sports {
+/* First-visit entrance, one gesture: copy and phone arrive together, then the
+   highlighter draws under "seul." as the payoff. CSS so it stays smooth while
+   the page is still loading; the final state is the default. */
+.hero .wrap > div:first-child {
   animation: rise 0.7s var(--ease-out) both;
 }
-.hero-lede {
-  animation-delay: 0.07s;
-}
-.hero .stores {
-  animation-delay: 0.14s;
-}
-.sports {
-  animation-delay: 0.24s;
-}
 .hero-visual {
-  animation: settle 0.9s var(--ease-out) 0.1s both;
+  animation: settle 0.9s var(--ease-out) 0.05s both;
+}
+.hero .mark {
+  animation: mark-draw 0.55s var(--ease-out) 0.5s both;
+}
+@keyframes mark-draw {
+  from {
+    background-size: 0% 100%;
+  }
 }
 @keyframes rise {
   from {
@@ -429,6 +427,33 @@ strong {
   height: 10px;
   border-radius: 50%;
   background: var(--c);
+}
+/* Pins drop onto the strip like markers onto the app's map, with the app's
+   own marker-pop overshoot. Hidden only once JS has armed the strip, so the
+   list stays visible without JS; the 40ms step is capped by the list length. */
+.alerts.armed li {
+  opacity: 0;
+}
+.alerts.armed.in li {
+  animation: chip-in 0.3s var(--ease-out) calc(var(--i) * 40ms) both;
+}
+.alerts.armed.in li i {
+  animation: pin-drop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1)
+    calc(var(--i) * 40ms + 60ms) both;
+}
+@keyframes chip-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes pin-drop {
+  from {
+    transform: translateY(-10px) scale(0.3);
+    opacity: 0;
+  }
 }
 
 /* ---------- Story (sticky phone) ---------- */
@@ -940,10 +965,7 @@ strong {
     transition: none !important;
   }
   /* Gentler, not zero: the hero still fades in, without any movement. */
-  .hero h1,
-  .hero-lede,
-  .hero .stores,
-  .sports,
+  .hero .wrap > div:first-child,
   .hero-visual {
     animation: fade 0.4s ease both !important;
   }

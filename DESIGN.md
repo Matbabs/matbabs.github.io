@@ -149,6 +149,8 @@ A two-accent app palette, yellow for action and highlight, purple for guidance a
 
 Hazard chips in the alert strip carry per-category dot colours taken from the app's alert types. They are data, set inline per item, not palette tokens.
 
+**Motion.** Two authored moments only. The hero arrives as one gesture (copy block and phone together), then the Sun Yellow highlighter draws under the headline's last word. When the alert strip enters view, its hazard dots drop in one after another with the app's map-marker overshoot (`cubic-bezier(0.34, 1.56, 0.64, 1)`, 40ms step). Content is visible without JS; reduced motion keeps only the hero fade.
+
 ### Named Rules
 
 **The Mirror Rule.** A colour enters this site only if it exists in the app's `styles.tsx`. The site does not invent brand colours; Dusk Grey and Hairline are the only web-side additions, both derived from Night Violet.

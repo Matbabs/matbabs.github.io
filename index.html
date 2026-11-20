@@ -594,8 +594,8 @@
           >
         </nav>
         <p class="fine">
-          © 2026 A BLOC · L'app des sports outdoor, conçue en France.
-          Site réalisé par
+          © 2026 A BLOC · L'app des sports outdoor, conçue en France. Site
+          réalisé par
           <a href="https://matisse-babonneau.fr" target="_blank" rel="noopener"
             >matisse-babonneau.fr</a
           >.
@@ -634,6 +634,27 @@
             },
             { threshold: 0.5 },
           ).observe(trainVideo);
+        }
+
+        // Alert strip: pins drop in once, when the strip comes into view.
+        var strip = document.querySelector(".alerts");
+        if ("IntersectionObserver" in window && strip && !still) {
+          strip.querySelectorAll("li").forEach(function (li, i) {
+            li.style.setProperty("--i", i);
+          });
+          strip.classList.add("armed");
+          var stripIo = new IntersectionObserver(
+            function (es) {
+              if (!es[0].isIntersecting) return;
+              // After the hero gesture when both are on screen at load.
+              setTimeout(function () {
+                strip.classList.add("in");
+              }, performance.now() < 1200 ? 700 : 0);
+              stripIo.disconnect();
+            },
+            { threshold: 0.4 },
+          );
+          stripIo.observe(strip);
         }
 
         // Sticky phone: swap the screen (image or video) for the step in the middle of the viewport.
